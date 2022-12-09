@@ -1,0 +1,168 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodSSalud> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CSCodSSalud"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodSSalud defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">SSA<a name=\"CSCodSSalud-SSA\"> </a></td><td>Servicio de Salud Arica</td></tr><tr><td style=\"white-space:nowrap\">SSAN<a name=\"CSCodSSalud-SSAN\"> </a></td><td>Servicio de Salud Antofagasta</td></tr><tr><td style=\"white-space:nowrap\">SSAT<a name=\"CSCodSSalud-SSAT\"> </a></td><td>Servicio de Salud Atacama</td></tr><tr><td style=\"white-space:nowrap\">SSC<a name=\"CSCodSSalud-SSC\"> </a></td><td>Servicio de Salud Coquimbo</td></tr><tr><td style=\"white-space:nowrap\">SSVSA<a name=\"CSCodSSalud-SSVSA\"> </a></td><td>Servicio de Salud Valparaíso-San Antonio</td></tr><tr><td style=\"white-space:nowrap\">SSVQ<a name=\"CSCodSSalud-SSVQ\"> </a></td><td>Servicio de Salud Viña del Mar-Quillota</td></tr><tr><td style=\"white-space:nowrap\">SSAC<a name=\"CSCodSSalud-SSAC\"> </a></td><td>Servicio de Salud Aconcagua</td></tr><tr><td style=\"white-space:nowrap\">SSMN<a name=\"CSCodSSalud-SSMN\"> </a></td><td>Servicio de Salud Metropolitano Norte (SSMN)</td></tr><tr><td style=\"white-space:nowrap\">SSMOC<a name=\"CSCodSSalud-SSMOC\"> </a></td><td>Servicio de Salud Metropolitano Occidente (SSMOC)</td></tr><tr><td style=\"white-space:nowrap\">SSMC<a name=\"CSCodSSalud-SSMC\"> </a></td><td>Servicio de Salud Metropolitano Central (SSMC)</td></tr><tr><td style=\"white-space:nowrap\">SSMS<a name=\"CSCodSSalud-SSMS\"> </a></td><td>Servicio de Salud Metropolitano Sur (SSMS)</td></tr><tr><td style=\"white-space:nowrap\">SSMO<a name=\"CSCodSSalud-SSMO\"> </a></td><td>Servicio de Salud Metropolitano Oriente (SSMO)</td></tr><tr><td style=\"white-space:nowrap\">SSMSO<a name=\"CSCodSSalud-SSMSO\"> </a></td><td>Servicio de Salud Metropolitano Sur Oriente (SSMSO)</td></tr><tr><td style=\"white-space:nowrap\">SSOH<a name=\"CSCodSSalud-SSOH\"> </a></td><td>Servicio de Salud Libertador B. OHiggins</td></tr><tr><td style=\"white-space:nowrap\">SSM<a name=\"CSCodSSalud-SSM\"> </a></td><td>Servicio de Salud del Maule</td></tr><tr><td style=\"white-space:nowrap\">SSÑ<a name=\"CSCodSSalud-SS.209\"> </a></td><td>Servicio de Salud Ñuble</td></tr><tr><td style=\"white-space:nowrap\">SSCO<a name=\"CSCodSSalud-SSCO\"> </a></td><td>Servicio de Salud Concepción</td></tr><tr><td style=\"white-space:nowrap\">SSAR<a name=\"CSCodSSalud-SSAR\"> </a></td><td>Servicio de Salud Arauco</td></tr><tr><td style=\"white-space:nowrap\">SST<a name=\"CSCodSSalud-SST\"> </a></td><td>Servicio de Salud Talcahuano</td></tr><tr><td style=\"white-space:nowrap\">SSB<a name=\"CSCodSSalud-SSB\"> </a></td><td>Servicio de Salud Bíobío</td></tr><tr><td style=\"white-space:nowrap\">SSARN<a name=\"CSCodSSalud-SSARN\"> </a></td><td>Servicio de Salud Araucanía Norte</td></tr><tr><td style=\"white-space:nowrap\">SSAS<a name=\"CSCodSSalud-SSAS\"> </a></td><td>Servicio de Salud Araucanía Sur</td></tr><tr><td style=\"white-space:nowrap\">SSV<a name=\"CSCodSSalud-SSV\"> </a></td><td>Servicio de Salud Valdivia</td></tr><tr><td style=\"white-space:nowrap\">SSO<a name=\"CSCodSSalud-SSO\"> </a></td><td>Servicio de Salud Osorno</td></tr><tr><td style=\"white-space:nowrap\">SSR<a name=\"CSCodSSalud-SSR\"> </a></td><td>Servicio de Salud Reloncaví</td></tr><tr><td style=\"white-space:nowrap\">SSCH<a name=\"CSCodSSalud-SSCH\"> </a></td><td>Servicio de Salud Chiloé</td></tr><tr><td style=\"white-space:nowrap\">SSAY<a name=\"CSCodSSalud-SSAY\"> </a></td><td>Servicio de Salud Aysén</td></tr><tr><td style=\"white-space:nowrap\">SSMA<a name=\"CSCodSSalud-SSMA\"> </a></td><td>Servicio de Salud Magallanes</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodSSalud"];
+  fhir:CodeSystem.version [ fhir:value "1.5.0"];
+  fhir:CodeSystem.name [ fhir:value "CSCodSSaludCL"];
+  fhir:CodeSystem.title [ fhir:value "Códigos del Sistema Nacional de Servicios de Salud"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-06-10T00:00:00-03:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Chile"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Chile" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7chile.cl" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "chair@hl7chile.cl" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Códigos del Sistema Nacional de Servicios de Salud"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "CL" ];
+       fhir:Coding.display [ fhir:value "Chile" ]
+     ]
+  ];
+  fhir:CodeSystem.copyright [ fhir:value "Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "28"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "SSA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Arica" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "SSAN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Antofagasta" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "SSAT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Atacama" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "SSC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Coquimbo" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "SSVSA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Valparaíso-San Antonio" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "SSVQ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Viña del Mar-Quillota" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "SSAC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Aconcagua" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "SSMN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Metropolitano Norte (SSMN)" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "SSMOC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Metropolitano Occidente (SSMOC)" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "SSMC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Metropolitano Central (SSMC)" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "SSMS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Metropolitano Sur (SSMS)" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "SSMO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Metropolitano Oriente (SSMO)" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "SSMSO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Metropolitano Sur Oriente (SSMSO)" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "SSOH" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Libertador B. OHiggins" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "SSM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud del Maule" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "SSÑ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Ñuble" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "SSCO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Concepción" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "SSAR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Arauco" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "SST" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Talcahuano" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "SSB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Bíobío" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "SSARN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Araucanía Norte" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "SSAS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Araucanía Sur" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "SSV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Valdivia" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "SSO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Osorno" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "SSR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Reloncaví" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "SSCH" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Chiloé" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "SSAY" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Aysén" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "SSMA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Servicio de Salud Magallanes" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodSSalud.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

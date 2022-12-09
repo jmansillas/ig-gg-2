@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSRazonNOT> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CSRazonNOT"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSRazonNOT defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">pierdeLlam<a name=\"CSRazonNOT-pierdeLlam\"> </a></td><td>El participante pierde la llamada</td></tr><tr><td style=\"white-space:nowrap\">finaLlam<a name=\"CSRazonNOT-finaLlam\"> </a></td><td>El participante finalizó la llamada abruptamente</td></tr><tr><td style=\"white-space:nowrap\">problConex<a name=\"CSRazonNOT-problConex\"> </a></td><td>El participante tuvo problemas de conexión a internet</td></tr><tr><td style=\"white-space:nowrap\">medproblConex<a name=\"CSRazonNOT-medproblConex\"> </a></td><td>Tuve problemas de conexión a internet</td></tr><tr><td style=\"white-space:nowrap\">otros<a name=\"CSRazonNOT-otros\"> </a></td><td>Otros / texto libre</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSRazonNOT"];
+  fhir:CodeSystem.version [ fhir:value "1.5.0"];
+  fhir:CodeSystem.name [ fhir:value "CSRazonNOencuentroCL"];
+  fhir:CodeSystem.title [ fhir:value "Códigos de razones por la cuales el encuentro remoto no se pudo llevar a cabo"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-05-22T00:00:00-03:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Chile"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Chile" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7chile.cl" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "chair@hl7chile.cl" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "CL" ];
+       fhir:Coding.display [ fhir:value "Chile" ]
+     ]
+  ];
+  fhir:CodeSystem.copyright [ fhir:value "Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "pierdeLlam" ];
+     fhir:CodeSystem.concept.display [ fhir:value "El participante pierde la llamada" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "finaLlam" ];
+     fhir:CodeSystem.concept.display [ fhir:value "El participante finalizó la llamada abruptamente" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "problConex" ];
+     fhir:CodeSystem.concept.display [ fhir:value "El participante tuvo problemas de conexión a internet" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "medproblConex" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tuve problemas de conexión a internet" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "otros" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Otros / texto libre" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSRazonNOT.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="PacienteCL2"/>
+  <meta>
+    <profile value="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "PacienteCL2" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-CorePacienteCl.html">Perfil Paciente Para Core Nacional</a></p></div><p><b>Codigo de Identificación de países</b>: El Salvador <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#222)</span></p><p><b>identifier</b>: Passport number: P3334521.2 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Wilmer Andres de Dios Cabrales (OFFICIAL)</p><p><b>telecom</b>: <a href="mailto:wilCAB12l@wilmermail.com">wilCAB12l@wilmermail.com</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1968-11-03</p><p><b>address</b>: Calle 4 Norte, 52, pieza 802 15101 15 152 (TEMP)</p></div>
+  </text>
+  <extension url="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises">
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:iso:std:iso:3166"/>
+        <code value="222"/>
+        <display value="El Salvador"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <extension url="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises">
+        <valueCodeableConcept>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="222"/>
+            <display value="El Salvador"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PPN"/>
+        <display value="Passport number"/>
+      </coding>
+    </type>
+    <system value="http://Pasaportes.cl/Validacion/Pass"/>
+    <value value="P3334521.2"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <family value="Cabrales">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-mothers-family">
+        <valueString value="Rivas"/>
+      </extension>
+    </family>
+    <given value="Wilmer"/>
+    <given value="Andres"/>
+    <given value="de Dios"/>
+  </name>
+  <telecom>
+    <system value="email"/>
+    <value value="wilCAB12l@wilmermail.com"/>
+    <use value="home"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1968-11-03"/>
+  <address>
+    <use value="temp"/>
+    <line value="Calle 4 Norte, 52, pieza 802"/>
+    <city value="15101"/>
+    <district value="151"/>
+    <state value="15"/>
+    <country value="152"/>
+  </address>
+</Patient>

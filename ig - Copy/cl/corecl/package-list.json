@@ -1,0 +1,27 @@
+{
+    "package-id": "hl7.fhir.cl.corecl",
+    "title": "cl core",
+    "canonical": "https://hl7chile.cl/fhir/ig/corecl",
+    "introduction": "El Core FHIR Chileno nace de la necesidad de contar con una base de recursos FHIR para el desarrollo de interoperabilidad en diferentes casos de uso. Esta iniciativa nace específicamente de las necesidades de MINSAL para porder integrar información desde los casos de uso de Receta Electónica, desde donde HL7 Chile ve el espacio para levantar el Core Nacional",
+    "category": "National Base",
+    "list": [
+        {
+            "version": "current",
+            "desc": "Versión evolutiva en desarrollo constante",
+            "path": "https://hl7chile.cl/fhir/ig/corecl/1.7.0",
+            "status": "ci-build",
+            "current": true
+        },
+        {
+            "version": "1.7.0",
+            "date": "2022-09-07",
+            "desc": "Versión de desarrollo",
+            "path": "https://hl7chile.cl/fhir/ig/corecl/1.7.0",
+            "changes": "changes.html",
+            "status": "draft",
+            "sequence": "STU1",
+            "fhirversion": "4.0.1",
+            "current": false
+        }
+    ]
+}

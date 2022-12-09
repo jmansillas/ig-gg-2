@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/CoreCL/PractitionerRole/EspecialidadCL> a fhir:PractitionerRole;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "EspecialidadCL"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreEspecialidadCl";
+       fhir:index 0;
+       fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreEspecialidadCl>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"EspecialidadCL\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CoreEspecialidadCl.html\">Perfil utilizaco para asignar una o mas especialidades medicas a un prestador de salud.</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Practitioner-3240.html\"></a></p><p><b style=\"color: maroon\">Exception generating Narrative: null</b></p></div>"
+  ];
+  fhir:PractitionerRole.active [ fhir:value "true"^^xsd:boolean];
+  fhir:PractitionerRole.practitioner [
+     fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/Practitioner/3240>;
+     fhir:Reference.reference [ fhir:value "Practitioner/3240" ];
+     fhir:Reference.display [ fhir:value "Johanna Rosa Silva Reyes" ]
+  ];
+  fhir:PractitionerRole.specialty [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSEspecialidadesDeisCL" ];
+       fhir:Coding.code [ fhir:value "06" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Cirujano Cardiovascular" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSEspecialidadesDeisCL" ];
+       fhir:Coding.code [ fhir:value "03" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Médico Cardiólogo" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSEspecialidadesDeisCL" ];
+       fhir:Coding.code [ fhir:value "30" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Médico internista" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/CoreCL/PractitionerRole/EspecialidadCL.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/corecl/CodeSystem/csrazonnoencuentro> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "csrazonnoencuentro"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://hl7chile.cl/fhir/ig/corecl/CodeSystem/csrazonnoencuentro</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">pierdellam<a name=\"csrazonnoencuentro-pierdellam\"> </a></td><td>Participante pierde llamada</td><td>Indica la pérdida de una llamada con el paciete</td></tr><tr><td style=\"white-space:nowrap\">finallam<a name=\"csrazonnoencuentro-finallam\"> </a></td><td>El participante finalizó la llamada abruptamente</td><td>Indica la finalización de una llamada de forma abrupta</td></tr><tr><td style=\"white-space:nowrap\">problcon<a name=\"csrazonnoencuentro-problcon\"> </a></td><td>El participante tuvo problemas de conexión a internet</td><td>Indica que existieron problemas de conexión a internet para conectarse con el médico</td></tr><tr><td style=\"white-space:nowrap\">medicoproblcon<a name=\"csrazonnoencuentro-medicoproblcon\"> </a></td><td>Tuve problemas de conexión a internet</td><td>Indica problemas de conexión a internet que tuvo el médico</td></tr><tr><td style=\"white-space:nowrap\">otros<a name=\"csrazonnoencuentro-otros\"> </a></td><td>Otros, texto libre</td><td>Cualquier otro motivo</td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/csrazonnoencuentro"]; # 
+  fhir:CodeSystem.version [ fhir:value "1.7.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "CSrazonnoencuentro"]; # 
+  fhir:CodeSystem.title [ fhir:value "Razón Encuentro Remoto no Realizado"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.date [ fhir:value "2022-05-22T00:00:00-03:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Chile"]; # 
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Chile" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7chile.cl" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "chair@hl7chile.cl" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud"]; # 
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "CL" ];
+       fhir:Coding.display [ fhir:value "Chile" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.copyright [ fhir:value "Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."]; # 
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger]; # 
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "pierdellam" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Participante pierde llamada" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indica la pérdida de una llamada con el paciete" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "finallam" ];
+     fhir:CodeSystem.concept.display [ fhir:value "El participante finalizó la llamada abruptamente" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indica la finalización de una llamada de forma abrupta" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "problcon" ];
+     fhir:CodeSystem.concept.display [ fhir:value "El participante tuvo problemas de conexión a internet" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indica que existieron problemas de conexión a internet para conectarse con el médico" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "medicoproblcon" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tuve problemas de conexión a internet" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indica problemas de conexión a internet que tuvo el médico" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "otros" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Otros, texto libre" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Cualquier otro motivo" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/corecl/CodeSystem/csrazonnoencuentro.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

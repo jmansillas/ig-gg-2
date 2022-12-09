@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSTiposEncuentro> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CSTiposEncuentro"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSTiposEncuentro defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Programmed<a name=\"CSTiposEncuentro-Programmed\"> </a></td><td>Programada</td></tr><tr><td style=\"white-space:nowrap\">Spontaneous<a name=\"CSTiposEncuentro-Spontaneous\"> </a></td><td>Espontánea</td></tr><tr><td style=\"white-space:nowrap\">Committee<a name=\"CSTiposEncuentro-Committee\"> </a></td><td>Comité</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSTiposEncuentro"];
+  fhir:CodeSystem.version [ fhir:value "1.5.0"];
+  fhir:CodeSystem.name [ fhir:value "CSTiposEncuentroCL"];
+  fhir:CodeSystem.title [ fhir:value "Códigos de Tipos de Encuentro"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-05-21T00:00:00-03:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Chile"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Chile" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7chile.cl" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "chair@hl7chile.cl" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Códigos de Encuentros según Minsal"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "CL" ];
+       fhir:Coding.display [ fhir:value "Chile" ]
+     ]
+  ];
+  fhir:CodeSystem.copyright [ fhir:value "Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "Programmed" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Programada" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "Spontaneous" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Espontánea" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "Committee" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Comité" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSTiposEncuentro.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

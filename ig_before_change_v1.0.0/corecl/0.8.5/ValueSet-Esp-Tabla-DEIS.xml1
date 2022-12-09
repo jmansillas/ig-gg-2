@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="Esp-Tabla-DEIS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://minsal.cl/TablaEspecialidades</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>ANATOMÍA PATOLÓGICA</td></tr><tr><td>12</td><td>ANESTESIOLOGÍA</td></tr><tr><td>13</td><td>CARDIOLOGÍA</td></tr><tr><td>14</td><td>CIRUGÍA GENERAL</td></tr><tr><td>15</td><td>CIRUGÍA DE CABEZA, CUELLO Y MAXILOFACIAL</td></tr><tr><td>16</td><td>CIRUGÍA CARDIOVASCULAR</td></tr><tr><td>17</td><td>CIRUGÍA DE TÓRAX</td></tr><tr><td>18</td><td>CIRUGÍA PLÁSTICA Y REPARADORA</td></tr><tr><td>19</td><td>CIRUGÍA PEDIÁTRICA</td></tr><tr><td>110</td><td>CIRUGÍA VASCULAR PERIFÉRICA</td></tr><tr><td>111</td><td>COLOPROCTOLOGÍA</td></tr><tr><td>112</td><td>DERMATOLOGÍA</td></tr><tr><td>113</td><td>DIABETOLOGÍA</td></tr><tr><td>114</td><td>ENDOCRINOLOGÍA ADULTO</td></tr><tr><td>115</td><td>ENDOCRINOLOGÍA PEDIÁTRICA</td></tr><tr><td>116</td><td>ENFERMEDADES RESPIRATORIAS DEL ADULTO</td></tr><tr><td>117</td><td>ENFERMEDADES RESPIRATORIAS PEDIÁTRICAS</td></tr><tr><td>118</td><td>GASTROENTEROLOGÍA ADULTO</td></tr><tr><td>119</td><td>GASTROENTEROLOGÍA PEDIÁTRICA</td></tr><tr><td>120</td><td>GENÉTICA CLÍNICA</td></tr><tr><td>121</td><td>GERIATRÍA</td></tr><tr><td>122</td><td>GINECOLOGÍA PEDIÁTRICA Y DE LA ADOLESCENCIA</td></tr><tr><td>123</td><td>HEMATOLOGÍA</td></tr><tr><td>124</td><td>IMAGENOLOGÍA</td></tr><tr><td>125</td><td>INFECTOLOGÍA</td></tr><tr><td>126</td><td>INMUNOLOGÍA</td></tr><tr><td>127</td><td>LABORATORIO CLÍNICO</td></tr><tr><td>128</td><td>MEDICINA FAMILIAR</td></tr><tr><td>129</td><td>MEDICINA FÍSICA Y REHABILITACIÓN</td></tr><tr><td>130</td><td>MEDICINA INTERNA</td></tr><tr><td>131</td><td>MEDICINA INTENSIVA ADULTO</td></tr><tr><td>132</td><td>MEDICINA INTENSIVA PEDIÁTRICA</td></tr><tr><td>133</td><td>MEDICINA LEGAL</td></tr><tr><td>134</td><td>MEDICINA MATERNO INFANTIL</td></tr><tr><td>135</td><td>MEDICINA NUCLEAR</td></tr><tr><td>136</td><td>MEDICINA DE URGENCIA</td></tr><tr><td>137</td><td>NEFROLOGÍA ADULTO</td></tr><tr><td>138</td><td>NEFROLOGÍA PEDIÁTRICO</td></tr><tr><td>139</td><td>NEONATOLOGÍA</td></tr><tr><td>140</td><td>NEUROCIRUGÍA</td></tr><tr><td>141</td><td>NEUROLOGÍA ADULTO</td></tr><tr><td>142</td><td>NEUROLOGÍA PEDIÁTRICA</td></tr><tr><td>143</td><td>OBSTETRICIA Y GINECOLOGÍA</td></tr><tr><td>144</td><td>OFTALMOLOGÍA</td></tr><tr><td>145</td><td>ONCOLOGÍA MÉDICA</td></tr><tr><td>146</td><td>OTORRINOLARINGOLOGÍA</td></tr><tr><td>147</td><td>PEDIATRÍA</td></tr><tr><td>148</td><td>PSIQUIATRÍA ADULTO</td></tr><tr><td>149</td><td>PSIQUIATRÍA PEDIÁTRICA Y DE LA ADOLESCENCIA</td></tr><tr><td>150</td><td>RADIOTERAPIA ONCOLÓGICA</td></tr><tr><td>151</td><td>REUMATOLOGÍA</td></tr><tr><td>152</td><td>SALUD PÚBLICA</td></tr><tr><td>153</td><td>TRAUMATOLOGÍA Y ORTOPEDIA</td></tr><tr><td>154</td><td>UROLOGÍA</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://core.hl7chile.cl/ValueSet/Esp-Tabla-DEIS"/>
+  <version value="0.85 (Ballot Pendiente)"/>
+  <name value="TablaEspecialidadesMedicasCl"/>
+  <title value="C&#xF3;digos de especialidades seg&#xFA;n DEIS"/>
+  <status value="active"/>
+  <date value="2022-01-18T11:06:02-03:00"/>
+  <contact>
+    <name value="Pablo Pizzaro"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ppizarro.delgado@minsal.cl"/>
+    </telecom>
+  </contact>
+  <description value="C&#xF3;digos de especialidades m&#xE9;dicas descritas segun DEIS"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://minsal.cl/TablaEspecialidades"/>
+      <concept>
+        <code value="1"/>
+        <display value="ANATOM&#xCD;A PATOL&#xD3;GICA"/>
+      </concept>
+      <concept>
+        <code value="12"/>
+        <display value="ANESTESIOLOG&#xCD;A"/>
+      </concept>
+      <concept>
+        <code value="13"/>
+        <display value="CARDIOLOG&#xCD;A"/>
+      </concept>
+      <concept>
+        <code value="14"/>
+        <display value="CIRUG&#xCD;A GENERAL"/>
+      </concept>
+      <concept>
+        <code value="15"/>
+        <display value="CIRUG&#xCD;A DE CABEZA, CUELLO Y MAXILOFACIAL"/>
+      </concept>
+      <concept>
+        <code value="16"/>
+        <display value="CIRUG&#xCD;A CARDIOVASCULAR"/>
+      </concept>
+      <concept>
+        <code value="17"/>
+        <display value="CIRUG&#xCD;A DE T&#xD3;RAX"/>
+      </concept>
+      <concept>
+        <code value="18"/>
+        <display value="CIRUG&#xCD;A PL&#xC1;STICA Y REPARADORA"/>
+      </concept>
+      <concept>
+        <code value="19"/>
+        <display value="CIRUG&#xCD;A PEDI&#xC1;TRICA"/>
+      </concept>
+      <concept>
+        <code value="110"/>
+        <display value="CIRUG&#xCD;A VASCULAR PERIF&#xC9;RICA"/>
+      </concept>
+      <concept>
+        <code value="111"/>
+        <display value="COLOPROCTOLOG&#xCD;A"/>
+      </concept>
+      <concept>
+        <code value="112"/>
+        <display value="DERMATOLOG&#xCD;A"/>
+      </concept>
+      <concept>
+        <code value="113"/>
+        <display value="DIABETOLOG&#xCD;A"/>
+      </concept>
+      <concept>
+        <code value="114"/>
+        <display value="ENDOCRINOLOG&#xCD;A ADULTO"/>
+      </concept>
+      <concept>
+        <code value="115"/>
+        <display value="ENDOCRINOLOG&#xCD;A PEDI&#xC1;TRICA"/>
+      </concept>
+      <concept>
+        <code value="116"/>
+        <display value="ENFERMEDADES RESPIRATORIAS DEL ADULTO"/>
+      </concept>
+      <concept>
+        <code value="117"/>
+        <display value="ENFERMEDADES RESPIRATORIAS PEDI&#xC1;TRICAS"/>
+      </concept>
+      <concept>
+        <code value="118"/>
+        <display value="GASTROENTEROLOG&#xCD;A ADULTO"/>
+      </concept>
+      <concept>
+        <code value="119"/>
+        <display value="GASTROENTEROLOG&#xCD;A PEDI&#xC1;TRICA"/>
+      </concept>
+      <concept>
+        <code value="120"/>
+        <display value="GEN&#xC9;TICA CL&#xCD;NICA"/>
+      </concept>
+      <concept>
+        <code value="121"/>
+        <display value="GERIATR&#xCD;A"/>
+      </concept>
+      <concept>
+        <code value="122"/>
+        <display value="GINECOLOG&#xCD;A PEDI&#xC1;TRICA Y DE LA ADOLESCENCIA"/>
+      </concept>
+      <concept>
+        <code value="123"/>
+        <display value="HEMATOLOG&#xCD;A"/>
+      </concept>
+      <concept>
+        <code value="124"/>
+        <display value="IMAGENOLOG&#xCD;A"/>
+      </concept>
+      <concept>
+        <code value="125"/>
+        <display value="INFECTOLOG&#xCD;A"/>
+      </concept>
+      <concept>
+        <code value="126"/>
+        <display value="INMUNOLOG&#xCD;A"/>
+      </concept>
+      <concept>
+        <code value="127"/>
+        <display value="LABORATORIO CL&#xCD;NICO"/>
+      </concept>
+      <concept>
+        <code value="128"/>
+        <display value="MEDICINA FAMILIAR"/>
+      </concept>
+      <concept>
+        <code value="129"/>
+        <display value="MEDICINA F&#xCD;SICA Y REHABILITACI&#xD3;N"/>
+      </concept>
+      <concept>
+        <code value="130"/>
+        <display value="MEDICINA INTERNA"/>
+      </concept>
+      <concept>
+        <code value="131"/>
+        <display value="MEDICINA INTENSIVA ADULTO"/>
+      </concept>
+      <concept>
+        <code value="132"/>
+        <display value="MEDICINA INTENSIVA PEDI&#xC1;TRICA"/>
+      </concept>
+      <concept>
+        <code value="133"/>
+        <display value="MEDICINA LEGAL"/>
+      </concept>
+      <concept>
+        <code value="134"/>
+        <display value="MEDICINA MATERNO INFANTIL"/>
+      </concept>
+      <concept>
+        <code value="135"/>
+        <display value="MEDICINA NUCLEAR"/>
+      </concept>
+      <concept>
+        <code value="136"/>
+        <display value="MEDICINA DE URGENCIA"/>
+      </concept>
+      <concept>
+        <code value="137"/>
+        <display value="NEFROLOG&#xCD;A ADULTO"/>
+      </concept>
+      <concept>
+        <code value="138"/>
+        <display value="NEFROLOG&#xCD;A PEDI&#xC1;TRICO"/>
+      </concept>
+      <concept>
+        <code value="139"/>
+        <display value="NEONATOLOG&#xCD;A"/>
+      </concept>
+      <concept>
+        <code value="140"/>
+        <display value="NEUROCIRUG&#xCD;A"/>
+      </concept>
+      <concept>
+        <code value="141"/>
+        <display value="NEUROLOG&#xCD;A ADULTO"/>
+      </concept>
+      <concept>
+        <code value="142"/>
+        <display value="NEUROLOG&#xCD;A PEDI&#xC1;TRICA"/>
+      </concept>
+      <concept>
+        <code value="143"/>
+        <display value="OBSTETRICIA Y GINECOLOG&#xCD;A"/>
+      </concept>
+      <concept>
+        <code value="144"/>
+        <display value="OFTALMOLOG&#xCD;A"/>
+      </concept>
+      <concept>
+        <code value="145"/>
+        <display value="ONCOLOG&#xCD;A M&#xC9;DICA"/>
+      </concept>
+      <concept>
+        <code value="146"/>
+        <display value="OTORRINOLARINGOLOG&#xCD;A"/>
+      </concept>
+      <concept>
+        <code value="147"/>
+        <display value="PEDIATR&#xCD;A"/>
+      </concept>
+      <concept>
+        <code value="148"/>
+        <display value="PSIQUIATR&#xCD;A ADULTO"/>
+      </concept>
+      <concept>
+        <code value="149"/>
+        <display value="PSIQUIATR&#xCD;A PEDI&#xC1;TRICA Y DE LA ADOLESCENCIA"/>
+      </concept>
+      <concept>
+        <code value="150"/>
+        <display value="RADIOTERAPIA ONCOL&#xD3;GICA"/>
+      </concept>
+      <concept>
+        <code value="151"/>
+        <display value="REUMATOLOG&#xCD;A"/>
+      </concept>
+      <concept>
+        <code value="152"/>
+        <display value="SALUD P&#xDA;BLICA"/>
+      </concept>
+      <concept>
+        <code value="153"/>
+        <display value="TRAUMATOLOG&#xCD;A Y ORTOPEDIA"/>
+      </concept>
+      <concept>
+        <code value="154"/>
+        <display value="UROLOG&#xCD;A"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

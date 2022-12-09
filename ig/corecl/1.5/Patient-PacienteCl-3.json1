@@ -1,0 +1,97 @@
+{
+  "resourceType": "Patient",
+  "id": "PacienteCl-3",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2021-07-13T00:22:41.166Z",
+    "profile": [
+      "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>PABLO RODRIGO PIZARRO (OFFICIAL)</b> male, DoB: 1983-08-04 ( Chile: 15602754-5 (OFFICIAL))</p></div>"
+  },
+  "extension": [
+    {
+      "url": "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:iso:std:iso:3166",
+            "code": "152",
+            "display": "Chile"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "extension": [
+          {
+            "url": "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "urn:iso:std:iso:3166",
+                  "code": "152",
+                  "display": "Chile"
+                }
+              ]
+            }
+          }
+        ],
+        "coding": [
+          {
+            "system": "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoDNI",
+            "code": "NNCHL",
+            "display": "Chile"
+          }
+        ]
+      },
+      "system": "http://regcivil.cl/Validacion/RUN",
+      "value": "15602754-5"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "PIZARRO",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
+            "valueString": "DELGADO"
+          }
+        ]
+      },
+      "given": [
+        "PABLO",
+        "RODRIGO"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "ppizarro.delgado@minsal.cl",
+      "use": "work"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1983-08-04",
+  "deceasedBoolean": false,
+  "address": [
+    {
+      "use": "home",
+      "city": "13120",
+      "district": "131",
+      "state": "13",
+      "country": "152"
+    }
+  ]
+}

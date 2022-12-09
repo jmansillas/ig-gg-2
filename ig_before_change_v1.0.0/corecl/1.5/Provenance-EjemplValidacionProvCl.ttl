@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/CoreCL/Provenance/EjemplValidacionProvCl> a fhir:Provenance;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "EjemplValidacionProvCl"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ProvenanceCl";
+       fhir:index 0;
+       fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ProvenanceCl>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"EjemplValidacionProvCl\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ProvenanceCl.html\">Validación de la Procedencia de Recursos</a></p></div><p><b>target</b>: <a href=\"RequestGroup-RG12224.html\">RequestGroup/RG12224</a></p><p><b>recorded</b>: Aug 26, 2015, 7:39:24 PM</p><p><b>activity</b>: legally authenticated <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-DocumentCompletion.html\">DocumentCompletion</a>#LA)</span></p><p><b style=\"color: maroon\">Exception generating Narrative: null</b></p></div>"
+  ];
+  fhir:Provenance.target [
+     fhir:index 0;
+     fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/RequestGroup/RG12224>;
+     fhir:Reference.reference [ fhir:value "RequestGroup/RG12224" ]
+  ];
+  fhir:Provenance.recorded [ fhir:value "2015-08-27T08:39:24+10:00"^^xsd:dateTime];
+  fhir:Provenance.activity [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-DocumentCompletion" ];
+       fhir:Coding.code [ fhir:value "LA" ];
+       fhir:Coding.display [ fhir:value "legally authenticated" ]
+     ]
+  ];
+  fhir:Provenance.agent [
+     fhir:index 0;
+     fhir:Provenance.agent.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/provenance-participant-type" ];
+         fhir:Coding.code [ fhir:value "author" ];
+         fhir:Coding.display [ fhir:value "author" ]
+       ]
+     ];
+     fhir:Provenance.agent.who [
+       fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/Practitioner/3240>;
+       fhir:Reference.reference [ fhir:value "Practitioner/3240" ]
+     ]
+  ];
+  fhir:Provenance.signature [
+     fhir:index 0;
+     fhir:Signature.type [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso-astm:E1762-95:2013" ];
+       fhir:Coding.code [ fhir:value "1.2.840.10065.1.12.1.1" ]
+     ];
+     fhir:Signature.when [ fhir:value "2015-08-27T08:39:24+10:00"^^xsd:dateTime ];
+     fhir:Signature.who [
+       fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/Practitioner/3240>;
+       fhir:Reference.reference [ fhir:value "Practitioner/3240" ]
+     ];
+     fhir:Signature.sigFormat [ fhir:value "application/signature+xml" ];
+     fhir:Signature.data [ fhir:value "Li4u"^^xsd:base64Binary ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/CoreCL/Provenance/EjemplValidacionProvCl.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

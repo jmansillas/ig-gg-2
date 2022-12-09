@@ -1,0 +1,323 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodigoslenguaje> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CSCodigoslenguaje"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodigoslenguaje</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">ar-SA<a name=\"CSCodigoslenguaje-ar-SA\"> </a></td><td>Arabic</td><td>Saudi Arabia, Arabic (Saudi Arabia)</td></tr><tr><td style=\"white-space:nowrap\">bn-BD<a name=\"CSCodigoslenguaje-bn-BD\"> </a></td><td>Bangla</td><td>Bangladesh, Bangla (Bangladesh)</td></tr><tr><td style=\"white-space:nowrap\">bn-IN<a name=\"CSCodigoslenguaje-bn-IN\"> </a></td><td>Bangla</td><td>India, Bangla (India)</td></tr><tr><td style=\"white-space:nowrap\">cs-CZ<a name=\"CSCodigoslenguaje-cs-CZ\"> </a></td><td>Czech</td><td>Czech Republic, Czech (Czech Republic)</td></tr><tr><td style=\"white-space:nowrap\">da-DK<a name=\"CSCodigoslenguaje-da-DK\"> </a></td><td>Danish</td><td>Denmark, Danish (Denmark)</td></tr><tr><td style=\"white-space:nowrap\">de-AT<a name=\"CSCodigoslenguaje-de-AT\"> </a></td><td>German</td><td>Austria, Austrian German</td></tr><tr><td style=\"white-space:nowrap\">de-CH<a name=\"CSCodigoslenguaje-de-CH\"> </a></td><td>German</td><td>Switzerland, Swiss German</td></tr><tr><td style=\"white-space:nowrap\">de-DE<a name=\"CSCodigoslenguaje-de-DE\"> </a></td><td>German</td><td>Germany, Standard German (as spoken in Germany)</td></tr><tr><td style=\"white-space:nowrap\">el-GR<a name=\"CSCodigoslenguaje-el-GR\"> </a></td><td>Greek</td><td>Greece, Modern Greek</td></tr><tr><td style=\"white-space:nowrap\">en-AU<a name=\"CSCodigoslenguaje-en-AU\"> </a></td><td>English</td><td>Australia, Australian English</td></tr><tr><td style=\"white-space:nowrap\">en-CA<a name=\"CSCodigoslenguaje-en-CA\"> </a></td><td>English</td><td>Canada, Canadian English</td></tr><tr><td style=\"white-space:nowrap\">en-GB<a name=\"CSCodigoslenguaje-en-GB\"> </a></td><td>English</td><td>United Kingdom, British English</td></tr><tr><td style=\"white-space:nowrap\">en-IE<a name=\"CSCodigoslenguaje-en-IE\"> </a></td><td>English</td><td>Ireland, Irish English</td></tr><tr><td style=\"white-space:nowrap\">en-IN<a name=\"CSCodigoslenguaje-en-IN\"> </a></td><td>English</td><td>India, Indian English</td></tr><tr><td style=\"white-space:nowrap\">en-NZ<a name=\"CSCodigoslenguaje-en-NZ\"> </a></td><td>English</td><td>New Zealand, New Zealand English</td></tr><tr><td style=\"white-space:nowrap\">en-US<a name=\"CSCodigoslenguaje-en-US\"> </a></td><td>English</td><td>United States, US English</td></tr><tr><td style=\"white-space:nowrap\">en-ZA<a name=\"CSCodigoslenguaje-en-ZA\"> </a></td><td>English</td><td>South Africa, English (South Africa)</td></tr><tr><td style=\"white-space:nowrap\">es-AR<a name=\"CSCodigoslenguaje-es-AR\"> </a></td><td>Spanish</td><td>Argentina, Argentine Spanish</td></tr><tr><td style=\"white-space:nowrap\">es-CL<a name=\"CSCodigoslenguaje-es-CL\"> </a></td><td>Spanish</td><td>Chile, Chilean Spanish</td></tr><tr><td style=\"white-space:nowrap\">es-CO<a name=\"CSCodigoslenguaje-es-CO\"> </a></td><td>Spanish</td><td>Columbia, Colombian Spanish</td></tr><tr><td style=\"white-space:nowrap\">es-ES<a name=\"CSCodigoslenguaje-es-ES\"> </a></td><td>Spanish</td><td>Spain, Castilian Spanish (as spoken in Central-Northern Spain)</td></tr><tr><td style=\"white-space:nowrap\">es-MX<a name=\"CSCodigoslenguaje-es-MX\"> </a></td><td>Spanish</td><td>Mexico, Mexican Spanish</td></tr><tr><td style=\"white-space:nowrap\">es-US<a name=\"CSCodigoslenguaje-es-US\"> </a></td><td>Spanish</td><td>United States, American Spanish</td></tr><tr><td style=\"white-space:nowrap\">fi-FI<a name=\"CSCodigoslenguaje-fi-FI\"> </a></td><td>Finnish</td><td>Finland, Finnish (Finland)</td></tr><tr><td style=\"white-space:nowrap\">fr-BE<a name=\"CSCodigoslenguaje-fr-BE\"> </a></td><td>French</td><td>Belgium, Belgian French</td></tr><tr><td style=\"white-space:nowrap\">fr-CA<a name=\"CSCodigoslenguaje-fr-CA\"> </a></td><td>French</td><td>Canada, Canadian French</td></tr><tr><td style=\"white-space:nowrap\">fr-CH<a name=\"CSCodigoslenguaje-fr-CH\"> </a></td><td>French</td><td>Switzerland, Swiss French</td></tr><tr><td style=\"white-space:nowrap\">fr-FR<a name=\"CSCodigoslenguaje-fr-FR\"> </a></td><td>French</td><td>France, Standard French (especially in France)</td></tr><tr><td style=\"white-space:nowrap\">he-IL<a name=\"CSCodigoslenguaje-he-IL\"> </a></td><td>Hebrew</td><td>Israel, Hebrew (Israel)</td></tr><tr><td style=\"white-space:nowrap\">hi-IN<a name=\"CSCodigoslenguaje-hi-IN\"> </a></td><td>Hindi</td><td>India, Hindi (India)</td></tr><tr><td style=\"white-space:nowrap\">hu-HU<a name=\"CSCodigoslenguaje-hu-HU\"> </a></td><td>Hungarian</td><td>Hungary, Hungarian (Hungary)</td></tr><tr><td style=\"white-space:nowrap\">id-ID<a name=\"CSCodigoslenguaje-id-ID\"> </a></td><td>Indonesian</td><td>Indonesia, Indonesian (Indonesia)</td></tr><tr><td style=\"white-space:nowrap\">it-CH<a name=\"CSCodigoslenguaje-it-CH\"> </a></td><td>Italian</td><td>Switzerland, Swiss Italian</td></tr><tr><td style=\"white-space:nowrap\">it-IT<a name=\"CSCodigoslenguaje-it-IT\"> </a></td><td>Italian</td><td>Italy, Standard Italian (as spoken in Italy)</td></tr><tr><td style=\"white-space:nowrap\">jp-JP<a name=\"CSCodigoslenguaje-jp-JP\"> </a></td><td>Japanese</td><td>Japan, Japanese (Japan)</td></tr><tr><td style=\"white-space:nowrap\">ko-KR<a name=\"CSCodigoslenguaje-ko-KR\"> </a></td><td>Korean</td><td>Republic of Korea, Korean (Republic of Korea)</td></tr><tr><td style=\"white-space:nowrap\">nl-BE<a name=\"CSCodigoslenguaje-nl-BE\"> </a></td><td>Dutch</td><td>Belgium, Belgian Dutch</td></tr><tr><td style=\"white-space:nowrap\">nl-NL<a name=\"CSCodigoslenguaje-nl-NL\"> </a></td><td>Dutch</td><td>The Netherlands, Standard Dutch (as spoken in The Netherlands)</td></tr><tr><td style=\"white-space:nowrap\">no-NO<a name=\"CSCodigoslenguaje-no-NO\"> </a></td><td>Norwegian</td><td>Norway, Norwegian (Norway)</td></tr><tr><td style=\"white-space:nowrap\">pl-PL<a name=\"CSCodigoslenguaje-pl-PL\"> </a></td><td>Polish</td><td>Poland, Polish (Poland)</td></tr><tr><td style=\"white-space:nowrap\">pt-BR<a name=\"CSCodigoslenguaje-pt-BR\"> </a></td><td>Portugese</td><td>Brazil, Brazilian Portuguese</td></tr><tr><td style=\"white-space:nowrap\">pt-PT<a name=\"CSCodigoslenguaje-pt-PT\"> </a></td><td>Portugese</td><td>Portugal, European Portuguese (as written and spoken in Portugal)</td></tr><tr><td style=\"white-space:nowrap\">ro-RO<a name=\"CSCodigoslenguaje-ro-RO\"> </a></td><td>Romanian</td><td>Romania, Romanian (Romania)</td></tr><tr><td style=\"white-space:nowrap\">ru-RU<a name=\"CSCodigoslenguaje-ru-RU\"> </a></td><td>Russian</td><td>Russian Federation, Russian (Russian Federation)</td></tr><tr><td style=\"white-space:nowrap\">sk-SK<a name=\"CSCodigoslenguaje-sk-SK\"> </a></td><td>Slovak</td><td>Slovakia, Slovak (Slovakia)</td></tr><tr><td style=\"white-space:nowrap\">sv-SE<a name=\"CSCodigoslenguaje-sv-SE\"> </a></td><td>Swedish</td><td>Sweden, Swedish (Sweden)</td></tr><tr><td style=\"white-space:nowrap\">ta-IN<a name=\"CSCodigoslenguaje-ta-IN\"> </a></td><td>Tamil</td><td>India, Indian Tamil</td></tr><tr><td style=\"white-space:nowrap\">ta-LK<a name=\"CSCodigoslenguaje-ta-LK\"> </a></td><td>Tamil</td><td>Sri Lanka, Sri Lankan Tamil</td></tr><tr><td style=\"white-space:nowrap\">th-TH<a name=\"CSCodigoslenguaje-th-TH\"> </a></td><td>Thai</td><td>Thailand, Thai (Thailand)</td></tr><tr><td style=\"white-space:nowrap\">tr-TR<a name=\"CSCodigoslenguaje-tr-TR\"> </a></td><td>Turkish</td><td>Turkey, Turkish (Turkey)</td></tr><tr><td style=\"white-space:nowrap\">zh-CN<a name=\"CSCodigoslenguaje-zh-CN\"> </a></td><td>Chinese</td><td>China, Mainland China, simplified characters</td></tr><tr><td style=\"white-space:nowrap\">zh-HK<a name=\"CSCodigoslenguaje-zh-HK\"> </a></td><td>Chinese</td><td>Hond Kong, Hong Kong, traditional characters</td></tr><tr><td style=\"white-space:nowrap\">zh-TW<a name=\"CSCodigoslenguaje-zh-TW\"> </a></td><td>Chinese</td><td>Taiwan, Taiwan, traditional characters</td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodigoslenguaje"]; # 
+  fhir:CodeSystem.version [ fhir:value "1.7.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "CSCodigoslenguaje"]; # 
+  fhir:CodeSystem.title [ fhir:value "Codigos Lenguaje"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.date [ fhir:value "2022-06-10T00:00:00-03:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Chile"]; # 
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Chile" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7chile.cl" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "chair@hl7chile.cl" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Codigoslenguaje"]; # 
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "CL" ];
+       fhir:Coding.display [ fhir:value "Chile" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.copyright [ fhir:value "Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."]; # 
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.count [ fhir:value "53"^^xsd:nonNegativeInteger]; # 
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "ar-SA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Arabic" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Saudi Arabia, Arabic (Saudi Arabia)" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "bn-BD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bangla" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Bangladesh, Bangla (Bangladesh)" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "bn-IN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bangla" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "India, Bangla (India)" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "cs-CZ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Czech" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Czech Republic, Czech (Czech Republic)" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "da-DK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Danish" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Denmark, Danish (Denmark)" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "de-AT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "German" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Austria, Austrian German" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "de-CH" ];
+     fhir:CodeSystem.concept.display [ fhir:value "German" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Switzerland, Swiss German" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "de-DE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "German" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Germany, Standard German (as spoken in Germany)" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "el-GR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Greek" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Greece, Modern Greek" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "en-AU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "English" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Australia, Australian English" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "en-CA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "English" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Canada, Canadian English" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "en-GB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "English" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "United Kingdom, British English" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "en-IE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "English" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Ireland, Irish English" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "en-IN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "English" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "India, Indian English" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "en-NZ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "English" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "New Zealand, New Zealand English" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "en-US" ];
+     fhir:CodeSystem.concept.display [ fhir:value "English" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "United States, US English" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "en-ZA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "English" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "South Africa, English (South Africa)" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "es-AR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Spanish" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Argentina, Argentine Spanish" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "es-CL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Spanish" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Chile, Chilean Spanish" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "es-CO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Spanish" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Columbia, Colombian Spanish" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "es-ES" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Spanish" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Spain, Castilian Spanish (as spoken in Central-Northern Spain)" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "es-MX" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Spanish" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Mexico, Mexican Spanish" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "es-US" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Spanish" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "United States, American Spanish" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "fi-FI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Finnish" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Finland, Finnish (Finland)" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "fr-BE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "French" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Belgium, Belgian French" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "fr-CA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "French" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Canada, Canadian French" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "fr-CH" ];
+     fhir:CodeSystem.concept.display [ fhir:value "French" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Switzerland, Swiss French" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "fr-FR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "French" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "France, Standard French (especially in France)" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "he-IL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hebrew" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Israel, Hebrew (Israel)" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "hi-IN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hindi" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "India, Hindi (India)" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "hu-HU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hungarian" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Hungary, Hungarian (Hungary)" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "id-ID" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Indonesian" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indonesia, Indonesian (Indonesia)" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "it-CH" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Italian" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Switzerland, Swiss Italian" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "it-IT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Italian" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Italy, Standard Italian (as spoken in Italy)" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "jp-JP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Japanese" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Japan, Japanese (Japan)" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "ko-KR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Korean" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Republic of Korea, Korean (Republic of Korea)" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "nl-BE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dutch" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Belgium, Belgian Dutch" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "nl-NL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dutch" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The Netherlands, Standard Dutch (as spoken in The Netherlands)" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "no-NO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Norwegian" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Norway, Norwegian (Norway)" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "pl-PL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Polish" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Poland, Polish (Poland)" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "pt-BR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Portugese" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Brazil, Brazilian Portuguese" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "pt-PT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Portugese" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Portugal, European Portuguese (as written and spoken in Portugal)" ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "ro-RO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Romanian" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Romania, Romanian (Romania)" ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "ru-RU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Russian" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Russian Federation, Russian (Russian Federation)" ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "sk-SK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Slovak" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Slovakia, Slovak (Slovakia)" ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "sv-SE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Swedish" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Sweden, Swedish (Sweden)" ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "ta-IN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tamil" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "India, Indian Tamil" ]
+  ], [
+     fhir:index 47;
+     fhir:CodeSystem.concept.code [ fhir:value "ta-LK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tamil" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Sri Lanka, Sri Lankan Tamil" ]
+  ], [
+     fhir:index 48;
+     fhir:CodeSystem.concept.code [ fhir:value "th-TH" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Thai" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Thailand, Thai (Thailand)" ]
+  ], [
+     fhir:index 49;
+     fhir:CodeSystem.concept.code [ fhir:value "tr-TR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Turkish" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Turkey, Turkish (Turkey)" ]
+  ], [
+     fhir:index 50;
+     fhir:CodeSystem.concept.code [ fhir:value "zh-CN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chinese" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "China, Mainland China, simplified characters" ]
+  ], [
+     fhir:index 51;
+     fhir:CodeSystem.concept.code [ fhir:value "zh-HK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chinese" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Hond Kong, Hong Kong, traditional characters" ]
+  ], [
+     fhir:index 52;
+     fhir:CodeSystem.concept.code [ fhir:value "zh-TW" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chinese" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Taiwan, Taiwan, traditional characters" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodigoslenguaje.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

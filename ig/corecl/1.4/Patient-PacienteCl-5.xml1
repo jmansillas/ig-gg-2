@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="PacienteCl-5"/>
+  <meta>
+    <versionId value="2"/>
+    <lastUpdated value="2021-07-13T00:22:41.166Z"/>
+    <profile value="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "PacienteCl-5" Version "2" Updated "2021-07-12T20:22:41.166-04:00" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-CorePacienteCl.html">Perfil Paciente Para Core Nacional</a></p></div><p><b>Codigo de Identificación de países</b>: Chile <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#152)</span></p><p><b>identifier</b>: Passport Number: P102145874 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Juan José Ortega (OFFICIAL), JuanJo </p><p><b>telecom</b>: <a href="mailto:juan@jo.cl">juan@jo.cl</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1980-08-04</p><p><b>address</b>: Ñuñoa Metropolitana de Santiago Chile (HOME)</p><h3>Contacts</h3><table class="grid"><tr><td>-</td><td><b>Extension</b></td><td><b>Relationship</b></td><td><b>Name</b></td></tr><tr><td>*</td><td></td><td>Next-of-Kin <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v2-0131.html">contactRole2</a>#N)</span></td><td>Juana Josefa Calleja (OFFICIAL)</td></tr></table></div>
+  </text>
+  <extension url="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises">
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:iso:std:iso:3166"/>
+        <code value="152"/>
+        <display value="Chile"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <extension url="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises">
+        <valueCodeableConcept>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="152"/>
+            <display value="Chile"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PPN"/>
+        <display value="Passport Number"/>
+      </coding>
+    </type>
+    <system value="http://regcivil.cl/Validacion/Passport"/>
+    <value value="P102145874"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <family value="Ortega">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-mothers-family">
+        <valueString value="Callejas"/>
+      </extension>
+    </family>
+    <given value="Juan"/>
+    <given value="José"/>
+  </name>
+  <name>
+    <use value="usual"/>
+    <given value="JuanJo"/>
+  </name>
+  <telecom>
+    <system value="email"/>
+    <value value="juan@jo.cl"/>
+    <use value="home"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1980-08-04"/>
+  <address>
+    <use value="home"/>
+    <city value="Ñuñoa">
+      <extension url="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ComunasCl">
+        <valueCodeableConcept>
+          <coding>
+            <code value="13120"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </city>
+    <district value="Santiago">
+      <extension url="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ProvinciasCl">
+        <valueCodeableConcept>
+          <coding>
+            <code value="131"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </district>
+    <state value="Metropolitana de Santiago">
+      <extension url="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RegionesCl">
+        <valueCodeableConcept>
+          <coding>
+            <code value="13"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </state>
+    <country value="Chile">
+      <extension url="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises">
+        <valueCodeableConcept>
+          <coding>
+            <code value="152"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </country>
+  </address>
+  <contact>
+    <extension url="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/IdContacto">
+      <extension url="tutId">
+        <valueIdentifier>
+          <type>
+            <coding>
+              <system value="https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoDNI"/>
+              <code value="NNCHL"/>
+              <display value="Chile"/>
+            </coding>
+          </type>
+          <system value="http://regcivil.cl/Validacion/RUN"/>
+          <value value="8987321-7"/>
+        </valueIdentifier>
+      </extension>
+      <extension url="docProc">
+        <valueCodeableConcept>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="152"/>
+            <display value="Chile"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </extension>
+    <relationship>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
+        <code value="N"/>
+        <display value="Next-of-Kin"/>
+      </coding>
+    </relationship>
+    <name>
+      <use value="official"/>
+      <family value="Calleja">
+        <extension url="http://hl7.org/fhir/StructureDefinition/humanname-mothers-family">
+          <valueString value="Morales"/>
+        </extension>
+      </family>
+      <given value="Juana"/>
+      <given value="Josefa"/>
+    </name>
+  </contact>
+</Patient>

@@ -1,0 +1,12 @@
+{
+  "url": "https://hl7chile.cl/fhir/ig/CoreCL/ImplementationGuide/hl7.fhir.cl.corecl",
+  "name": "CoreCLDEV",
+  "package-id": "hl7.fhir.cl.corecl",
+  "ig-ver": "1.5.0",
+  "date": "Tue, 14 Jun, 2022 00:52:46 -0400",
+  "errs": 0,
+  "warnings": 13,
+  "hints": 17,
+  "version": "4.0.1",
+  "tool": "5.0.0-snapshot1 (3)"
+}

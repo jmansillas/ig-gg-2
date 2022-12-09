@@ -1,0 +1,177 @@
+﻿CoreCLDEV : Validation Results
+=========================================
+
+err = 0, warn = 13, info = 17
+IG Publisher Version: 1.1.121
+Generated Tue Jun 14 00:54:31 CLT 2022. FHIR version 4.0.1 for hl7.fhir.cl.corecl#1.5.0 (canonical = https://hl7chile.cl/fhir/ig/CoreCL)
+ Build Errors : 0 / 0 / 0
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\AuditEvent-AuditEventEx : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\Bundle-BundleEx : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\CodeSystem-CSCodComunasCL : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\CodeSystem-CSCodProvinciasCL : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\CodeSystem-CSCodRegionCL : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\CodeSystem-CSCodSSalud : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\CodeSystem-CSCodigoDNI : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\CodeSystem-CSCodigoServicio : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\CodeSystem-CSCodigoVacunas : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\CodeSystem-CSEspecialidadesDeisCL : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\CodeSystem-CSNombreCampana : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\CodeSystem-CSRazonNOT : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\CodeSystem-CSRazonNOTinm : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\CodeSystem-CSTiposEncuentro : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\ImplementationGuide-hl7.fhir.cl.corecl : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\Location-LocalizacionEjemploCL1 : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\Medication-MedicamentoCl : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\Medication-MedicamentoCl-2 : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\Organization-ORG1 : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteCL : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteCL2 : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteCl-3 : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteCl-4 : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\Patient-PacienteCl-5 : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\Practitioner-3240 : 0 / 0 / 4
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\PractitionerRole-EspecialidadCL : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\Provenance-EjemplValidacionProvCl : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\RequestGroup-RG12224 : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-AuditEventCl : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-BundleCl : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CodigoPaises : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-ComunasCl : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-ContactoParticipantes : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CoreEspecialidadCl : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CoreLocalizacionCl : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CoreMedicamentoCl : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CoreOrganizacionCl : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CorePacienteCl : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-CorePrestadorCl : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-EncounterCL : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-EspecialidadesMedico : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-IdContacto : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-ImmunizationCL : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-NombreCampana : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-NotasEncuentro : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-ObservacionesDiagnostico : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-ProvenanceCl : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-ProvinciasCl : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RazonNOrealizarse : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RazonNOrealizarseInm : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-RegionesCl : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-ServicioSalud : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-TiposEncuentro : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-TiposServicio : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\StructureDefinition-TiposVacunaRNI : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-CodPais : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-VSCodigosComunaCL : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-VSCodigosProvinciasCL : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-VSCodigosRegionesCL : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-VSCodigosServiciosSalud : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-VSContactosec : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-VSEspecialidadesDeisCL : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-VSNombreCampana : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-VSRazonNOT : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-VSRazonNOTinm : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-VSTiposDocumentos : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-VSTiposEncuentro : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-VSTiposServicio : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\fsh-generated\resources\ValueSet-VSTiposVacunas : 0 / 0 / 1
+</table>
+== n/a ==
+== fsh-generated\resources\AuditEvent-AuditEventEx.json ==
+== fsh-generated\resources\Bundle-BundleEx.json ==
+== fsh-generated\resources\CodeSystem-CSCodComunasCL.json ==
+INFORMATION: CodeSystem/CSCodComunasCL: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-CSCodProvinciasCL.json ==
+INFORMATION: CodeSystem/CSCodProvinciasCL: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-CSCodRegionCL.json ==
+INFORMATION: CodeSystem/CSCodRegionCL: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-CSCodSSalud.json ==
+INFORMATION: CodeSystem/CSCodSSalud: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-CSCodigoDNI.json ==
+INFORMATION: CodeSystem/CSCodigoDNI: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-CSCodigoServicio.json ==
+INFORMATION: CodeSystem/CSCodigoServicio: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-CSCodigoVacunas.json ==
+INFORMATION: CodeSystem/CSCodigoVacunas: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-CSEspecialidadesDeisCL.json ==
+INFORMATION: CodeSystem/CSEspecialidadesDeisCL: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-CSNombreCampana.json ==
+INFORMATION: CodeSystem/CSNombreCampana: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-CSRazonNOT.json ==
+INFORMATION: CodeSystem/CSRazonNOT: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-CSRazonNOTinm.json ==
+INFORMATION: CodeSystem/CSRazonNOTinm: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-CSTiposEncuentro.json ==
+INFORMATION: CodeSystem/CSTiposEncuentro: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\ImplementationGuide-hl7.fhir.cl.corecl.json ==
+== fsh-generated\resources\Location-LocalizacionEjemploCL1.json ==
+== fsh-generated\resources\Medication-MedicamentoCl.json ==
+INFORMATION: Medication/MedicamentoCl: Medication.code.coding[0]: Code System URI 'http://minsal.cl/semantikos/description-id' is unknown so the code cannot be validated
+== fsh-generated\resources\Medication-MedicamentoCl-2.json ==
+INFORMATION: Medication/MedicamentoCl-2: Medication.code.coding[0]: Code System URI 'http://minsal.cl/semantikos/description-id' is unknown so the code cannot be validated
+== fsh-generated\resources\Organization-ORG1.json ==
+== fsh-generated\resources\Patient-PacienteCL.json ==
+== fsh-generated\resources\Patient-PacienteCL2.json ==
+== fsh-generated\resources\Patient-PacienteCl-3.json ==
+== fsh-generated\resources\Patient-PacienteCl-4.json ==
+== fsh-generated\resources\Patient-PacienteCl-5.json ==
+== fsh-generated\resources\Practitioner-3240.json ==
+INFORMATION: Practitioner/3240: Practitioner.qualification[0].code.coding[0]: Code System URI 'https://api.minsal.cl/v1/catalogos/profesiones/' is unknown so the code cannot be validated
+INFORMATION: Practitioner/3240: Practitioner.qualification[1].code.coding[0]: Code System URI 'https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/' is unknown so the code cannot be validated
+INFORMATION: Practitioner/3240: Practitioner.qualification[2].code.coding[0]: Code System URI 'https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/' is unknown so the code cannot be validated
+== fsh-generated\resources\PractitionerRole-EspecialidadCL.json ==
+== fsh-generated\resources\Provenance-EjemplValidacionProvCl.json ==
+== fsh-generated\resources\RequestGroup-RG12224.json ==
+== fsh-generated\resources\StructureDefinition-AuditEventCl.json ==
+== fsh-generated\resources\StructureDefinition-BundleCl.json ==
+== fsh-generated\resources\StructureDefinition-CodigoPaises.json ==
+== fsh-generated\resources\StructureDefinition-ComunasCl.json ==
+== fsh-generated\resources\StructureDefinition-ContactoParticipantes.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ContactoParticipantes'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-CoreEspecialidadCl.json ==
+== fsh-generated\resources\StructureDefinition-CoreLocalizacionCl.json ==
+== fsh-generated\resources\StructureDefinition-CoreMedicamentoCl.json ==
+== fsh-generated\resources\StructureDefinition-CoreOrganizacionCl.json ==
+== fsh-generated\resources\StructureDefinition-CorePacienteCl.json ==
+== fsh-generated\resources\StructureDefinition-CorePrestadorCl.json ==
+== fsh-generated\resources\StructureDefinition-EncounterCL.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/EncounterCL'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-EspecialidadesMedico.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/EspecialidadesMedico'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-IdContacto.json ==
+== fsh-generated\resources\StructureDefinition-ImmunizationCL.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ImmunizationCL'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-NombreCampana.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/NombreCampana'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-NotasEncuentro.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/NotasEncuentro'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-ObservacionesDiagnostico.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ObservacionesDiagnostico'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-ProvenanceCl.json ==
+== fsh-generated\resources\StructureDefinition-ProvinciasCl.json ==
+== fsh-generated\resources\StructureDefinition-RazonNOrealizarse.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RazonNOrealizarse'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-RazonNOrealizarseInm.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RazonNOrealizarseInm'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-RegionesCl.json ==
+== fsh-generated\resources\StructureDefinition-ServicioSalud.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ServicioSalud'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-TiposEncuentro.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/TiposEncuentro'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-TiposServicio.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/TiposServicio'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-TiposVacunaRNI.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/TiposVacunaRNI'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\ValueSet-CodPais.json ==
+== fsh-generated\resources\ValueSet-VSCodigosComunaCL.json ==
+== fsh-generated\resources\ValueSet-VSCodigosProvinciasCL.json ==
+== fsh-generated\resources\ValueSet-VSCodigosRegionesCL.json ==
+== fsh-generated\resources\ValueSet-VSCodigosServiciosSalud.json ==
+== fsh-generated\resources\ValueSet-VSContactosec.json ==
+== fsh-generated\resources\ValueSet-VSEspecialidadesDeisCL.json ==
+== fsh-generated\resources\ValueSet-VSNombreCampana.json ==
+== fsh-generated\resources\ValueSet-VSRazonNOT.json ==
+== fsh-generated\resources\ValueSet-VSRazonNOTinm.json ==
+== fsh-generated\resources\ValueSet-VSTiposDocumentos.json ==
+== fsh-generated\resources\ValueSet-VSTiposEncuentro.json ==
+== fsh-generated\resources\ValueSet-VSTiposServicio.json ==
+== fsh-generated\resources\ValueSet-VSTiposVacunas.json ==

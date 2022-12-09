@@ -1,0 +1,142 @@
+[
+  {
+    "id": "CSCodComunasCL",
+    "type": "CodeSystem",
+    "url": "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodComunasCL",
+    "version": "1.0.0",
+    "name": "CSCodComunasCL"
+  },
+  {
+    "id": "CSCodProvinciasCL",
+    "type": "CodeSystem",
+    "url": "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodProvinciasCL",
+    "version": "1.0.0",
+    "name": "CSCodProvinciasCL"
+  },
+  {
+    "id": "CSCodRegionCL",
+    "type": "CodeSystem",
+    "url": "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodRegionCL",
+    "version": "1.0.0",
+    "name": "CSCodRegionCL"
+  },
+  {
+    "id": "CSCodigoDNI",
+    "type": "CodeSystem",
+    "url": "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoDNI",
+    "version": "1.0.0",
+    "name": "CSCodigoDNI"
+  },
+  {
+    "id": "CSEspecialidadesDeisCL",
+    "type": "CodeSystem",
+    "url": "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSEspecialidadesDeisCL",
+    "version": "1.0.0",
+    "name": "CSEspecialidadesDeisCL"
+  },
+  {
+    "id": "hl7.fhir.cl.corecl",
+    "type": "ImplementationGuide",
+    "url": "https://hl7chile.cl/fhir/ig/CoreCL/ImplementationGuide/hl7.fhir.cl.corecl",
+    "version": "1.0.0",
+    "name": "CoreCL"
+  },
+  {
+    "id": "BundleCl",
+    "type": "StructureDefinition",
+    "url": "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/BundleCl",
+    "version": "1.0.0",
+    "name": "BundleCL"
+  },
+  {
+    "id": "CodigoPaises",
+    "type": "StructureDefinition",
+    "url": "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises",
+    "version": "1.0.0",
+    "name": "PaisOrigenNacionalidadCl"
+  },
+  {
+    "id": "CoreEspecialidadCl",
+    "type": "StructureDefinition",
+    "url": "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreEspecialidadCl",
+    "version": "1.0.0",
+    "name": "EspecialidadCL"
+  },
+  {
+    "id": "CoreLocalizacionCl",
+    "type": "StructureDefinition",
+    "url": "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreLocalizacionCl",
+    "version": "1.0.0",
+    "name": "LocalizacionCL"
+  },
+  {
+    "id": "CoreMedicamentoCl",
+    "type": "StructureDefinition",
+    "url": "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreMedicamentoCl",
+    "version": "1.0.0",
+    "name": "MedicamentoCL"
+  },
+  {
+    "id": "CoreOrganizacionCl",
+    "type": "StructureDefinition",
+    "url": "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreOrganizacionCl",
+    "version": "1.0.0",
+    "name": "OrganizacionCL"
+  },
+  {
+    "id": "CorePacienteCl",
+    "type": "StructureDefinition",
+    "url": "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl",
+    "version": "1.0.0",
+    "name": "PacienteCl"
+  },
+  {
+    "id": "CorePrestadorCl",
+    "type": "StructureDefinition",
+    "url": "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePrestadorCl",
+    "version": "1.0.0",
+    "name": "PrestadorCL"
+  },
+  {
+    "id": "CodPais",
+    "type": "ValueSet",
+    "url": "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/CodPais",
+    "version": "1.0.0",
+    "name": "CodPaises"
+  },
+  {
+    "id": "VSCodigosComunaCL",
+    "type": "ValueSet",
+    "url": "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosComunaCL",
+    "version": "1.0.0",
+    "name": "VSCodigosComunaCL"
+  },
+  {
+    "id": "VSCodigosProvinciasCL",
+    "type": "ValueSet",
+    "url": "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosProvinciasCL",
+    "version": "1.0.0",
+    "name": "VSCodigosProvinciasCL"
+  },
+  {
+    "id": "VSCodigosRegionesCL",
+    "type": "ValueSet",
+    "url": "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosRegionesCL",
+    "version": "1.0.0",
+    "name": "VSCodigosRegionesCL"
+  },
+  {
+    "id": "VSEspecialidadesDeisCL",
+    "type": "ValueSet",
+    "url": "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSEspecialidadesDeisCL",
+    "version": "1.0.0",
+    "name": "VSEspecialidadesDeisCL"
+  },
+  {
+    "id": "VSTiposDocumentos",
+    "type": "ValueSet",
+    "url": "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSTiposDocumentos",
+    "version": "1.0.0",
+    "name": "VSTiposDocumentos"
+  }
+]

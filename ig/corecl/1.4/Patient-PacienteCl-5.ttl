@@ -1,0 +1,221 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/CoreCL/Patient/PacienteCl-5> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "PacienteCl-5"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "2" ];
+     fhir:Meta.lastUpdated [ fhir:value "2021-07-13T00:22:41.166Z"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl";
+       fhir:index 0;
+       fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"PacienteCl-5\" Version \"2\" Updated \"2021-07-12T20:22:41.166-04:00\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CorePacienteCl.html\">Perfil Paciente Para Core Nacional</a></p></div><p><b>Codigo de Identificación de países</b>: Chile <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#152)</span></p><p><b>identifier</b>: Passport Number: P102145874 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Juan José Ortega (OFFICIAL), JuanJo </p><p><b>telecom</b>: <a href=\"mailto:juan@jo.cl\">juan@jo.cl</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1980-08-04</p><p><b>address</b>: Ñuñoa Metropolitana de Santiago Chile (HOME)</p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Relationship</b></td><td><b>Name</b></td></tr><tr><td>*</td><td></td><td>Next-of-Kin <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0131.html\">contactRole2</a>#N)</span></td><td>Juana Josefa Calleja (OFFICIAL)</td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+         fhir:Coding.code [ fhir:value "152" ];
+         fhir:Coding.display [ fhir:value "Chile" ]
+       ]
+     ]
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+             fhir:Coding.code [ fhir:value "152" ];
+             fhir:Coding.display [ fhir:value "Chile" ]
+           ]
+         ]
+       ];
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "PPN" ];
+         fhir:Coding.display [ fhir:value "Passport Number" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://regcivil.cl/Validacion/Passport" ];
+     fhir:Identifier.value [ fhir:value "P102145874" ]
+  ];
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.family [
+       fhir:value "Ortega";
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family" ];
+         fhir:Extension.valueString [ fhir:value "Callejas" ]
+       ]
+     ];
+     fhir:HumanName.given [
+       fhir:value "Juan";
+       fhir:index 0
+     ], [
+       fhir:value "José";
+       fhir:index 1
+     ]
+  ], [
+     fhir:index 1;
+     fhir:HumanName.use [ fhir:value "usual" ];
+     fhir:HumanName.given [
+       fhir:value "JuanJo";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "juan@jo.cl" ];
+     fhir:ContactPoint.use [ fhir:value "home" ]
+  ];
+  fhir:Patient.gender [ fhir:value "male"];
+  fhir:Patient.birthDate [ fhir:value "1980-08-04"^^xsd:date];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.city [
+       fhir:value "Ñuñoa";
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ComunasCl" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.code [ fhir:value "13120" ]
+           ]
+         ]
+       ]
+     ];
+     fhir:Address.district [
+       fhir:value "Santiago";
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ProvinciasCl" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.code [ fhir:value "131" ]
+           ]
+         ]
+       ]
+     ];
+     fhir:Address.state [
+       fhir:value "Metropolitana de Santiago";
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RegionesCl" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.code [ fhir:value "13" ]
+           ]
+         ]
+       ]
+     ];
+     fhir:Address.country [
+       fhir:value "Chile";
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.code [ fhir:value "152" ]
+           ]
+         ]
+       ]
+     ]
+  ];
+  fhir:Patient.contact [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "tutId" ];
+         fhir:Extension.valueIdentifier [
+           fhir:Identifier.type [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoDNI" ];
+               fhir:Coding.code [ fhir:value "NNCHL" ];
+               fhir:Coding.display [ fhir:value "Chile" ]
+             ]
+           ];
+           fhir:Identifier.system [ fhir:value "http://regcivil.cl/Validacion/RUN" ];
+           fhir:Identifier.value [ fhir:value "8987321-7" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "docProc" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+             fhir:Coding.code [ fhir:value "152" ];
+             fhir:Coding.display [ fhir:value "Chile" ]
+           ]
+         ]
+       ];
+       fhir:Extension.url [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/IdContacto" ]
+     ];
+     fhir:Patient.contact.relationship [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0131" ];
+         fhir:Coding.code [ fhir:value "N" ];
+         fhir:Coding.display [ fhir:value "Next-of-Kin" ]
+       ]
+     ];
+     fhir:Patient.contact.name [
+       fhir:HumanName.use [ fhir:value "official" ];
+       fhir:HumanName.family [
+         fhir:value "Calleja";
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family" ];
+           fhir:Extension.valueString [ fhir:value "Morales" ]
+         ]
+       ];
+       fhir:HumanName.given [
+         fhir:value "Juana";
+         fhir:index 0
+       ], [
+         fhir:value "Josefa";
+         fhir:index 1
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/CoreCL/Patient/PacienteCl-5.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

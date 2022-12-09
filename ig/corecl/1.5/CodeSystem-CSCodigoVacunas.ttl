@@ -1,0 +1,372 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoVacunas> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CSCodigoVacunas"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoVacunas defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">actacelPriv<a name=\"CSCodigoVacunas-actacelPriv\"> </a></td><td>Actacel (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">antirr<a name=\"CSCodigoVacunas-antirr\"> </a></td><td>Antirrábica</td></tr><tr><td style=\"white-space:nowrap\">antirrPriv<a name=\"CSCodigoVacunas-antirrPriv\"> </a></td><td>Antirrábica (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">antitifoInyPriv<a name=\"CSCodigoVacunas-antitifoInyPriv\"> </a></td><td>Antitifoidea inyectable (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">bcgMat<a name=\"CSCodigoVacunas-bcgMat\"> </a></td><td>BCG MATERNIDAD</td></tr><tr><td style=\"white-space:nowrap\">bcg_mat<a name=\"CSCodigoVacunas-bcg_mat\"> </a></td><td>BCG_maternidad</td></tr><tr><td style=\"white-space:nowrap\">fiebreAmar<a name=\"CSCodigoVacunas-fiebreAmar\"> </a></td><td>Fiebre Amarilla</td></tr><tr><td style=\"white-space:nowrap\">hep_A<a name=\"CSCodigoVacunas-hep_A\"> </a></td><td>Hepatítis A</td></tr><tr><td style=\"white-space:nowrap\">hep_A_adult<a name=\"CSCodigoVacunas-hep_A_adult\"> </a></td><td>Hepatitis A adulto</td></tr><tr><td style=\"white-space:nowrap\">hep_A_adultPriv<a name=\"CSCodigoVacunas-hep_A_adultPriv\"> </a></td><td>Hepatitis A adulto (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">hep_A_ped<a name=\"CSCodigoVacunas-hep_A_ped\"> </a></td><td>Hepatitis A pediátrica</td></tr><tr><td style=\"white-space:nowrap\">hep_A_pedPriv<a name=\"CSCodigoVacunas-hep_A_pedPriv\"> </a></td><td>Hepatitis A pediátrica (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">hep_A-B_adultPriv<a name=\"CSCodigoVacunas-hep_A-B_adultPriv\"> </a></td><td>Hepatitis A-B adulto (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">hep_A-B_pedPriv<a name=\"CSCodigoVacunas-hep_A-B_pedPriv\"> </a></td><td>Hepatitis A-B pediátrica (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">hep_B_adult<a name=\"CSCodigoVacunas-hep_B_adult\"> </a></td><td>Hepatitis B adulto</td></tr><tr><td style=\"white-space:nowrap\">hep_B_adultPriv<a name=\"CSCodigoVacunas-hep_B_adultPriv\"> </a></td><td>Hepatitis B adulto (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">hep_B_dializAdult<a name=\"CSCodigoVacunas-hep_B_dializAdult\"> </a></td><td>Hepatitis B dializados adulto</td></tr><tr><td style=\"white-space:nowrap\">hep_B_dializPed<a name=\"CSCodigoVacunas-hep_B_dializPed\"> </a></td><td>Hepatitis B dializados pediátrica</td></tr><tr><td style=\"white-space:nowrap\">hep_B_ped<a name=\"CSCodigoVacunas-hep_B_ped\"> </a></td><td>Hepatitis B pediátrica</td></tr><tr><td style=\"white-space:nowrap\">hep_B_pedPriv<a name=\"CSCodigoVacunas-hep_B_pedPriv\"> </a></td><td>Hepatitis B pediátrica (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">hep_B_maternidad<a name=\"CSCodigoVacunas-hep_B_maternidad\"> </a></td><td>Hepatitis B_maternidad</td></tr><tr><td style=\"white-space:nowrap\">herpesZPriv<a name=\"CSCodigoVacunas-herpesZPriv\"> </a></td><td>Herpes Zoster (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">hexavalent<a name=\"CSCodigoVacunas-hexavalent\"> </a></td><td>Hexavalente</td></tr><tr><td style=\"white-space:nowrap\">hezavalentPriv<a name=\"CSCodigoVacunas-hezavalentPriv\"> </a></td><td>Hexavalente (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">inmAntitetanic<a name=\"CSCodigoVacunas-inmAntitetanic\"> </a></td><td>INMUNOGLOBULINA ANTITETANICA</td></tr><tr><td style=\"white-space:nowrap\">inmAntiVaricela<a name=\"CSCodigoVacunas-inmAntiVaricela\"> </a></td><td>Inmunoglobulina anti varicela</td></tr><tr><td style=\"white-space:nowrap\">inmAntirrabica<a name=\"CSCodigoVacunas-inmAntirrabica\"> </a></td><td>Inmunoglobulina antirrábica</td></tr><tr><td style=\"white-space:nowrap\">inmAntirrabicaPriv<a name=\"CSCodigoVacunas-inmAntirrabicaPriv\"> </a></td><td>Inmunoglobulina antirrábica (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">inmAntitetanica<a name=\"CSCodigoVacunas-inmAntitetanica\"> </a></td><td>Inmunoglobulina Antitetánica</td></tr><tr><td style=\"white-space:nowrap\">inmEstandarH_A<a name=\"CSCodigoVacunas-inmEstandarH_A\"> </a></td><td>Inmunoglobulina estandar (Hep. A)</td></tr><tr><td style=\"white-space:nowrap\">inmEstandarSaramp<a name=\"CSCodigoVacunas-inmEstandarSaramp\"> </a></td><td>Inmunoglobulina estandar (Sarampión)</td></tr><tr><td style=\"white-space:nowrap\">inmEstandarVaric<a name=\"CSCodigoVacunas-inmEstandarVaric\"> </a></td><td>Inmunoglobulina estandar (Varicela)</td></tr><tr><td style=\"white-space:nowrap\">inmHepat_B<a name=\"CSCodigoVacunas-inmHepat_B\"> </a></td><td>Inmunoglobulina Hepatitis B</td></tr><tr><td style=\"white-space:nowrap\">neumococicaConj10V<a name=\"CSCodigoVacunas-neumococicaConj10V\"> </a></td><td>Neumocócica conjugada 10V</td></tr><tr><td style=\"white-space:nowrap\">neomococicaConj10VPriv<a name=\"CSCodigoVacunas-neomococicaConj10VPriv\"> </a></td><td>Neumocócica conjugada 10V (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">neumococicaConj13V<a name=\"CSCodigoVacunas-neumococicaConj13V\"> </a></td><td>Neumocócica conjugada 13V</td></tr><tr><td style=\"white-space:nowrap\">neumococicaConj13VPriv<a name=\"CSCodigoVacunas-neumococicaConj13VPriv\"> </a></td><td>Neumocócica conjugada 13V (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">neumococicaPolisac23V<a name=\"CSCodigoVacunas-neumococicaPolisac23V\"> </a></td><td>Neumocócica polisacárida 23V</td></tr><tr><td style=\"white-space:nowrap\">neumococicaPolisac23VPriv<a name=\"CSCodigoVacunas-neumococicaPolisac23VPriv\"> </a></td><td>Neumocócica polisacárida 23V (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">pentavalente<a name=\"CSCodigoVacunas-pentavalente\"> </a></td><td>Pentavalente</td></tr><tr><td style=\"white-space:nowrap\">polioInactIny<a name=\"CSCodigoVacunas-polioInactIny\"> </a></td><td>Polio inactivada inyectable</td></tr><tr><td style=\"white-space:nowrap\">polioInactInyPriv<a name=\"CSCodigoVacunas-polioInactInyPriv\"> </a></td><td>Polio inactivada inyectable (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">polioOralBival_boPV<a name=\"CSCodigoVacunas-polioOralBival_boPV\"> </a></td><td>Polio oral bivalente (bOPV)</td></tr><tr><td style=\"white-space:nowrap\">polioOralTrival<a name=\"CSCodigoVacunas-polioOralTrival\"> </a></td><td>Polio oral trivalente</td></tr><tr><td style=\"white-space:nowrap\">rotavirus<a name=\"CSCodigoVacunas-rotavirus\"> </a></td><td>Rotavirus</td></tr><tr><td style=\"white-space:nowrap\">rotavirusPriv<a name=\"CSCodigoVacunas-rotavirusPriv\"> </a></td><td>Rotavirus (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">saramp_rube_paper<a name=\"CSCodigoVacunas-saramp_rube_paper\"> </a></td><td>Sarampión-Rubeóla-Paperas</td></tr><tr><td style=\"white-space:nowrap\">toxoideDTPriv<a name=\"CSCodigoVacunas-toxoideDTPriv\"> </a></td><td>Toxoide DT (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">toxoideDTEscol<a name=\"CSCodigoVacunas-toxoideDTEscol\"> </a></td><td>TOXOIDE DT ESCOLAR</td></tr><tr><td style=\"white-space:nowrap\">toxoideDTProfil<a name=\"CSCodigoVacunas-toxoideDTProfil\"> </a></td><td>TOXOIDE DT PROFILAXIS</td></tr><tr><td style=\"white-space:nowrap\">vacunaAntiten<a name=\"CSCodigoVacunas-vacunaAntiten\"> </a></td><td>VACUNA ANTITETÁNICA</td></tr><tr><td style=\"white-space:nowrap\">vacunaAntitenPriv<a name=\"CSCodigoVacunas-vacunaAntitenPriv\"> </a></td><td>Vacuna Antitetánica (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">vacunaBCG<a name=\"CSCodigoVacunas-vacunaBCG\"> </a></td><td>VACUNA BCG</td></tr><tr><td style=\"white-space:nowrap\">vacunaBexsero<a name=\"CSCodigoVacunas-vacunaBexsero\"> </a></td><td>VACUNA BEXSERO</td></tr><tr><td style=\"white-space:nowrap\">vacunaBexseroPriv<a name=\"CSCodigoVacunas-vacunaBexseroPriv\"> </a></td><td>VACUNA BEXSERO (Sector privado)</td></tr><tr><td style=\"white-space:nowrap\">vacunaDPT<a name=\"CSCodigoVacunas-vacunaDPT\"> </a></td><td>VACUNA DPT</td></tr><tr><td style=\"white-space:nowrap\">vacunadpTaPriv<a name=\"CSCodigoVacunas-vacunadpTaPriv\"> </a></td><td>Vacuna dpTa (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">vacunadtPa<a name=\"CSCodigoVacunas-vacunadtPa\"> </a></td><td>Vacuna dTpa</td></tr><tr><td style=\"white-space:nowrap\">vacunaHepat_AyB<a name=\"CSCodigoVacunas-vacunaHepat_AyB\"> </a></td><td>VACUNA HEPATITIS A Y B</td></tr><tr><td style=\"white-space:nowrap\">vacunaHIB<a name=\"CSCodigoVacunas-vacunaHIB\"> </a></td><td>VACUNA HIB</td></tr><tr><td style=\"white-space:nowrap\">vacunaHIBPriv<a name=\"CSCodigoVacunas-vacunaHIBPriv\"> </a></td><td>Vacuna HIB (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">vacunaInfluTrival<a name=\"CSCodigoVacunas-vacunaInfluTrival\"> </a></td><td>VACUNA INFLUENZA TRIVALENTE</td></tr><tr><td style=\"white-space:nowrap\">vacunaMenacPriv<a name=\"CSCodigoVacunas-vacunaMenacPriv\"> </a></td><td>VACUNA MENACTRA (Sector privado)</td></tr><tr><td style=\"white-space:nowrap\">vacunaMenveo<a name=\"CSCodigoVacunas-vacunaMenveo\"> </a></td><td>VACUNA MENVEO</td></tr><tr><td style=\"white-space:nowrap\">vacunaMenveoPriv<a name=\"CSCodigoVacunas-vacunaMenveoPriv\"> </a></td><td>VACUNA MENVEO (Sector privado)</td></tr><tr><td style=\"white-space:nowrap\">vacunaNeumoco7V<a name=\"CSCodigoVacunas-vacunaNeumoco7V\"> </a></td><td>VACUNA NEUMOCOCICA 7 V</td></tr><tr><td style=\"white-space:nowrap\">vacunaNimenrix<a name=\"CSCodigoVacunas-vacunaNimenrix\"> </a></td><td>VACUNA NIMENRIX</td></tr><tr><td style=\"white-space:nowrap\">vacunaNimenrixPriv<a name=\"CSCodigoVacunas-vacunaNimenrixPriv\"> </a></td><td>VACUNA NIMENRIX (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">vacunaPoliomielInact<a name=\"CSCodigoVacunas-vacunaPoliomielInact\"> </a></td><td>VACUNA POLIOMIELITIS INACTIVADA</td></tr><tr><td style=\"white-space:nowrap\">vacunaSRPt3VMonodos<a name=\"CSCodigoVacunas-vacunaSRPt3VMonodos\"> </a></td><td>VACUNA SRP (TRES VIRICA) MONODOSIS</td></tr><tr><td style=\"white-space:nowrap\">vacunaSRP3VMultidos<a name=\"CSCodigoVacunas-vacunaSRP3VMultidos\"> </a></td><td>VACUNA SRP (TRES VIRICA) MULTIDOSIS</td></tr><tr><td style=\"white-space:nowrap\">vacunaSRPTrivMonodos<a name=\"CSCodigoVacunas-vacunaSRPTrivMonodos\"> </a></td><td>Vacuna SRP (trivirica) Monodosis</td></tr><tr><td style=\"white-space:nowrap\">vacunaSRPTrivMultidos<a name=\"CSCodigoVacunas-vacunaSRPTrivMultidos\"> </a></td><td>Vacuna SRP (trivirica) Multidosis</td></tr><tr><td style=\"white-space:nowrap\">varicela<a name=\"CSCodigoVacunas-varicela\"> </a></td><td>Varicela</td></tr><tr><td style=\"white-space:nowrap\">varicelaPriv<a name=\"CSCodigoVacunas-varicelaPriv\"> </a></td><td>Varicela (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">VPHBivalPriv<a name=\"CSCodigoVacunas-VPHBivalPriv\"> </a></td><td>VPH Bivalente (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">VPHNonavalPriv<a name=\"CSCodigoVacunas-VPHNonavalPriv\"> </a></td><td>VPH Nonavalente (sector privado)</td></tr><tr><td style=\"white-space:nowrap\">VPHTetraval<a name=\"CSCodigoVacunas-VPHTetraval\"> </a></td><td>VPH Tetravalente</td></tr><tr><td style=\"white-space:nowrap\">VPHTretavalPriv<a name=\"CSCodigoVacunas-VPHTretavalPriv\"> </a></td><td>VPH Tetravalente (sector privado)</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoVacunas"];
+  fhir:CodeSystem.version [ fhir:value "1.5.0"];
+  fhir:CodeSystem.name [ fhir:value "CSTiposVacunaCL"];
+  fhir:CodeSystem.title [ fhir:value "Códigos de Vacunas RNI"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-06-05T00:00:00-03:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Chile"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Chile" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7chile.cl" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "chair@hl7chile.cl" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Códigos de las vacunas o inmunizaciones según indicaciones del Ministerio de Salud"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "CL" ];
+       fhir:Coding.display [ fhir:value "Chile" ]
+     ]
+  ];
+  fhir:CodeSystem.copyright [ fhir:value "Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "79"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "actacelPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Actacel (sector privado)" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "antirr" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Antirrábica" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "antirrPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Antirrábica (sector privado)" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "antitifoInyPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Antitifoidea inyectable (sector privado)" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "bcgMat" ];
+     fhir:CodeSystem.concept.display [ fhir:value "BCG MATERNIDAD" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "bcg_mat" ];
+     fhir:CodeSystem.concept.display [ fhir:value "BCG_maternidad" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "fiebreAmar" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Fiebre Amarilla" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "hep_A" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hepatítis A" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "hep_A_adult" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hepatitis A adulto" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "hep_A_adultPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hepatitis A adulto (sector privado)" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "hep_A_ped" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hepatitis A pediátrica" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "hep_A_pedPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hepatitis A pediátrica (sector privado)" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "hep_A-B_adultPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hepatitis A-B adulto (sector privado)" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "hep_A-B_pedPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hepatitis A-B pediátrica (sector privado)" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "hep_B_adult" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hepatitis B adulto" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "hep_B_adultPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hepatitis B adulto (sector privado)" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "hep_B_dializAdult" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hepatitis B dializados adulto" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "hep_B_dializPed" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hepatitis B dializados pediátrica" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "hep_B_ped" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hepatitis B pediátrica" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "hep_B_pedPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hepatitis B pediátrica (sector privado)" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "hep_B_maternidad" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hepatitis B_maternidad" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "herpesZPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Herpes Zoster (sector privado)" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "hexavalent" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hexavalente" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "hezavalentPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hexavalente (sector privado)" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "inmAntitetanic" ];
+     fhir:CodeSystem.concept.display [ fhir:value "INMUNOGLOBULINA ANTITETANICA" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "inmAntiVaricela" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inmunoglobulina anti varicela" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "inmAntirrabica" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inmunoglobulina antirrábica" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "inmAntirrabicaPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inmunoglobulina antirrábica (sector privado)" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "inmAntitetanica" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inmunoglobulina Antitetánica" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "inmEstandarH_A" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inmunoglobulina estandar (Hep. A)" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "inmEstandarSaramp" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inmunoglobulina estandar (Sarampión)" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "inmEstandarVaric" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inmunoglobulina estandar (Varicela)" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "inmHepat_B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inmunoglobulina Hepatitis B" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "neumococicaConj10V" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Neumocócica conjugada 10V" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "neomococicaConj10VPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Neumocócica conjugada 10V (sector privado)" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "neumococicaConj13V" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Neumocócica conjugada 13V" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "neumococicaConj13VPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Neumocócica conjugada 13V (sector privado)" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "neumococicaPolisac23V" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Neumocócica polisacárida 23V" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "neumococicaPolisac23VPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Neumocócica polisacárida 23V (sector privado)" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "pentavalente" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pentavalente" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "polioInactIny" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Polio inactivada inyectable" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "polioInactInyPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Polio inactivada inyectable (sector privado)" ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "polioOralBival_boPV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Polio oral bivalente (bOPV)" ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "polioOralTrival" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Polio oral trivalente" ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "rotavirus" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rotavirus" ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "rotavirusPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rotavirus (sector privado)" ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "saramp_rube_paper" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sarampión-Rubeóla-Paperas" ]
+  ], [
+     fhir:index 47;
+     fhir:CodeSystem.concept.code [ fhir:value "toxoideDTPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Toxoide DT (sector privado)" ]
+  ], [
+     fhir:index 48;
+     fhir:CodeSystem.concept.code [ fhir:value "toxoideDTEscol" ];
+     fhir:CodeSystem.concept.display [ fhir:value "TOXOIDE DT ESCOLAR" ]
+  ], [
+     fhir:index 49;
+     fhir:CodeSystem.concept.code [ fhir:value "toxoideDTProfil" ];
+     fhir:CodeSystem.concept.display [ fhir:value "TOXOIDE DT PROFILAXIS" ]
+  ], [
+     fhir:index 50;
+     fhir:CodeSystem.concept.code [ fhir:value "vacunaAntiten" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VACUNA ANTITETÁNICA" ]
+  ], [
+     fhir:index 51;
+     fhir:CodeSystem.concept.code [ fhir:value "vacunaAntitenPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vacuna Antitetánica (sector privado)" ]
+  ], [
+     fhir:index 52;
+     fhir:CodeSystem.concept.code [ fhir:value "vacunaBCG" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VACUNA BCG" ]
+  ], [
+     fhir:index 53;
+     fhir:CodeSystem.concept.code [ fhir:value "vacunaBexsero" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VACUNA BEXSERO" ]
+  ], [
+     fhir:index 54;
+     fhir:CodeSystem.concept.code [ fhir:value "vacunaBexseroPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VACUNA BEXSERO (Sector privado)" ]
+  ], [
+     fhir:index 55;
+     fhir:CodeSystem.concept.code [ fhir:value "vacunaDPT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VACUNA DPT" ]
+  ], [
+     fhir:index 56;
+     fhir:CodeSystem.concept.code [ fhir:value "vacunadpTaPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vacuna dpTa (sector privado)" ]
+  ], [
+     fhir:index 57;
+     fhir:CodeSystem.concept.code [ fhir:value "vacunadtPa" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vacuna dTpa" ]
+  ], [
+     fhir:index 58;
+     fhir:CodeSystem.concept.code [ fhir:value "vacunaHepat_AyB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VACUNA HEPATITIS A Y B" ]
+  ], [
+     fhir:index 59;
+     fhir:CodeSystem.concept.code [ fhir:value "vacunaHIB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VACUNA HIB" ]
+  ], [
+     fhir:index 60;
+     fhir:CodeSystem.concept.code [ fhir:value "vacunaHIBPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vacuna HIB (sector privado)" ]
+  ], [
+     fhir:index 61;
+     fhir:CodeSystem.concept.code [ fhir:value "vacunaInfluTrival" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VACUNA INFLUENZA TRIVALENTE" ]
+  ], [
+     fhir:index 62;
+     fhir:CodeSystem.concept.code [ fhir:value "vacunaMenacPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VACUNA MENACTRA (Sector privado)" ]
+  ], [
+     fhir:index 63;
+     fhir:CodeSystem.concept.code [ fhir:value "vacunaMenveo" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VACUNA MENVEO" ]
+  ], [
+     fhir:index 64;
+     fhir:CodeSystem.concept.code [ fhir:value "vacunaMenveoPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VACUNA MENVEO (Sector privado)" ]
+  ], [
+     fhir:index 65;
+     fhir:CodeSystem.concept.code [ fhir:value "vacunaNeumoco7V" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VACUNA NEUMOCOCICA 7 V" ]
+  ], [
+     fhir:index 66;
+     fhir:CodeSystem.concept.code [ fhir:value "vacunaNimenrix" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VACUNA NIMENRIX" ]
+  ], [
+     fhir:index 67;
+     fhir:CodeSystem.concept.code [ fhir:value "vacunaNimenrixPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VACUNA NIMENRIX (sector privado)" ]
+  ], [
+     fhir:index 68;
+     fhir:CodeSystem.concept.code [ fhir:value "vacunaPoliomielInact" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VACUNA POLIOMIELITIS INACTIVADA" ]
+  ], [
+     fhir:index 69;
+     fhir:CodeSystem.concept.code [ fhir:value "vacunaSRPt3VMonodos" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VACUNA SRP (TRES VIRICA) MONODOSIS" ]
+  ], [
+     fhir:index 70;
+     fhir:CodeSystem.concept.code [ fhir:value "vacunaSRP3VMultidos" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VACUNA SRP (TRES VIRICA) MULTIDOSIS" ]
+  ], [
+     fhir:index 71;
+     fhir:CodeSystem.concept.code [ fhir:value "vacunaSRPTrivMonodos" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vacuna SRP (trivirica) Monodosis" ]
+  ], [
+     fhir:index 72;
+     fhir:CodeSystem.concept.code [ fhir:value "vacunaSRPTrivMultidos" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vacuna SRP (trivirica) Multidosis" ]
+  ], [
+     fhir:index 73;
+     fhir:CodeSystem.concept.code [ fhir:value "varicela" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Varicela" ]
+  ], [
+     fhir:index 74;
+     fhir:CodeSystem.concept.code [ fhir:value "varicelaPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Varicela (sector privado)" ]
+  ], [
+     fhir:index 75;
+     fhir:CodeSystem.concept.code [ fhir:value "VPHBivalPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VPH Bivalente (sector privado)" ]
+  ], [
+     fhir:index 76;
+     fhir:CodeSystem.concept.code [ fhir:value "VPHNonavalPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VPH Nonavalente (sector privado)" ]
+  ], [
+     fhir:index 77;
+     fhir:CodeSystem.concept.code [ fhir:value "VPHTetraval" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VPH Tetravalente" ]
+  ], [
+     fhir:index 78;
+     fhir:CodeSystem.concept.code [ fhir:value "VPHTretavalPriv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VPH Tetravalente (sector privado)" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoVacunas.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

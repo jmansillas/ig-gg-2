@@ -1,0 +1,1542 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 319, errors = 2, warn = 61, info = 2 -->
+<head>
+  <title>CoreCL : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for CoreCL</h1>
+ <p>Generated Tue Jan 18 11:09:55 CLST 2022, FHIR version 4.0.1 for hl7.fhir.cl.corecl#0.85 (Ballot Pendiente) (canonical = <a href="http://core.hl7chile.cl">http://core.hl7chile.cl</a> (<a href="http://core.hl7chile.cl/history.html">history</a>)). See <a href="c:\users\jmansilla\downloads\fhir_core_ch-0.85\output\qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.77, which is out of date. The current version is v1.1.97 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.cl.corecl, Canonical = http://core.hl7chile.cl</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.85 (Ballot Pendiente): <span stlye="color: marron; font-weight: bold">Version does not conform to semver rules</span></td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAI0lEQVR42u3QIQEAAAACIL/6/4MvTAQOkLYBAAB4kAAAANwMad9AqkRjgNAAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.cl.corecl</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.85 (Ballot Pendiente)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://core.hl7chile.cl</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: fhir.base.template#0.2.1</para></div></td></tr>
+ <tr><td>Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+ <br/><br/>The copyrightYear parameter ('2020+') in the IG resource is good</td></tr>
+ <tr><td>HTA Analysis:</td><td><a href="qa-hta.html">All OK</a></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://core.hl7chile.cl (Problem #1 with package-list.json at http://core.hl7chile.cl: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 12 path $)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 319, errors = 2, warn = 61, info = 2</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>319</b></td><td><b>9</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_ImplementationGuide-hl7.fhir.cl.corecl"><b>C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\ImplementationGuide-hl7.fhir.cl.corecl</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_Location-LocalizacionEjemploCL1"><b>C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Location-LocalizacionEjemploCL1</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_Medication-MedicamentoCl"><b>C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Medication-MedicamentoCl</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_Patient-PacienteCL"><b>C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Patient-PacienteCL</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_Patient-PacienteCL2"><b>C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Patient-PacienteCL2</b></a></td><td><b>0</b></td><td><b>6</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_Patient-PacienteCl-3"><b>C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Patient-PacienteCl-3</b></a></td><td><b>0</b></td><td><b>6</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_Practitioner-PrestadorCL"><b>C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Practitioner-PrestadorCL</b></a></td><td><b>0</b></td><td><b>6</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_PractitionerRole-EspecialidadCL"><b>C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\PractitionerRole-EspecialidadCL</b></a></td><td><b>1</b></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_StructureDefinition-CodigoPaises"><b>C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\StructureDefinition-CodigoPaises</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_StructureDefinition-CorePacienteCl"><b>C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\StructureDefinition-CorePacienteCl</b></a></td><td><b>0</b></td><td><b>6</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_StructureDefinition-CorePrestadorCl"><b>C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\StructureDefinition-CorePrestadorCl</b></a></td><td><b>0</b></td><td><b>6</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_StructureDefinition-RecetaBundleCl"><b>C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\StructureDefinition-RecetaBundleCl</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_ValueSet-CodNacComunas"><b>C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\ValueSet-CodNacComunas</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_ValueSet-CodProv"><b>C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\ValueSet-CodProv</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_ValueSet-CodReg"><b>C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\ValueSet-CodReg</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_ValueSet-Esp-Tabla-DEIS"><b>C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\ValueSet-Esp-Tabla-DEIS</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/EspecialidadCL.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Location/LocalizacionEjemploCL1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Medication/MedicamentoCl.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Medication/MedicamentoCl-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Organization/OrganizacionCl.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PacienteCL.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PacienteCL2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PacienteCl-3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/PrestadorCL.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Alcances-Objetivos.html#50db409b-ff00-4f3c-8d41-d7d58400c990">Alcances-Objetivos.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Alcances-Objetivos.html#8e9f511c-474d-42de-b8ab-c5b4b1ccde5d">Alcances-Objetivos.html#/html/body/div/div/div/p/a at Line 268, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Aspectos-Generales.html#9422d56d-9b43-45cf-abdf-bb16f4d2a367">Aspectos-Generales.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Aspectos-Generales.html#8277ae3c-5e45-4e6c-ba17-56e809599dfd">Aspectos-Generales.html#/html/body/div/div/div/p/a at Line 480, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Balloting-Validadores.html#a0adef6b-68ad-489f-98b3-ff3545203582">Balloting-Validadores.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Balloting-Validadores.html#c650af29-2e64-487d-89e2-ee20ddf04f0b">Balloting-Validadores.html#/html/body/div/div/div/p/a at Line 262, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Balloting.html#9cc6a1be-c4ef-4b11-827f-6e245ca5049f">Balloting.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Balloting.html#2be66d76-e900-4652-a8a4-2dfe4a703000">Balloting.html#/html/body/div/div/div/p/a at Line 346, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Consolidado-Operaciones.html#aff73054-90a9-4fae-9b2e-4618c4970da0">Consolidado-Operaciones.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Consolidado-Operaciones.html#90aae104-1558-4c60-90f5-1f5ce6cfb51a">Consolidado-Operaciones.html#/html/body/div/div/div/div/div/ul/li/a at Line 557, column 111</a></b></td><td><b>error</b></td><td><b>The link 'resource-operations.html' for &quot;Resource Operations&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Consolidado-Operaciones.html#0907b0bb-a6bd-42bf-8904-16ca60ef3c07">Consolidado-Operaciones.html#/html/body/div/div/div/p/a at Line 937, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Extensiones.html#53e2bf01-be19-4d4a-a249-e29f1512b03e">Extensiones.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Extensiones.html#dc92349a-b550-4f61-a9da-9d01c8dc3ebf">Extensiones.html#/html/body/div/div/div/p/a at Line 254, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Location-LocalizacionEjemploCL1.change.history.html#286e4fa9-55a8-495c-a781-c42702703e82">Location-LocalizacionEjemploCL1.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Location-LocalizacionEjemploCL1.change.history.html#776ada2e-63e4-4c76-a54a-9c8b13ddb894">Location-LocalizacionEjemploCL1.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Location-LocalizacionEjemploCL1.html#91a3db75-55ca-4914-b3ad-60f0bd013b3d">Location-LocalizacionEjemploCL1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Location-LocalizacionEjemploCL1.html#d7ed5156-cb1c-4a89-a91e-70a3c09692af">Location-LocalizacionEjemploCL1.html#/html/body/div/div/div/p/a at Line 281, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Location-LocalizacionEjemploCL1.json.html#e1e4cf0b-c6c9-46c3-9848-d62e23d7f2de">Location-LocalizacionEjemploCL1.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Location-LocalizacionEjemploCL1.json.html#c1fb9b0e-a948-4659-8e23-af4870b49e9d">Location-LocalizacionEjemploCL1.json.html#/html/body/div/div/div/p/a at Line 350, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Location-LocalizacionEjemploCL1.ttl.html#e7ec20f4-a1f6-4665-9829-ac5e882d7da5">Location-LocalizacionEjemploCL1.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Location-LocalizacionEjemploCL1.ttl.html#ecb971ba-451f-4cc3-9bdd-9abc468d30be">Location-LocalizacionEjemploCL1.ttl.html#/html/body/div/div/div/p/a at Line 361, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Location-LocalizacionEjemploCL1.xml.html#629a843b-6cf7-4803-8f34-e29c454e8812">Location-LocalizacionEjemploCL1.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Location-LocalizacionEjemploCL1.xml.html#6904632e-1918-405c-8618-846736decbc7">Location-LocalizacionEjemploCL1.xml.html#/html/body/div/div/div/p/a at Line 333, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoCl-2.change.history.html#830ec5c1-67d9-4094-9434-4451b9286fd4">Medication-MedicamentoCl-2.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoCl-2.change.history.html#b6e9ebc4-13cd-43ad-a1ff-a6dd9d3e9b65">Medication-MedicamentoCl-2.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoCl-2.html#ae63b066-b1ca-4bdc-bd45-191db1e2441c">Medication-MedicamentoCl-2.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoCl-2.html#6e41f926-cc47-4e0f-852d-94fd1737df9f">Medication-MedicamentoCl-2.html#/html/body/div/div/div/p/a at Line 281, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoCl-2.json.html#6368b798-30cb-48e1-b82c-713a30769bc5">Medication-MedicamentoCl-2.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoCl-2.json.html#35ec6c20-ac13-4760-ae15-b61d61ed5c0e">Medication-MedicamentoCl-2.json.html#/html/body/div/div/div/p/a at Line 317, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoCl-2.ttl.html#462ad942-a6b2-4ad5-bcc1-993ab83935c6">Medication-MedicamentoCl-2.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoCl-2.ttl.html#ac4938e5-09db-4837-b513-8c769494e556">Medication-MedicamentoCl-2.ttl.html#/html/body/div/div/div/p/a at Line 329, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoCl-2.xml.html#2c546407-6969-42d3-8794-9b23383878b1">Medication-MedicamentoCl-2.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoCl-2.xml.html#31b24f7a-e1b4-4836-ba8d-3b7e6d6b6be3">Medication-MedicamentoCl-2.xml.html#/html/body/div/div/div/p/a at Line 312, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoCl.change.history.html#28eee9ed-c44a-4588-879d-41b3af81b8f7">Medication-MedicamentoCl.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoCl.change.history.html#507be996-6fac-4d7c-9508-974c4426e852">Medication-MedicamentoCl.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoCl.html#44b3a97b-44bd-4d3f-b2f3-1b99ea4793dd">Medication-MedicamentoCl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoCl.html#ded1f186-a179-4438-8f2f-7a0d7c89b827">Medication-MedicamentoCl.html#/html/body/div/div/div/p/a at Line 281, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoCl.json.html#4de4c23e-d926-497b-9375-8efe521d7b0f">Medication-MedicamentoCl.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoCl.json.html#271b1493-79cf-4dcf-9ad9-80767fe8e4e7">Medication-MedicamentoCl.json.html#/html/body/div/div/div/p/a at Line 318, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoCl.ttl.html#07a6caa2-d344-412b-8878-ea9923604ed1">Medication-MedicamentoCl.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoCl.ttl.html#37402ca5-010c-47ad-b7a7-f24db9c2c2b9">Medication-MedicamentoCl.ttl.html#/html/body/div/div/div/p/a at Line 330, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoCl.xml.html#9077519f-9cec-4e4e-b6b0-d5d43a6786fa">Medication-MedicamentoCl.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicamentoCl.xml.html#78d1b0f0-f519-4265-8b49-23292536f7a8">Medication-MedicamentoCl.xml.html#/html/body/div/div/div/p/a at Line 313, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-OrganizacionCl.change.history.html#58065dae-2b57-4661-93c8-76f6b72e0ffd">Organization-OrganizacionCl.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-OrganizacionCl.change.history.html#d10dfb16-b655-4fd3-9bb5-b0f2f62d2e02">Organization-OrganizacionCl.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-OrganizacionCl.html#205cb224-606f-44e6-a0c2-bf1c49d25914">Organization-OrganizacionCl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-OrganizacionCl.html#5889b677-4174-4606-8dd8-1eed5215f701">Organization-OrganizacionCl.html#/html/body/div/div/div/p/a at Line 281, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-OrganizacionCl.json.html#1927ef58-fcb2-4115-b97e-0016a20f7fec">Organization-OrganizacionCl.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-OrganizacionCl.json.html#c63d2103-1eed-4e5f-80f3-ae7616affa05">Organization-OrganizacionCl.json.html#/html/body/div/div/div/p/a at Line 325, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-OrganizacionCl.ttl.html#31aad1f8-df33-4800-b7b7-977e4a522d3b">Organization-OrganizacionCl.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-OrganizacionCl.ttl.html#61f280e0-2e73-4e1c-9e7a-8c3f6d1d5306">Organization-OrganizacionCl.ttl.html#/html/body/div/div/div/p/a at Line 338, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-OrganizacionCl.xml.html#a36f752c-0eb5-4c5e-b85c-9e8270e8f0e8">Organization-OrganizacionCl.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-OrganizacionCl.xml.html#3c215cf1-0544-4b2c-8518-ad9da7f72641">Organization-OrganizacionCl.xml.html#/html/body/div/div/div/p/a at Line 314, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCL.change.history.html#31f6c919-92a5-4c60-a6eb-6be1e00e3c91">Patient-PacienteCL.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCL.change.history.html#b7cc5ee1-be6c-401b-a1b4-23940a308d74">Patient-PacienteCL.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCL.html#4996c027-f720-4e68-b96a-878325590979">Patient-PacienteCL.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCL.html#7770f77a-b615-4524-b340-90bb4fa4b143">Patient-PacienteCL.html#/html/body/div/div/div/p/a at Line 281, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCL.json.html#2ff0d2d5-a9cd-469e-8b1a-f6f364d168b0">Patient-PacienteCL.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCL.json.html#d2e9b111-4ace-46bb-a60c-ac7f491698a0">Patient-PacienteCL.json.html#/html/body/div/div/div/p/a at Line 374, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCL.ttl.html#bc39aaa7-10b5-4605-b183-547860f516cf">Patient-PacienteCL.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCL.ttl.html#3e94a665-9d70-483a-a0f7-4bd7d911a13c">Patient-PacienteCL.ttl.html#/html/body/div/div/div/p/a at Line 376, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCL.xml.html#de537d80-fab7-40f8-a298-d6e8089736ef">Patient-PacienteCL.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCL.xml.html#c3a1bb1e-57df-4e21-a5b7-3abd084808d4">Patient-PacienteCL.xml.html#/html/body/div/div/div/p/a at Line 348, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCL2.change.history.html#ddb3af0c-cb26-47b9-accf-c59b2df154f1">Patient-PacienteCL2.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCL2.change.history.html#c42582f0-5f6b-4102-9f86-473f823af2a3">Patient-PacienteCL2.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCL2.html#73d77538-532e-4291-ad83-5963300959a2">Patient-PacienteCL2.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCL2.html#b31d16aa-9b75-4d4a-85fc-f0c8747c59e1">Patient-PacienteCL2.html#/html/body/div/div/div/p/a at Line 281, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCL2.json.html#8375dff7-30ae-4f51-8772-18a7d2a5a519">Patient-PacienteCL2.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCL2.json.html#30a12b98-453a-4217-8fbb-85582d670634">Patient-PacienteCL2.json.html#/html/body/div/div/div/p/a at Line 377, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCL2.ttl.html#c18b2cdf-fbc8-4542-8159-6d8cac2b7e6b">Patient-PacienteCL2.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCL2.ttl.html#3c82374c-1177-4f8f-94cd-c27ece193378">Patient-PacienteCL2.ttl.html#/html/body/div/div/div/p/a at Line 375, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCL2.xml.html#aa92dd50-23d6-4b12-9709-154e2d58c753">Patient-PacienteCL2.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCL2.xml.html#9cef56a2-8d91-448b-9815-901c3a1ab4ff">Patient-PacienteCL2.xml.html#/html/body/div/div/div/p/a at Line 348, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCl-3.change.history.html#a2b34b72-cd73-4a28-b627-5bcfa39c8a5c">Patient-PacienteCl-3.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCl-3.change.history.html#af700e0f-7b3c-4201-b353-314c3c520b37">Patient-PacienteCl-3.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCl-3.html#cb5b5fd8-d67b-463c-af8c-87d5eac195ad">Patient-PacienteCl-3.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCl-3.html#befe041c-bf69-4d7e-b5ab-28b8f7d53bed">Patient-PacienteCl-3.html#/html/body/div/div/div/p/a at Line 281, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCl-3.json.html#2d1e3289-8860-4297-a580-93105690762e">Patient-PacienteCl-3.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCl-3.json.html#b2c32603-9cde-4e20-a37b-b6d21ac15383">Patient-PacienteCl-3.json.html#/html/body/div/div/div/p/a at Line 375, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCl-3.ttl.html#f9e6db4d-9c9c-4fca-9d91-ef7f96d30a52">Patient-PacienteCl-3.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCl-3.ttl.html#a8f6dfcb-d001-466a-859e-2149e511cb2f">Patient-PacienteCl-3.ttl.html#/html/body/div/div/div/p/a at Line 371, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCl-3.xml.html#66adcf5b-b38e-4d2b-bf27-d92ebbdd4c72">Patient-PacienteCl-3.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-PacienteCl-3.xml.html#17c90049-8222-47c8-987f-7064212f9b5e">Patient-PacienteCl-3.xml.html#/html/body/div/div/div/p/a at Line 348, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Perfiles.html#f27d8407-8bbf-49f1-9924-7138280d3f59">Perfiles.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Perfiles.html#4ef295ea-d45f-4d6d-86c6-df79fd7a0ec2">Perfiles.html#/html/body/div/div/div/p/a at Line 262, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Practitioner-PrestadorCL.change.history.html#762598c5-cb4e-47bc-8f2b-b9251d27e5d7">Practitioner-PrestadorCL.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Practitioner-PrestadorCL.change.history.html#33d26812-416d-4e94-9779-10ef12cd555b">Practitioner-PrestadorCL.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Practitioner-PrestadorCL.html#afd7be30-2b53-4148-811b-b549a8645863">Practitioner-PrestadorCL.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Practitioner-PrestadorCL.html#07a455b5-2aba-4e82-9f10-6fb55dcd0cab">Practitioner-PrestadorCL.html#/html/body/div/div/div/p/a at Line 281, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Practitioner-PrestadorCL.json.html#a9e4ab48-e49b-4e46-b392-651e0f8d0d83">Practitioner-PrestadorCL.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Practitioner-PrestadorCL.json.html#61da588f-73db-40df-b0c3-6fbf1c79babb">Practitioner-PrestadorCL.json.html#/html/body/div/div/div/p/a at Line 387, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Practitioner-PrestadorCL.ttl.html#80aaf6b8-6fe8-4a17-9fac-2c80e554c2ad">Practitioner-PrestadorCL.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Practitioner-PrestadorCL.ttl.html#96d4cb3b-1427-4f26-8228-6d3887cca1c9">Practitioner-PrestadorCL.ttl.html#/html/body/div/div/div/p/a at Line 386, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Practitioner-PrestadorCL.xml.html#2ecb9f60-9f20-4a2f-94e7-cb742f51ac69">Practitioner-PrestadorCL.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Practitioner-PrestadorCL.xml.html#0bc6100f-80d4-426b-b4e8-c5f59a226105">Practitioner-PrestadorCL.xml.html#/html/body/div/div/div/p/a at Line 363, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="PractitionerRole-EspecialidadCL.change.history.html#8a9804f0-56ec-42ef-b84f-b15819240caa">PractitionerRole-EspecialidadCL.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="PractitionerRole-EspecialidadCL.change.history.html#e8fb132e-3adb-493b-b9fb-7a028873587e">PractitionerRole-EspecialidadCL.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="PractitionerRole-EspecialidadCL.html#2cbdeba2-b935-4916-b491-b8d5eda83ed1">PractitionerRole-EspecialidadCL.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="PractitionerRole-EspecialidadCL.html#e73c3973-6804-4e45-a9dd-2ba88c50f107">PractitionerRole-EspecialidadCL.html#/html/body/div/div/div/p/a at Line 281, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="PractitionerRole-EspecialidadCL.json.html#dee504de-ee37-4523-87ce-2050f2fe3487">PractitionerRole-EspecialidadCL.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="PractitionerRole-EspecialidadCL.json.html#9bc202d6-24af-4f81-b1e5-b6ec1cd97186">PractitionerRole-EspecialidadCL.json.html#/html/body/div/div/div/p/a at Line 327, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="PractitionerRole-EspecialidadCL.ttl.html#b2e4a2c3-3a0d-48da-8f83-0c44ca4722e7">PractitionerRole-EspecialidadCL.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="PractitionerRole-EspecialidadCL.ttl.html#7854167a-cb2a-486c-b12e-db9b3fbd0b47">PractitionerRole-EspecialidadCL.ttl.html#/html/body/div/div/div/p/a at Line 336, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="PractitionerRole-EspecialidadCL.xml.html#abdc4137-2bd5-461f-9075-784d0eb60b6e">PractitionerRole-EspecialidadCL.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="PractitionerRole-EspecialidadCL.xml.html#26d6bf15-954f-4abd-a033-3362dfd65ade">PractitionerRole-EspecialidadCL.xml.html#/html/body/div/div/div/p/a at Line 318, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Set-De-Validacion-ValueSets.html#0060319f-385e-41df-9031-dd45d75a6f6b">Set-De-Validacion-ValueSets.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Set-De-Validacion-ValueSets.html#8dc706f8-a188-4a80-97b8-7a0db9454ccf">Set-De-Validacion-ValueSets.html#/html/body/div/div/div/p/a at Line 263, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Set-Ejemplos.html#4c684781-e3dc-4d2e-b32a-577a10c06ede">Set-Ejemplos.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Set-Ejemplos.html#13fddd0c-1504-4e9f-bc4f-9c326af3d706">Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/a at Line 242, column 8</a></b></td><td><b>error</b></td><td><b>The link 'Organization-OrganizacionCL.html' for &quot;Organización Prestadora de Salud&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Set-Ejemplos.html#437d2c74-5b49-4265-b794-d7c7b712e659">Set-Ejemplos.html#/html/body/div/div/div/p/a at Line 297, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CodigoPaises-definitions.html#421628e9-4d7b-4635-810b-87dc531ed343">StructureDefinition-CodigoPaises-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CodigoPaises-definitions.html#433bd289-8949-41bb-b361-701aeb79d385">StructureDefinition-CodigoPaises-definitions.html#/html/body/div/div/div/p/a at Line 344, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CodigoPaises-mappings.html#e3db03e6-295c-450e-ad31-849cda3c2e42">StructureDefinition-CodigoPaises-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CodigoPaises-mappings.html#65a5119b-4823-42b6-bf13-819a8f3d63cb">StructureDefinition-CodigoPaises-mappings.html#/html/body/div/div/div/p/a at Line 304, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CodigoPaises.html#3fc92a75-dbbf-4e15-adef-6200860c8b61">StructureDefinition-CodigoPaises.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CodigoPaises.html#a6fc34be-bfe9-4fc4-ac1a-21b51fb2422a">StructureDefinition-CodigoPaises.html#/html/body/div/div/div/p/a at Line 548, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CodigoPaises.profile.history.html#93b32213-f80e-4453-a6e5-12b7c9e8f4c5">StructureDefinition-CodigoPaises.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CodigoPaises.profile.history.html#84bd9235-bfc5-4dd8-b7ba-4b9adb9e4a3d">StructureDefinition-CodigoPaises.profile.history.html#/html/body/div/div/div/p/a at Line 286, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CodigoPaises.profile.json.html#aeb4408a-76dc-477c-bb82-b5567ac5d5b3">StructureDefinition-CodigoPaises.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CodigoPaises.profile.json.html#dac15b29-525b-48dd-b787-67e565b07941">StructureDefinition-CodigoPaises.profile.json.html#/html/body/div/div/div/p/a at Line 655, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CodigoPaises.profile.ttl.html#bd2cbb21-f2e1-4b18-91c6-30426689452f">StructureDefinition-CodigoPaises.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CodigoPaises.profile.ttl.html#0c961cfd-d74e-4ba3-a9ca-5b5bcc8cbb9c">StructureDefinition-CodigoPaises.profile.ttl.html#/html/body/div/div/div/p/a at Line 616, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CodigoPaises.profile.xml.html#7d235197-03ca-42df-b836-22857190d23c">StructureDefinition-CodigoPaises.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CodigoPaises.profile.xml.html#9f328872-0606-490c-8fca-c489e4f6d83e">StructureDefinition-CodigoPaises.profile.xml.html#/html/body/div/div/div/p/a at Line 596, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreEspecialidadCl-definitions.html#ef24f0c6-cfa6-427f-9edd-1dd363361f5b">StructureDefinition-CoreEspecialidadCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreEspecialidadCl-definitions.html#4bb30094-f698-4e8a-a79f-9701b98e80bd">StructureDefinition-CoreEspecialidadCl-definitions.html#/html/body/div/div/div/p/a at Line 680, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreEspecialidadCl-examples.html#d4921d23-9685-47df-979b-3d8af1ca549a">StructureDefinition-CoreEspecialidadCl-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreEspecialidadCl-examples.html#d7046537-e29e-4181-9d75-f3ae32583531">StructureDefinition-CoreEspecialidadCl-examples.html#/html/body/div/div/div/p/a at Line 312, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreEspecialidadCl-mappings.html#f6cbf459-e16e-4a16-b3d1-b32c8ccacef8">StructureDefinition-CoreEspecialidadCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreEspecialidadCl-mappings.html#1b43e0ec-5a08-4ae8-8d0a-014ea01353ef">StructureDefinition-CoreEspecialidadCl-mappings.html#/html/body/div/div/div/p/a at Line 367, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreEspecialidadCl.html#e0a35aed-4e6d-49f9-9748-d3eca19e4999">StructureDefinition-CoreEspecialidadCl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreEspecialidadCl.html#528a2965-adac-4981-934b-1399de71028e">StructureDefinition-CoreEspecialidadCl.html#/html/body/div/div/div/p/a at Line 720, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreEspecialidadCl.profile.history.html#520b2803-a8cd-42c0-a414-0b5d217d40b7">StructureDefinition-CoreEspecialidadCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreEspecialidadCl.profile.history.html#5d5a9a13-63f2-4162-98f0-972df24870a8">StructureDefinition-CoreEspecialidadCl.profile.history.html#/html/body/div/div/div/p/a at Line 290, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreEspecialidadCl.profile.json.html#5c64890c-1f1e-4c5f-b157-7637780c15cf">StructureDefinition-CoreEspecialidadCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreEspecialidadCl.profile.json.html#2f85b3e2-01a5-408b-9510-b994fbb2c2b0">StructureDefinition-CoreEspecialidadCl.profile.json.html#/html/body/div/div/div/p/a at Line 2202, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreEspecialidadCl.profile.ttl.html#801c7fb0-93d8-4766-b2bd-234af4972c90">StructureDefinition-CoreEspecialidadCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreEspecialidadCl.profile.ttl.html#3f6da4cb-2753-4cfd-89d8-7169fe2c2de4">StructureDefinition-CoreEspecialidadCl.profile.ttl.html#/html/body/div/div/div/p/a at Line 1961, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreEspecialidadCl.profile.xml.html#43d3a011-f19f-4a5a-b0ed-860418e31903">StructureDefinition-CoreEspecialidadCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreEspecialidadCl.profile.xml.html#f6318a85-4943-4c53-86c3-8cd9c7bb0342">StructureDefinition-CoreEspecialidadCl.profile.xml.html#/html/body/div/div/div/p/a at Line 1993, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreLocalizacionCl-definitions.html#c7a5aadb-cecf-4b29-bf30-739a4ec67bc6">StructureDefinition-CoreLocalizacionCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreLocalizacionCl-definitions.html#dbd0954e-243d-4ace-bb22-d65f297ca555">StructureDefinition-CoreLocalizacionCl-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 814, column 114</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Iso3166-1-N&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreLocalizacionCl-definitions.html#34cace92-a104-49ff-9c5e-9a68611aa1a4">StructureDefinition-CoreLocalizacionCl-definitions.html#/html/body/div/div/div/p/a at Line 1135, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreLocalizacionCl-examples.html#09355159-6d0b-442e-a122-5906b6f94273">StructureDefinition-CoreLocalizacionCl-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreLocalizacionCl-examples.html#a02e6492-eac3-4302-8597-7d6ee64f6a44">StructureDefinition-CoreLocalizacionCl-examples.html#/html/body/div/div/div/p/a at Line 312, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreLocalizacionCl-mappings.html#de79e48f-b2aa-4032-a3cd-b18c98daa0ad">StructureDefinition-CoreLocalizacionCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreLocalizacionCl-mappings.html#9cf9990c-de44-4192-acfb-acf8caef6c0e">StructureDefinition-CoreLocalizacionCl-mappings.html#/html/body/div/div/div/p/a at Line 392, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreLocalizacionCl.html#087f2cca-19f7-4114-a3f8-7b1dc9b7b02b">StructureDefinition-CoreLocalizacionCl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreLocalizacionCl.html#de996e91-b48b-4bf7-afaa-3acc2eb35af1">StructureDefinition-CoreLocalizacionCl.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 901, column 146</a></b></td><td><b>error</b></td><td><b>The link '??' for &quot;Iso3166-1-N (missing link)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreLocalizacionCl.html#a08d702f-0d45-4a73-a066-ddd8a14910d0">StructureDefinition-CoreLocalizacionCl.html#/html/body/div/div/div/p/a at Line 970, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreLocalizacionCl.profile.history.html#b537409f-4d75-48ee-abbf-cc7d399cd6e6">StructureDefinition-CoreLocalizacionCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreLocalizacionCl.profile.history.html#6a9f3712-ae16-4081-ab2f-fe712ace2f17">StructureDefinition-CoreLocalizacionCl.profile.history.html#/html/body/div/div/div/p/a at Line 290, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreLocalizacionCl.profile.json.html#bf2c452b-707f-4e91-8a71-60d930c480d9">StructureDefinition-CoreLocalizacionCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreLocalizacionCl.profile.json.html#3a618906-67d7-44d4-b26a-2fc7472a9f42">StructureDefinition-CoreLocalizacionCl.profile.json.html#/html/body/div/div/div/p/a at Line 4412, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreLocalizacionCl.profile.ttl.html#8d54854f-896f-4f95-b800-3a9d7723550c">StructureDefinition-CoreLocalizacionCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreLocalizacionCl.profile.ttl.html#e23e8faa-f037-45ca-a4d1-ffeebd080497">StructureDefinition-CoreLocalizacionCl.profile.ttl.html#/html/body/div/div/div/p/a at Line 3799, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreLocalizacionCl.profile.xml.html#3647b000-9557-4de3-9a45-1205ad86d1e6">StructureDefinition-CoreLocalizacionCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreLocalizacionCl.profile.xml.html#033e87b8-b3be-45ca-821f-6e25f3447c5d">StructureDefinition-CoreLocalizacionCl.profile.xml.html#/html/body/div/div/div/p/a at Line 3938, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreMedicamentoCl-definitions.html#eaff92ba-20fc-4258-b55d-9790d6d9f97c">StructureDefinition-CoreMedicamentoCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreMedicamentoCl-definitions.html#e0ceb472-e3a8-46a5-9fc6-e28909be4d92">StructureDefinition-CoreMedicamentoCl-definitions.html#/html/body/div/div/div/p/a at Line 866, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreMedicamentoCl-examples.html#ab410bcb-ecc8-40ea-befb-130a59488efb">StructureDefinition-CoreMedicamentoCl-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreMedicamentoCl-examples.html#3c318a4c-8728-4f4f-88ce-93c8de445724">StructureDefinition-CoreMedicamentoCl-examples.html#/html/body/div/div/div/p/a at Line 318, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreMedicamentoCl-mappings.html#6a6532cc-a978-43e2-acb5-400ff90ad149">StructureDefinition-CoreMedicamentoCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreMedicamentoCl-mappings.html#ef876ebc-e114-4e2a-92a8-623830160d33">StructureDefinition-CoreMedicamentoCl-mappings.html#/html/body/div/div/div/p/a at Line 429, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreMedicamentoCl.html#e9125268-7df3-4675-91a4-9e2e391405d5">StructureDefinition-CoreMedicamentoCl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreMedicamentoCl.html#4c9f76c7-e8e8-4f88-9bd5-4f8236675a5a">StructureDefinition-CoreMedicamentoCl.html#/html/body/div/div/div/p/a at Line 829, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreMedicamentoCl.profile.history.html#0739b148-c9a7-44a4-a2b9-5817b84f3885">StructureDefinition-CoreMedicamentoCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreMedicamentoCl.profile.history.html#9a69437c-79ae-493c-a7fa-cd5569b7054a">StructureDefinition-CoreMedicamentoCl.profile.history.html#/html/body/div/div/div/p/a at Line 290, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreMedicamentoCl.profile.json.html#c36832b5-dc9a-4ff7-8ece-33b3c99ec2d8">StructureDefinition-CoreMedicamentoCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreMedicamentoCl.profile.json.html#fb00fe25-20e5-4ec9-9293-9c2777f4ad60">StructureDefinition-CoreMedicamentoCl.profile.json.html#/html/body/div/div/div/p/a at Line 3178, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreMedicamentoCl.profile.ttl.html#c1f1649c-f717-4e29-ac2c-9f51e10fa858">StructureDefinition-CoreMedicamentoCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreMedicamentoCl.profile.ttl.html#c45b9f5f-e98b-45ab-81d5-d24cbb915aef">StructureDefinition-CoreMedicamentoCl.profile.ttl.html#/html/body/div/div/div/p/a at Line 2761, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreMedicamentoCl.profile.xml.html#2ceb336b-20a8-4917-be5c-d791528d7ded">StructureDefinition-CoreMedicamentoCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreMedicamentoCl.profile.xml.html#9c961251-df67-43b1-927c-cd57ed4cba3d">StructureDefinition-CoreMedicamentoCl.profile.xml.html#/html/body/div/div/div/p/a at Line 2879, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreOrganizacionCl-definitions.html#75356e43-d9aa-445d-a3de-922ea9f9ccc2">StructureDefinition-CoreOrganizacionCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreOrganizacionCl-definitions.html#00ef9aac-4675-42fb-8b01-7f16731419aa">StructureDefinition-CoreOrganizacionCl-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 688, column 114</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Iso3166-1-N&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreOrganizacionCl-definitions.html#e41b04a6-5014-4c39-91fb-e66e4a65a613">StructureDefinition-CoreOrganizacionCl-definitions.html#/html/body/div/div/div/p/a at Line 864, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreOrganizacionCl-examples.html#09ed17c4-4df4-4c3a-b8ed-8f714504585a">StructureDefinition-CoreOrganizacionCl-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreOrganizacionCl-examples.html#b3f9be19-be2d-4847-86ff-862843b60d52">StructureDefinition-CoreOrganizacionCl-examples.html#/html/body/div/div/div/p/a at Line 312, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreOrganizacionCl-mappings.html#7e56a788-b905-4add-99c4-b6729b686d6c">StructureDefinition-CoreOrganizacionCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreOrganizacionCl-mappings.html#c94f7325-9639-4eff-9d9a-bb8cf3813437">StructureDefinition-CoreOrganizacionCl-mappings.html#/html/body/div/div/div/p/a at Line 421, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreOrganizacionCl.html#9d1b91af-5622-43d7-b15d-fa58adfc56ca">StructureDefinition-CoreOrganizacionCl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreOrganizacionCl.html#b8d01cc4-bd6d-4964-9e09-422c846d639d">StructureDefinition-CoreOrganizacionCl.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 728, column 150</a></b></td><td><b>error</b></td><td><b>The link '??' for &quot;Iso3166-1-N (missing link)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreOrganizacionCl.html#435d0898-a8c2-4cd9-9305-41c7922f7a57">StructureDefinition-CoreOrganizacionCl.html#/html/body/div/div/div/p/a at Line 795, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreOrganizacionCl.profile.history.html#e4705416-1a4b-44df-8c97-fd64036af725">StructureDefinition-CoreOrganizacionCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreOrganizacionCl.profile.history.html#c3ab1532-2193-48cb-bfe8-eb529e0d4479">StructureDefinition-CoreOrganizacionCl.profile.history.html#/html/body/div/div/div/p/a at Line 290, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreOrganizacionCl.profile.json.html#a18eb8bd-7aef-4417-a6b4-9702d6f533c9">StructureDefinition-CoreOrganizacionCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreOrganizacionCl.profile.json.html#98247e24-1452-42a0-a4a7-fed887fd3894">StructureDefinition-CoreOrganizacionCl.profile.json.html#/html/body/div/div/div/p/a at Line 3112, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreOrganizacionCl.profile.ttl.html#ce74e203-3daa-479f-8b71-352c23d89a48">StructureDefinition-CoreOrganizacionCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreOrganizacionCl.profile.ttl.html#d77b5336-d0ec-4be5-a4ae-7230c72243a8">StructureDefinition-CoreOrganizacionCl.profile.ttl.html#/html/body/div/div/div/p/a at Line 2707, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreOrganizacionCl.profile.xml.html#eeda6f7b-5b46-4e2f-8387-c383d92d7443">StructureDefinition-CoreOrganizacionCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CoreOrganizacionCl.profile.xml.html#c1551a46-3cc1-4017-83fd-8cf082b0cbd3">StructureDefinition-CoreOrganizacionCl.profile.xml.html#/html/body/div/div/div/p/a at Line 2789, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePacienteCl-definitions.html#5c8ec516-454d-4e04-bc81-5a21286cf4e4">StructureDefinition-CorePacienteCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePacienteCl-definitions.html#a5cc1aa2-ffb0-44fb-88ae-560ffe41da21">StructureDefinition-CorePacienteCl-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1048, column 114</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Iso3166-1-N&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePacienteCl-definitions.html#9eaa27da-43bc-420f-a178-79e95e2d85cc">StructureDefinition-CorePacienteCl-definitions.html#/html/body/div/div/div/p/a at Line 1428, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePacienteCl-examples.html#b1df3c13-f830-4a3b-997e-b5337698c6d0">StructureDefinition-CorePacienteCl-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePacienteCl-examples.html#0a8043ef-8662-4cdd-ab58-4d541a90d0de">StructureDefinition-CorePacienteCl-examples.html#/html/body/div/div/div/p/a at Line 324, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePacienteCl-mappings.html#7f97fc3e-031a-4c83-9345-7c3d73f5dcd0">StructureDefinition-CorePacienteCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePacienteCl-mappings.html#4e0fc1b3-1f8b-4815-891d-0e8ca03daf39">StructureDefinition-CorePacienteCl-mappings.html#/html/body/div/div/div/p/a at Line 506, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePacienteCl.html#9df24d7d-f818-420f-8c7b-05c6c8c150a9">StructureDefinition-CorePacienteCl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePacienteCl.html#f0ddc9a5-bf55-49ec-9a1a-53a588073de8">StructureDefinition-CorePacienteCl.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1092, column 145</a></b></td><td><b>error</b></td><td><b>The link '??' for &quot;Iso3166-1-N (missing link)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePacienteCl.html#567baf7c-cea1-435a-82d4-8c513230e0e7">StructureDefinition-CorePacienteCl.html#/html/body/div/div/div/p/a at Line 1172, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePacienteCl.profile.history.html#0634ca9e-ef4b-4dde-b220-eeaf2455cc6c">StructureDefinition-CorePacienteCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePacienteCl.profile.history.html#0f2b52c1-0b73-4a48-9e31-8f768d6f016c">StructureDefinition-CorePacienteCl.profile.history.html#/html/body/div/div/div/p/a at Line 290, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePacienteCl.profile.json.html#15237498-f288-491b-a0d4-c1e63db04519">StructureDefinition-CorePacienteCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePacienteCl.profile.json.html#6b5a165a-4eb7-4ace-b1e7-84a297ef4110">StructureDefinition-CorePacienteCl.profile.json.html#/html/body/div/div/div/p/a at Line 6008, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePacienteCl.profile.ttl.html#f83b3d0c-c597-483a-871a-5d8beaf15f6a">StructureDefinition-CorePacienteCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePacienteCl.profile.ttl.html#ce9d6e44-853d-4cbd-ba3d-45381eac1e70">StructureDefinition-CorePacienteCl.profile.ttl.html#/html/body/div/div/div/p/a at Line 5155, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePacienteCl.profile.xml.html#160d8563-74bb-4053-a0ec-9e3261d6b61f">StructureDefinition-CorePacienteCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePacienteCl.profile.xml.html#9eb3507b-e449-4040-80f1-f3d8b55e65e5">StructureDefinition-CorePacienteCl.profile.xml.html#/html/body/div/div/div/p/a at Line 5412, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePrestadorCl-definitions.html#86fc1be8-857e-41ed-b4bc-925396ea2ddd">StructureDefinition-CorePrestadorCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePrestadorCl-definitions.html#8de54fe3-6061-496a-aa23-5abb4fc5ed4b">StructureDefinition-CorePrestadorCl-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 897, column 114</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Iso3166-1-N&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePrestadorCl-definitions.html#e5dd18eb-f92e-41e8-8dd1-0868f9f3dec3">StructureDefinition-CorePrestadorCl-definitions.html#/html/body/div/div/div/p/a at Line 1601, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePrestadorCl-examples.html#a9af6a95-a118-402b-a5b8-712792e5bfb6">StructureDefinition-CorePrestadorCl-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePrestadorCl-examples.html#c2cd6088-4937-41e9-a321-98f00f4ce22e">StructureDefinition-CorePrestadorCl-examples.html#/html/body/div/div/div/p/a at Line 312, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePrestadorCl-mappings.html#b1db84e3-9b85-46b0-ab5b-e0d4e3f5fc6b">StructureDefinition-CorePrestadorCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePrestadorCl-mappings.html#4a78a3cc-1204-4647-b562-2056bcbee0b0">StructureDefinition-CorePrestadorCl-mappings.html#/html/body/div/div/div/p/a at Line 563, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePrestadorCl.html#55978cc2-2430-4440-8f08-cacff943b032">StructureDefinition-CorePrestadorCl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePrestadorCl.html#cac0ad92-6586-416b-ab42-a4d35015ce5c">StructureDefinition-CorePrestadorCl.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1173, column 150</a></b></td><td><b>error</b></td><td><b>The link '??' for &quot;Iso3166-1-N (missing link)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePrestadorCl.html#7a8d21c5-f997-457b-8e01-ef8551775d80">StructureDefinition-CorePrestadorCl.html#/html/body/div/div/div/p/a at Line 1247, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePrestadorCl.profile.history.html#5081971d-75d0-4153-ba4b-05c818d955a8">StructureDefinition-CorePrestadorCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePrestadorCl.profile.history.html#3b86854d-4c68-484b-a753-9dd6b443a451">StructureDefinition-CorePrestadorCl.profile.history.html#/html/body/div/div/div/p/a at Line 290, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePrestadorCl.profile.json.html#d7615130-3a61-41b0-bbcb-a95c5e11ac39">StructureDefinition-CorePrestadorCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePrestadorCl.profile.json.html#bb7719fa-2684-4f5e-9d6d-6637b5c809c2">StructureDefinition-CorePrestadorCl.profile.json.html#/html/body/div/div/div/p/a at Line 6852, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePrestadorCl.profile.ttl.html#5de9ddc4-c8ca-49af-ad81-ef0e10cfa917">StructureDefinition-CorePrestadorCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePrestadorCl.profile.ttl.html#c436495a-d36c-4b2f-8f64-43d057c465f9">StructureDefinition-CorePrestadorCl.profile.ttl.html#/html/body/div/div/div/p/a at Line 5842, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePrestadorCl.profile.xml.html#f33b38b3-b948-40c7-858f-689a29ed84a6">StructureDefinition-CorePrestadorCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-CorePrestadorCl.profile.xml.html#1e2130b3-50c4-4f84-9210-ce82dfeee864">StructureDefinition-CorePrestadorCl.profile.xml.html#/html/body/div/div/div/p/a at Line 6125, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaBundleCl-definitions.html#cabcd44c-c3dc-4ad6-9472-c3b3368238bc">StructureDefinition-RecetaBundleCl-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaBundleCl-definitions.html#6ea07120-ec5c-4a5d-9f74-31733a50c911">StructureDefinition-RecetaBundleCl-definitions.html#/html/body/div/div/div/p/a at Line 736, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaBundleCl-examples.html#1f75c674-986d-402c-934c-b3edd2c08783">StructureDefinition-RecetaBundleCl-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaBundleCl-examples.html#09485329-546c-4a1b-b7ba-14e14b574378">StructureDefinition-RecetaBundleCl-examples.html#/html/body/div/div/div/p/a at Line 297, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaBundleCl-mappings.html#94b8ae9d-18e0-4190-bd82-8dc741f530c4">StructureDefinition-RecetaBundleCl-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaBundleCl-mappings.html#48b3d8bc-c849-42bb-9818-e38a91d6a575">StructureDefinition-RecetaBundleCl-mappings.html#/html/body/div/div/div/p/a at Line 337, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaBundleCl.html#1850f5c7-e6e2-438f-9c58-e7a67f52ed7c">StructureDefinition-RecetaBundleCl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaBundleCl.html#036444e9-49ea-4561-91a0-71fb6a812028">StructureDefinition-RecetaBundleCl.html#/html/body/div/div/div/p/a at Line 755, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaBundleCl.profile.history.html#059d3fbf-88a9-4c0a-8f5d-94791d37d6b5">StructureDefinition-RecetaBundleCl.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaBundleCl.profile.history.html#f5247e7d-8dda-4762-b9de-11638e4f4739">StructureDefinition-RecetaBundleCl.profile.history.html#/html/body/div/div/div/p/a at Line 286, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaBundleCl.profile.json.html#1589e753-2641-40d6-89e1-3209f2da5b02">StructureDefinition-RecetaBundleCl.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaBundleCl.profile.json.html#a26ffd0a-8ed9-4ebf-8061-f3ac5886444c">StructureDefinition-RecetaBundleCl.profile.json.html#/html/body/div/div/div/p/a at Line 2284, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaBundleCl.profile.ttl.html#4777ac92-df8f-4814-b6c7-f089258bac9a">StructureDefinition-RecetaBundleCl.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaBundleCl.profile.ttl.html#6d70b616-ff5b-42ba-a185-b266f39debe1">StructureDefinition-RecetaBundleCl.profile.ttl.html#/html/body/div/div/div/p/a at Line 2071, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaBundleCl.profile.xml.html#4e473fc2-69c5-4365-bdba-97b429483ea4">StructureDefinition-RecetaBundleCl.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-RecetaBundleCl.profile.xml.html#2843587f-9844-422e-80bc-65a9331dd2f3">StructureDefinition-RecetaBundleCl.profile.xml.html#/html/body/div/div/div/p/a at Line 2126, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Todas-Descargas.html#291c9694-a325-4b71-8332-a40f9a7c1d95">Todas-Descargas.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Todas-Descargas.html#0ef8d4c2-2da3-4e54-99a6-595adecd70f4">Todas-Descargas.html#/html/body/div/div/div/div/div/p/a at Line 223, column 2</a></b></td><td><b>error</b></td><td><b>The link './package.tar' for &quot;Paquete&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Todas-Descargas.html#6893c41f-4dc9-483a-8031-10bbd7ce4c09">Todas-Descargas.html#/html/body/div/div/div/div/div/ul/li/a at Line 232, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-CoreOrganizacionrCl.sch' for &quot;StructureDefinition Organizacion Genérica&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Todas-Descargas.html#e70ce798-fac6-42fa-9197-a1bb55c2d3f9">Todas-Descargas.html#/html/body/div/div/div/div/div/ul/li/a at Line 245, column 8</a></b></td><td><b>error</b></td><td><b>The link './ejemplosjson.tar' for &quot;Ejemplos en json&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Todas-Descargas.html#9f06e1a9-3995-4fa1-97f2-df4acee96139">Todas-Descargas.html#/html/body/div/div/div/div/div/ul/li/a at Line 246, column 8</a></b></td><td><b>error</b></td><td><b>The link './ejemplosxml.tar' for &quot;Ejemplos en xml&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Todas-Descargas.html#ac34b743-d831-445f-8b5b-56b3ef4a5736">Todas-Descargas.html#/html/body/div/div/div/p/a at Line 291, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-COD-Cert-RNPI.change.history.html#a627fec4-1f1c-422c-a29c-144985e942ce">ValueSet-COD-Cert-RNPI.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-COD-Cert-RNPI.change.history.html#79fa8d94-9867-407e-bc97-c26e61fcd45c">ValueSet-COD-Cert-RNPI.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-COD-Cert-RNPI.html#b23b0fcc-fef3-4938-a3b7-53e75327528c">ValueSet-COD-Cert-RNPI.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-COD-Cert-RNPI.html#6904f303-b879-4622-bc94-2782d7b8f478">ValueSet-COD-Cert-RNPI.html#/html/body/div/div/div/p/a at Line 341, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-COD-Cert-RNPI.json.html#4703d046-07a4-420f-88f1-8dd8e34ace45">ValueSet-COD-Cert-RNPI.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-COD-Cert-RNPI.json.html#9fcf7bec-afb1-4695-8bdb-4beca787e254">ValueSet-COD-Cert-RNPI.json.html#/html/body/div/div/div/p/a at Line 320, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-COD-Cert-RNPI.ttl.html#be0ef23e-ddc0-4c72-908f-a14b7ad1f6ba">ValueSet-COD-Cert-RNPI.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-COD-Cert-RNPI.ttl.html#43fd5bd1-5bc7-4aa0-8639-f477358e12f7">ValueSet-COD-Cert-RNPI.ttl.html#/html/body/div/div/div/p/a at Line 328, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-COD-Cert-RNPI.xml.html#3b1329d7-4a18-4e8d-88a8-f5e9f0447941">ValueSet-COD-Cert-RNPI.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-COD-Cert-RNPI.xml.html#2e975d3c-0eed-474d-9834-e2d6472465a0">ValueSet-COD-Cert-RNPI.xml.html#/html/body/div/div/div/p/a at Line 314, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodNacComunas.change.history.html#21fc0b14-e1c8-4730-aa73-e2bc899be140">ValueSet-CodNacComunas.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodNacComunas.change.history.html#caa2c577-b9f0-4b0e-972a-6fde132bf69a">ValueSet-CodNacComunas.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodNacComunas.html#1b3b276f-bd5e-4ada-a953-665f9d1d2654">ValueSet-CodNacComunas.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodNacComunas.html#94fbce07-3c42-47d0-b154-f75e46927971">ValueSet-CodNacComunas.html#/html/body/div/div/div/p/a at Line 342, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodNacComunas.json.html#7a1d3488-0fdf-4fb4-bcbe-ba5448b22f1b">ValueSet-CodNacComunas.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodNacComunas.json.html#bc4ed22e-5c19-4727-8327-6d2a96da48e1">ValueSet-CodNacComunas.json.html#/html/body/div/div/div/p/a at Line 1713, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodNacComunas.ttl.html#6e61575c-7c29-450b-ac44-78e22d6bf92e">ValueSet-CodNacComunas.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodNacComunas.ttl.html#eb4b11d4-cca4-4cd2-8860-6d6c0a859661">ValueSet-CodNacComunas.ttl.html#/html/body/div/div/div/p/a at Line 1372, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodNacComunas.xml.html#a6d5219d-ca60-469f-9a74-d3ab140c9408">ValueSet-CodNacComunas.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodNacComunas.xml.html#6df2e087-64f8-49ef-b5d3-b3346b9732ca">ValueSet-CodNacComunas.xml.html#/html/body/div/div/div/p/a at Line 1702, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodPais.change.history.html#f494053f-29e0-4b68-954e-24510b4aaa75">ValueSet-CodPais.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodPais.change.history.html#d53c0da3-885e-44e9-993c-235df520e480">ValueSet-CodPais.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodPais.html#86e9a942-df15-4a98-b176-afb2fced2217">ValueSet-CodPais.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodPais.html#3675ca9e-d97d-4d96-824b-ef05e48e06a6">ValueSet-CodPais.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 265, column 95</a></b></td><td><b>error</b></td><td><b>The link 'null' for &quot;http://hl7.org/fhir/ValueSet/iso3166-1-N&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodPais.html#13016fd6-1767-4e6d-b263-34eae3320d87">ValueSet-CodPais.html#/html/body/div/div/div/p/a at Line 343, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodPais.json.html#6e6351cf-c6b3-431b-ad5f-e783fb47e5a9">ValueSet-CodPais.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodPais.json.html#9d5b049a-baa7-4803-a02c-378d776fb130">ValueSet-CodPais.json.html#/html/body/div/div/div/p/a at Line 329, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodPais.ttl.html#41cb8818-f41f-4e53-8b79-fc0fa414e223">ValueSet-CodPais.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodPais.ttl.html#234f82b6-b517-49b2-9db9-b2d070168405">ValueSet-CodPais.ttl.html#/html/body/div/div/div/p/a at Line 336, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodPais.xml.html#fc63976e-8f81-4f87-83ec-545db3a9b8b1">ValueSet-CodPais.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodPais.xml.html#01e62925-f9c4-44f9-814b-3149caa79efa">ValueSet-CodPais.xml.html#/html/body/div/div/div/p/a at Line 318, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodProv.change.history.html#c0a3e4ec-9021-4d3c-aa10-b64b4dd58854">ValueSet-CodProv.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodProv.change.history.html#84584e57-05ed-4f91-831b-621b52a0b91d">ValueSet-CodProv.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodProv.html#9b55e86b-2878-4c48-be12-d505d6fd7632">ValueSet-CodProv.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodProv.html#b35f671a-ae8b-4986-a5c0-0a5f2af333a6">ValueSet-CodProv.html#/html/body/div/div/div/p/a at Line 342, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodProv.json.html#b0513594-109c-4661-8bc0-9853a24f08c9">ValueSet-CodProv.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodProv.json.html#ac98e6ae-2103-4933-9b00-801f0d6131c4">ValueSet-CodProv.json.html#/html/body/div/div/div/p/a at Line 553, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodProv.ttl.html#9876af32-5bc1-4adf-9d70-905f7508016a">ValueSet-CodProv.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodProv.ttl.html#96cfe141-a514-40d9-a3de-cb16b0fb21ba">ValueSet-CodProv.ttl.html#/html/body/div/div/div/p/a at Line 502, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodProv.xml.html#23336def-87a6-4ed1-a275-fdd565950b71">ValueSet-CodProv.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodProv.xml.html#41a83dcb-332b-41a4-aaad-8fc8f2c8e062">ValueSet-CodProv.xml.html#/html/body/div/div/div/p/a at Line 542, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodReg.change.history.html#cf06de9b-0fac-46f3-a071-36ebcb162c52">ValueSet-CodReg.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodReg.change.history.html#33447326-0449-4f75-9e77-039ef934c23f">ValueSet-CodReg.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodReg.html#ff94ceea-d6c0-4bf1-b7ce-bf354b838508">ValueSet-CodReg.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodReg.html#dc45c6a7-32d4-4b61-beac-819f278fd47e">ValueSet-CodReg.html#/html/body/div/div/div/p/a at Line 342, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodReg.json.html#651d1ce9-4372-463f-9849-fdb99150e381">ValueSet-CodReg.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodReg.json.html#464ea3bd-99e7-4650-aa99-495cbfe0a29b">ValueSet-CodReg.json.html#/html/body/div/div/div/p/a at Line 393, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodReg.ttl.html#00d7dc53-5007-448e-b70c-34c8585c7145">ValueSet-CodReg.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodReg.ttl.html#686a700a-5d14-4caa-92de-e708f3db2151">ValueSet-CodReg.ttl.html#/html/body/div/div/div/p/a at Line 382, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodReg.xml.html#150a44ee-1740-43f7-9914-cf12f0c952b7">ValueSet-CodReg.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CodReg.xml.html#eac76d1d-f734-44c0-92b1-4bc5da9a7b3f">ValueSet-CodReg.xml.html#/html/body/div/div/div/p/a at Line 382, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-Esp-Tabla-DEIS.change.history.html#fd830369-69e9-4f73-a241-8b76429e1da7">ValueSet-Esp-Tabla-DEIS.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-Esp-Tabla-DEIS.change.history.html#4fabec39-26da-4d86-aa01-46885422af95">ValueSet-Esp-Tabla-DEIS.change.history.html#/html/body/div/div/div/p/a at Line 294, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-Esp-Tabla-DEIS.html#30318509-f210-48f3-92b3-2b6ef7141cbc">ValueSet-Esp-Tabla-DEIS.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-Esp-Tabla-DEIS.html#6d8b6ef5-2eef-4522-aade-09837d552d80">ValueSet-Esp-Tabla-DEIS.html#/html/body/div/div/div/p/a at Line 344, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-Esp-Tabla-DEIS.json.html#e59abd71-208a-4ad5-932a-62d52d16f400">ValueSet-Esp-Tabla-DEIS.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-Esp-Tabla-DEIS.json.html#19e107f2-5190-4459-97fd-b2254823fb2e">ValueSet-Esp-Tabla-DEIS.json.html#/html/body/div/div/div/p/a at Line 545, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-Esp-Tabla-DEIS.ttl.html#0165a435-4723-422b-94f3-ba670c1db5a1">ValueSet-Esp-Tabla-DEIS.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-Esp-Tabla-DEIS.ttl.html#a5276d7c-4621-4275-beb8-d58ee97f8e43">ValueSet-Esp-Tabla-DEIS.ttl.html#/html/body/div/div/div/p/a at Line 496, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-Esp-Tabla-DEIS.xml.html#6f6eb901-6725-434c-9fc0-ec0982100209">ValueSet-Esp-Tabla-DEIS.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-Esp-Tabla-DEIS.xml.html#267cd540-6b04-43c1-9a54-612f68d6421c">ValueSet-Esp-Tabla-DEIS.xml.html#/html/body/div/div/div/p/a at Line 533, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#ce3b0ab3-ed1c-48e2-8839-9138a2da5e72">artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#257891bc-f3ed-466d-9632-f6b1a5ecdbdc">artifacts.html#/html/body/div/div/div/p/a at Line 474, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#6b993a20-57f3-4d4d-9351-7737ab8383b3">index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#9de96524-0348-4216-a1c5-cdd8da110fbd">index.html#/html/body/div/div/div/div/div/p/a at Line 229, column 5</a></b></td><td><b>error</b></td><td><b>The link 'balloting.html' for &quot;Sobre Balotaje&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#13dabe9e-8aaa-44dd-af4c-20774308e18f">index.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 273, column 12</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#55a1054d-c741-4a9d-9482-f915452eb425">index.html#/html/body/div/div/div/p/a at Line 363, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#b8082910-c1a4-4f8d-a646-1f7394f8b564">toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 10</a></b></td><td><b>error</b></td><td><b>The link 'extensiones.html' for &quot;Extensiones&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#d5859405-8782-475a-a26c-e2cf5e819afb">toc.html#/html/body/div/div/div/p/a at Line 232, column 34</a></b></td><td><b>error</b></td><td><b>The link 'ppizarro.delgado@minsal.cl' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_ImplementationGuide-hl7.fhir.cl.corecl"> </a>
+<h2><a href="ImplementationGuide-hl7.fhir.cl.corecl.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\ImplementationGuide-hl7.fhir.cl.corecl.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.definition.resource[2].description</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_Location-LocalizacionEjemploCL1"> </a>
+<h2><a href="Location-LocalizacionEjemploCL1.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Location-LocalizacionEjemploCL1.json</a></h2>
+ <ul style="font-size: 7px"><li>Location: Validated against <i>this.</i><a href="StructureDefinition-CoreLocalizacionCl.html">Perfil de Localización de Objetos e Infraestructura</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Location.managingOrganization (l54/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'https://fhir.cens.cl/baseR4/Organization/ORG-000/'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_Medication-MedicamentoCl"> </a>
+<h2><a href="Medication-MedicamentoCl.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Medication-MedicamentoCl.json</a></h2>
+ <ul style="font-size: 7px"><li>Medication: Validated against <i>this.</i><a href="StructureDefinition-CoreMedicamentoCl.html">Medicamento Core Nacional</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Medication.identifier[1].value (l19/c6)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Medication.code.coding[0] (l28/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://minsal.cl/semantikos/description-id' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_Patient-PacienteCL"> </a>
+<h2><a href="Patient-PacienteCL.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Patient-PacienteCL.json</a></h2>
+ <ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-CorePacienteCl.html">Perfil Paciente Para Core Nacional</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[0].type.extension[0].value.ofType(CodeableConcept).coding[0] (l42/c18)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[0].type.coding[0] (l51/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.address[0].city (l81/c22)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet https://apis.digital.gob.cl/dpa/comunas/ not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.address[0].district (l82/c25)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet https://apis.digital.gob.cl/dpa/provincias/ not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.address[0].state (l83/c20)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet https://apis.digital.gob.cl/dpa/regiones/ not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_Patient-PacienteCL2"> </a>
+<h2><a href="Patient-PacienteCL2.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Patient-PacienteCL2.json</a></h2>
+ <ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-CorePacienteCl.html">Perfil Paciente Para Core Nacional</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.extension[0].value.ofType(CodeableConcept).coding[0] (l33/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[0].type.extension[0].value.ofType(CodeableConcept).coding[0] (l49/c18)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[0].type.coding[0] (l58/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.address[0].city (l84/c23)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet https://apis.digital.gob.cl/dpa/comunas/ not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.address[0].district (l85/c25)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet https://apis.digital.gob.cl/dpa/provincias/ not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.address[0].state (l86/c21)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet https://apis.digital.gob.cl/dpa/regiones/ not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_Patient-PacienteCl-3"> </a>
+<h2><a href="Patient-PacienteCl-3.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Patient-PacienteCl-3.json</a></h2>
+ <ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-CorePacienteCl.html">Perfil Paciente Para Core Nacional</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.extension[0].value.ofType(CodeableConcept).coding[0] (l33/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[0].type.extension[0].value.ofType(CodeableConcept).coding[0] (l49/c18)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[0].type.coding[0] (l58/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.address[0].city (l81/c23)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet https://apis.digital.gob.cl/dpa/comunas/ not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.address[0].district (l82/c25)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet https://apis.digital.gob.cl/dpa/provincias/ not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.address[0].state (l83/c21)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet https://apis.digital.gob.cl/dpa/regiones/ not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_Practitioner-PrestadorCL"> </a>
+<h2><a href="Practitioner-PrestadorCL.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Practitioner-PrestadorCL.json</a></h2>
+ <ul style="font-size: 7px"><li>Practitioner: Validated against <i>this.</i><a href="StructureDefinition-CorePrestadorCl.html">Prestador Core-CL</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Practitioner.address[0].city (l94/c24)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet https://apis.digital.gob.cl/dpa/comunas/ not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Practitioner.address[0].district (l95/c25)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet https://apis.digital.gob.cl/dpa/provincias/ not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Practitioner.address[0].state (l96/c21)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet https://apis.digital.gob.cl/dpa/regiones/ not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Practitioner.qualification[0].code.coding[0] (l43/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Practitioner.qualification[1].code.coding[0] (l54/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Practitioner.qualification[2].code.coding[0] (l65/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_PractitionerRole-EspecialidadCL"> </a>
+<h2><a href="PractitionerRole-EspecialidadCL.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\PractitionerRole-EspecialidadCL.json</a></h2>
+ <ul style="font-size: 7px"><li>PractitionerRole: Validated against <i>this.</i><a href="StructureDefinition-CoreEspecialidadCl.html">Perfil utilizaco para asignar una o mas especialidades medicas a un prestador de salud.</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>PractitionerRole.practitioner (l11/c57)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'http://minsal/RNPI/Practitioner/3420'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>PractitionerRole.specialty[0].coding[0] (l17/c10)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>PractitionerRole.specialty[1].coding[0] (l25/c10)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>PractitionerRole.specialty[2].coding[0] (l33/c10)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_StructureDefinition-CodigoPaises"> </a>
+<h2><a href="StructureDefinition-CodigoPaises.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\StructureDefinition-CodigoPaises.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition</b></td><td><b>warning</b></td><td title="sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_StructureDefinition-CorePacienteCl"> </a>
+<h2><a href="StructureDefinition-CorePacienteCl.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\StructureDefinition-CorePacienteCl.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[35].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://apis.digital.gob.cl/dpa/comunas/ on element Patient.address.city could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[36].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://apis.digital.gob.cl/dpa/provincias/ on element Patient.address.district could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[37].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://apis.digital.gob.cl/dpa/regiones/ on element Patient.address.state could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[75].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://apis.digital.gob.cl/dpa/comunas/ on element Patient.address.city could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[76].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://apis.digital.gob.cl/dpa/provincias/ on element Patient.address.district could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[77].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://apis.digital.gob.cl/dpa/regiones/ on element Patient.address.state could not be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_StructureDefinition-CorePrestadorCl"> </a>
+<h2><a href="StructureDefinition-CorePrestadorCl.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\StructureDefinition-CorePrestadorCl.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[22].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://apis.digital.gob.cl/dpa/comunas/ on element Practitioner.address.city could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[23].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://apis.digital.gob.cl/dpa/provincias/ on element Practitioner.address.district could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[24].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://apis.digital.gob.cl/dpa/regiones/ on element Practitioner.address.state could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[58].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://apis.digital.gob.cl/dpa/comunas/ on element Practitioner.address.city could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[59].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://apis.digital.gob.cl/dpa/provincias/ on element Practitioner.address.district could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[60].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://apis.digital.gob.cl/dpa/regiones/ on element Practitioner.address.state could not be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_StructureDefinition-RecetaBundleCl"> </a>
+<h2><a href="StructureDefinition-RecetaBundleCl.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\StructureDefinition-RecetaBundleCl.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[7].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[3].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://core.hl7chile.cl/StructureDefinition/RecetaBundleCl')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_ValueSet-CodNacComunas"> </a>
+<h2><a href="ValueSet-CodNacComunas.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\ValueSet-CodNacComunas.json</a></h2>
+ <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.where(id = 'CodNacComunas')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/comunas/</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_ValueSet-CodProv"> </a>
+<h2><a href="ValueSet-CodProv.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\ValueSet-CodProv.json</a></h2>
+ <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.where(id = 'CodProv')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/provincias/</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_ValueSet-CodReg"> </a>
+<h2><a href="ValueSet-CodReg.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\ValueSet-CodReg.json</a></h2>
+ <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.where(id = 'CodReg')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system https://apis.digital.gob.cl/dpa/regiones/</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_jmansilla_Downloads_FHIR_Core_CH-0.85_fsh-generated_resources_ValueSet-Esp-Tabla-DEIS"> </a>
+<h2><a href="ValueSet-Esp-Tabla-DEIS.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\ValueSet-Esp-Tabla-DEIS.json</a></h2>
+ <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.where(id = 'Esp-Tabla-DEIS')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system https://minsal.cl/TablaEspecialidades</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="Reference_REF_CantResolve"> </a>
+<h2>Reference_REF_CantResolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Location-LocalizacionEjemploCL1.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Location-LocalizacionEjemploCL1.json</a></td><td><b>Unable to resolve resource 'https://fhir.cens.cl/baseR4/Organization/ORG-000/'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="PractitionerRole-EspecialidadCL.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\PractitionerRole-EspecialidadCL.json</a></td><td><b>Unable to resolve resource 'http://minsal/RNPI/Practitioner/3420'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TERMINOLOGY_TX_SYSTEM_NO_CODE"> </a>
+<h2>TERMINOLOGY_TX_SYSTEM_NO_CODE</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-PacienteCL.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Patient-PacienteCL.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-PacienteCL.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Patient-PacienteCL.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-PacienteCL2.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Patient-PacienteCL2.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-PacienteCL2.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Patient-PacienteCL2.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-PacienteCL2.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Patient-PacienteCL2.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-PacienteCl-3.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Patient-PacienteCl-3.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-PacienteCl-3.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Patient-PacienteCl-3.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-PacienteCl-3.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Patient-PacienteCl-3.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Practitioner-PrestadorCL.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Practitioner-PrestadorCL.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Practitioner-PrestadorCL.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Practitioner-PrestadorCL.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Practitioner-PrestadorCL.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Practitioner-PrestadorCL.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="PractitionerRole-EspecialidadCL.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\PractitionerRole-EspecialidadCL.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="PractitionerRole-EspecialidadCL.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\PractitionerRole-EspecialidadCL.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="PractitionerRole-EspecialidadCL.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\PractitionerRole-EspecialidadCL.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Medication-MedicamentoCl.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Medication-MedicamentoCl.json</a></td><td><b>Code System URI 'http://minsal.cl/semantikos/description-id' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Medication-MedicamentoCl-2.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Medication-MedicamentoCl-2.json</a></td><td><b>Code System URI 'http://minsal.cl/semantikos/description-id' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_ValueSet_NotFound2"> </a>
+<h2>Terminology_TX_ValueSet_NotFound2</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-PacienteCL.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Patient-PacienteCL.json</a></td><td><b>ValueSet https://apis.digital.gob.cl/dpa/comunas/ not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-PacienteCL.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Patient-PacienteCL.json</a></td><td><b>ValueSet https://apis.digital.gob.cl/dpa/provincias/ not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-PacienteCL.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Patient-PacienteCL.json</a></td><td><b>ValueSet https://apis.digital.gob.cl/dpa/regiones/ not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-PacienteCL2.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Patient-PacienteCL2.json</a></td><td><b>ValueSet https://apis.digital.gob.cl/dpa/comunas/ not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-PacienteCL2.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Patient-PacienteCL2.json</a></td><td><b>ValueSet https://apis.digital.gob.cl/dpa/provincias/ not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-PacienteCL2.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Patient-PacienteCL2.json</a></td><td><b>ValueSet https://apis.digital.gob.cl/dpa/regiones/ not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-PacienteCl-3.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Patient-PacienteCl-3.json</a></td><td><b>ValueSet https://apis.digital.gob.cl/dpa/comunas/ not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-PacienteCl-3.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Patient-PacienteCl-3.json</a></td><td><b>ValueSet https://apis.digital.gob.cl/dpa/provincias/ not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-PacienteCl-3.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Patient-PacienteCl-3.json</a></td><td><b>ValueSet https://apis.digital.gob.cl/dpa/regiones/ not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Practitioner-PrestadorCL.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Practitioner-PrestadorCL.json</a></td><td><b>ValueSet https://apis.digital.gob.cl/dpa/comunas/ not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Practitioner-PrestadorCL.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Practitioner-PrestadorCL.json</a></td><td><b>ValueSet https://apis.digital.gob.cl/dpa/provincias/ not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Practitioner-PrestadorCL.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Practitioner-PrestadorCL.json</a></td><td><b>ValueSet https://apis.digital.gob.cl/dpa/regiones/ not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_String_WS"> </a>
+<h2>Type_Specific_Checks_DT_String_WS</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ImplementationGuide-hl7.fhir.cl.corecl.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\ImplementationGuide-hl7.fhir.cl.corecl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Medication-MedicamentoCl.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\Medication-MedicamentoCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-RecetaBundleCl.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\StructureDefinition-RecetaBundleCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-RecetaBundleCl.html">C:\Users\jmansilla\Downloads\FHIR_Core_CH-0.85\fsh-generated\resources\StructureDefinition-RecetaBundleCl.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+</table>
+</body>
+</html>

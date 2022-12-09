@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="PacienteCl-3"/>
+  <meta>
+    <versionId value="2"/>
+    <lastUpdated value="2021-07-13T00:22:41.166Z"/>
+    <profile value="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>PABLO RODRIGO PIZARRO (OFFICIAL)</b> male, DoB: 1983-08-04 ( Chile: 15602754-5 (OFFICIAL))</p></div>
+  </text>
+  <extension url="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises">
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:iso:std:iso:3166"/>
+        <code value="152"/>
+        <display value="Chile"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <extension url="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises">
+        <valueCodeableConcept>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="152"/>
+            <display value="Chile"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <coding>
+        <system value="https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoDNI"/>
+        <code value="NNCHL"/>
+        <display value="Chile"/>
+      </coding>
+    </type>
+    <system value="http://regcivil.cl/Validacion/RUN"/>
+    <value value="15602754-5"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <family value="PIZARRO">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-mothers-family">
+        <valueString value="DELGADO"/>
+      </extension>
+    </family>
+    <given value="PABLO"/>
+    <given value="RODRIGO"/>
+  </name>
+  <telecom>
+    <system value="email"/>
+    <value value="ppizarro.delgado@minsal.cl"/>
+    <use value="work"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1983-08-04"/>
+  <deceasedBoolean value="false"/>
+  <address>
+    <use value="home"/>
+    <city value="13120"/>
+    <district value="131"/>
+    <state value="13"/>
+    <country value="152"/>
+  </address>
+</Patient>

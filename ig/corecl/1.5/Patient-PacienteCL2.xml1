@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="PacienteCL2"/>
+  <meta>
+    <profile value="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Wilmer Andres de Dios Cabrales (OFFICIAL)</b> male, DoB: 1968-11-03 ( Passport number: P3334521.2 (OFFICIAL))</p></div>
+  </text>
+  <extension url="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises">
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:iso:std:iso:3166"/>
+        <code value="222"/>
+        <display value="El Salvador"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <extension url="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises">
+        <valueCodeableConcept>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="222"/>
+            <display value="El Salvador"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PPN"/>
+        <display value="Passport number"/>
+      </coding>
+    </type>
+    <system value="http://Pasaportes.cl/Validacion/Pass"/>
+    <value value="P3334521.2"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <family value="Cabrales">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-mothers-family">
+        <valueString value="Rivas"/>
+      </extension>
+    </family>
+    <given value="Wilmer"/>
+    <given value="Andres"/>
+    <given value="de Dios"/>
+  </name>
+  <telecom>
+    <system value="email"/>
+    <value value="wilCAB12l@wilmermail.com"/>
+    <use value="home"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1968-11-03"/>
+  <address>
+    <use value="temp"/>
+    <line value="Calle 4 Norte, 52, pieza 802"/>
+    <city value="15101"/>
+    <district value="151"/>
+    <state value="15"/>
+    <country value="152"/>
+  </address>
+</Patient>

@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <title>HL7.FHIR.CL.CORECL\Resumen de artefactos - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="http://hl7.org/fhir" />
+
+    <link href="fhir.css" rel="stylesheet" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet" />
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet" />
+    <link href="assets/css/pygments-manni.css" rel="stylesheet" />
+    <link href="assets/css/jquery-ui.css" rel="stylesheet" />
+    <link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/fhir.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="fhir-table-scripts.js">
+    </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png" />
+    <link rel="shortcut icon" href="assets/ico/favicon.png" />
+</head>
+
+<body onload="document.body.style.opacity='1'">
+
+    <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">
+        h2 {
+            --heading-prefix: "10"
+        }
+        
+        h3,
+        h4,
+        h5,
+        h6 {
+            --heading-prefix: "10.0"
+        }
+    </style>
+    <div id="segment-header" class="segment">
+        <!-- segment-header -->
+        <div class="container">
+            <!-- container -->
+            <!-- Placeholder for child template header declarations 
+<div id="hl7-nav">
+    <a id="hl7-logo" no-external="true" href="http://hl7.org">
+        <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png" />
+    </a>
+</div>
+-->
+            <div id="hl7-nav-left">
+                <a id="header-logo-left" no-external="true" href="http://minsal.cl">
+                    <img height="50" alt="Visitar sitio web del Ministerio de Salud de Chile" src="minsal.png" />
+                </a>
+            </div>
+
+            <div id="hl7-nav-right">
+                <a id="header-logo-righ" no-external="true" href="http://hl7chile.cl">
+                    <img height="50" alt="Visitar HL7 Chile" src="hl7chile.png" />
+                </a>
+            </div>
+
+            <div id="ig-status">
+                <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación Core-CL FHIR R4, (Versión Evolutiva)</span><br/>1.5.0 - CI Build</p>
+            </div>
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">
+        <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">
+            <!-- container -->
+            <!-- HEADER CONTENT -->
+
+            <nav class="navbar navbar-inverse">
+                <!--status-bar-->
+                <div class="container">
+                    <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+                    <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+                    <div class="nav-collapse collapse navbar-inverse-collapse">
+                        <!-- menu.xml  -->
+
+                        <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+                            <li>
+                                <a href="index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="Alcances-Objetivos.html">Objetivos</a>
+                            </li>
+                            <li>
+                                <a href="Aspectos-Generales.html">Generalidades</a>
+                            </li>
+                            <li>
+                                <a href="Consolidado-Operaciones.html">Operaciones</a>
+                            </li>
+                            <li class="dropdown">
+                                <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artefactos
+      <b class="caret"></b>
+    </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="Perfiles.html">Perfiles</a>
+                                    </li>
+                                    <li>
+                                        <a href="Extensiones.html">Extensiones</a>
+                                    </li>
+                                    <li>
+                                        <a href="Set-De-Validacion-ValueSets.html">Valuesets</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a data-toggle="dropdown" href="#" class="dropdown-toggle">Perfiles
+      <b class="caret"></b>
+    </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="StructureDefinition-CorePacienteCl.html">Paciente</a>
+                                    </li>
+                                    <li>
+                                        <a href="StructureDefinition-CorePrestadorCl.html">Prestador</a>
+                                    </li>
+                                    <li>
+                                        <a href="StructureDefinition-CoreEspecialidadCl.html">Especialidad Prestador</a>
+                                    </li>
+                                    <li>
+                                        <a href="StructureDefinition-CoreOrganizacionCl.html">Organización</a>
+                                    </li>
+                                    <li>
+                                        <a href="StructureDefinition-CoreMedicamentoCl.html">Medicamento</a>
+                                    </li>
+                                    <li>
+                                        <a href="StructureDefinition-CoreLocalizacionCl.html">Localización</a>
+                                    </li>
+                                    <li>
+                                        <a href="StructureDefinition-ProvenanceCl.html">Provenance</a>
+                                    </li>
+                                    <li>
+                                        <a href="StructureDefinition-EncounterCL.html">Encounter</a>
+                                    </li>
+                                    <li>
+                                        <a href="StructureDefinition-ImmunizationCL.html">Inmunizacion</a>
+                                    </li>
+                                    <li>
+                                        <a href="StructureDefinition-AuditEventCl.html">Auditoría</a>
+                                    </li>
+                                    <li>
+                                        <a href="StructureDefinition-BundleCl.html">Bundle</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="Set-Ejemplos.html">Ejemplos</a>
+                            </li>
+                            <li>
+                                <a href="Todas-Descargas.html">Descargas</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.nav-collapse -->
+                </div>
+                <!-- /.container -->
+            </nav>
+            <!-- /.navbar -->
+            <!-- /HEADER CONTENT -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">
+        <!-- segment-breadcrumb -->
+        <div class="container">
+            <!-- container -->
+            <ul class="breadcrumb">
+                <li><a href='toc.html'><b>Table of Contents</b></a></li>
+                <li><b>Resumen de artefactos</b></li>
+
+            </ul>
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">
+        <!-- segment-content -->
+        <div class="container">
+            <!-- container -->
+            <div class="row">
+                <div class="inner-wrapper">
+
+                    <style type="text/css">
+                        h2:before {
+                            color: silver;
+                            counter-increment: section;
+                            content: var(--heading-prefix) " ";
+                        }
+                        
+                        h3:before {
+                            color: silver;
+                            counter-increment: sub-section;
+                            content: var(--heading-prefix) "." counter(sub-section) " ";
+                        }
+                        
+                        h4:before {
+                            color: silver;
+                            counter-increment: composite;
+                            content: var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";
+                        }
+                        
+                        h5:before {
+                            color: silver;
+                            counter-increment: detail;
+                            content: var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";
+                        }
+                        
+                        h6:before {
+                            color: silver;
+                            counter-increment: more-detail;
+                            content: var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";
+                        }
+                    </style>
+                    <div class="col-12">
+                        <!--ReleaseHeader-->
+                        <p id="publish-box">Guía de Implementación Core-CL FHIR R4, (Versión Evolutiva) - Local Development build (v1.5.0). See the <a href="https://hl7chile.cl/fhir/ig/CoreCL/history.html">Directory of published versions</a></p>
+                        <!--EndReleaseHeader-->
+                        <h2>Resumen de artefactos</h2>
+
+                        <!--DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten-->
+                        <div xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://hl7.org/fhir" class="markdown-toc">
+                            <p>Contents:</p>
+                            <ul>
+                                <li>
+                                    <a href="#1">Structures: Resource Profiles</a>
+                                </li>
+                                <li>
+                                    <a href="#2">Structures: Extension Definitions</a>
+                                </li>
+                                <li>
+                                    <a href="#3">Terminology: Value Sets</a>
+                                </li>
+                                <li>
+                                    <a href="#4">Terminology: Code Systems</a>
+                                </li>
+                                <li>
+                                    <a href="#5">Example: Example Instances</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://hl7.org/fhir">
+                            <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+                            <a name="1"> </a>
+                            <h3>Structures: Resource Profiles </h3>
+                            <p>
+                                <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
+                            </p>
+                            <p>
+                                <table class="grid">
+                                    <col style="width:20%" />
+                                    <tbody>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-AuditEventCl.html" title="StructureDefinition/AuditEventCl">Perfil para log de seguridad de acceso a recursos</a>
+                                            </td>
+                                            <td>
+                                                <p>Perfil para genererar un recurso que permita desarrollar logs de auditoría en cuanto al acceso y manejo de recursos FHIR</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-BundleCl.html" title="StructureDefinition/BundleCl">BundleCL</a>
+                                            </td>
+                                            <td>
+                                                <p>Este Perfil describe como debe ser el recurso Bundle que permite transportar una serie de recursos de PRescripción para conformar una receta</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-CoreEspecialidadCl.html" title="StructureDefinition/CoreEspecialidadCl">Perfil utilizaco para asignar una o mas especialidades medicas a un prestador de salud.</a>
+                                            </td>
+                                            <td>
+                                                <p>Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso de Especialidad
+                                                    Médica para la denominación de Prescriptor en Chile</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-EncounterCL.html" title="StructureDefinition/EncounterCL">Encuentro CL</a>
+                                            </td>
+                                            <td>
+                                                <p>Definición de un Encuentro clínico remoto para las necesidades de interoperabilidad en Chile.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-ImmunizationCL.html" title="StructureDefinition/ImmunizationCL">Inmunización CL</a>
+                                            </td>
+                                            <td>
+                                                <p>Definición de un evento de inmunización para las necesidades de interoperabilidad en Chile.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-CoreLocalizacionCl.html" title="StructureDefinition/CoreLocalizacionCl">Perfil de Localización de Objetos e Infraestructura</a>
+                                            </td>
+                                            <td>
+                                                <p>Este perfil determina la ubicación especifica para un evento, objeto o Infraestructura específica. Este perfil permite vinlcular la localización especifica con una organización o espacio físico específico</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-CoreMedicamentoCl.html" title="StructureDefinition/CoreMedicamentoCl">Medicamento Core Nacional</a>
+                                            </td>
+                                            <td>
+                                                <p>Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica desde la visión del TFC que se usará para poder manejar farmacos ya registrados, y que deberán ser consultados
+                                                    por los prestadores a la hora de prescribir algno.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-CoreOrganizacionCl.html" title="StructureDefinition/CoreOrganizacionCl">Perfil de Organización de Salud en Chile</a>
+                                            </td>
+                                            <td>
+                                                <p>Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado para también cubrir las necesidades nacionales de un Recurso de Organzación
+                                                    en Salud</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-CorePacienteCl.html" title="StructureDefinition/CorePacienteCl">Perfil Paciente Para Core Nacional</a>
+                                            </td>
+                                            <td>
+                                                <p>Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso Paciente para
+                                                    un Historial Clínico Nacional</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-CorePrestadorCl.html" title="StructureDefinition/CorePrestadorCl">Prestador Core-CL</a>
+                                            </td>
+                                            <td>
+                                                <p>Este Perfil fue creado para cubrir la descripción de un Prestador a nivel Nacional</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-ProvenanceCl.html" title="StructureDefinition/ProvenanceCl">Validación de la Procedencia de Recursos</a>
+                                            </td>
+                                            <td>
+                                                <p>Este Perfil describe la forma de validación respecto a la procedencia de un recurso genrado durante un acto clínico.</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                            <a name="2"> </a>
+                            <h3>Structures: Extension Definitions </h3>
+                            <p>
+                                <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
+                            </p>
+                            <p>
+                                <table class="grid">
+                                    <col style="width:20%" />
+                                    <tbody>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-ComunasCl.html" title="StructureDefinition/ComunasCl">Códigos para Comunas en Chile</a>
+                                            </td>
+                                            <td>
+                                                <p>Esta extensión que permite codiificar las Comunas en Chile en el campo de Dirección</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-ContactoParticipantes.html" title="StructureDefinition/ContactoParticipantes">Contacto de los participantes secundarios del encuentro</a>
+                                            </td>
+                                            <td>
+                                                <p>Esta extensión incluye los codigos de los medios de contacto que se tiene para los participantes secundarios</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-EspecialidadesMedico.html" title="StructureDefinition/EspecialidadesMedico">Especialidad del medico principal</a>
+                                            </td>
+                                            <td>
+                                                <p>Esta extensión incluye los codigos de las especialidades que puede tener el medico principal</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-IdContacto.html" title="StructureDefinition/IdContacto">Identificación del Contacto de un Paciente</a>
+                                            </td>
+                                            <td>
+                                                <p>Identificación de contacto de paciente en especial para casos en los cuales este actúa como Tutor Legal</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-NombreCampana.html" title="StructureDefinition/NombreCampana">Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)</a>
+                                            </td>
+                                            <td>
+                                                <p>Esta extensión incluye los nombres de las distintas Campañas que se realizan y estan registradas en el RNI</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-NotasEncuentro.html" title="StructureDefinition/NotasEncuentro">Notas realizadas en un encuentro por Comite</a>
+                                            </td>
+                                            <td>
+                                                <p>Esta extensión incluye los codigos de los medios de contacto que se tiene para los participantes secundarios</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-ObservacionesDiagnostico.html" title="StructureDefinition/ObservacionesDiagnostico">Observaciones o comentarios simples respecto a un diagnostico</a>
+                                            </td>
+                                            <td>
+                                                <p>Esta extension sirve para insertar comentarios acerca a un diagnostico medico realizado en un encuentro remoto</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-CodigoPaises.html" title="StructureDefinition/CodigoPaises">Codigo de Identificación de países</a>
+                                            </td>
+                                            <td>
+                                                <p>Esta extensión incluye códigos de paises de origen</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-ProvinciasCl.html" title="StructureDefinition/ProvinciasCl">Códigos para Provincias en Chile</a>
+                                            </td>
+                                            <td>
+                                                <p>Esta extensión que permite codificar las Provincias en Chile en el campo de Dirección</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-RazonNOrealizarse.html" title="StructureDefinition/RazonNOrealizarse">Código de las razones por la cual no se pudo realizar la atención</a>
+                                            </td>
+                                            <td>
+                                                <p>Esta extensión incluye codigos de razones por la cuales no pudo llevarse a cabo el encuentro remoto</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-RazonNOrealizarseInm.html" title="StructureDefinition/RazonNOrealizarseInm">Razones por las cuales no se pudo realizar la inmunización</a>
+                                            </td>
+                                            <td>
+                                                <p>Esta extensión incluye las razones por la cuales no pudo llevarse a cabo la inmunización</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-RegionesCl.html" title="StructureDefinition/RegionesCl">Códigos para Regiones en Chile</a>
+                                            </td>
+                                            <td>
+                                                <p>Esta extensión que permite codificar las Regiones en Chile en el campo de Dirección</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-ServicioSalud.html" title="StructureDefinition/ServicioSalud">Sistema Nacional de Servicios de Salud</a>
+                                            </td>
+                                            <td>
+                                                <p>Esta extensión incluye los codigos de los Servicios de Salud que existen en el país</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-TiposEncuentro.html" title="StructureDefinition/TiposEncuentro">Código de tipos de encuentro remoto</a>
+                                            </td>
+                                            <td>
+                                                <p>Esta extensión incluye códigos de los tipos de encuentro que se realizan de forma remota</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-TiposVacunaRNI.html" title="StructureDefinition/TiposVacunaRNI">Código de tipos de Vacunas en Chile</a>
+                                            </td>
+                                            <td>
+                                                <p>Esta extensión incluye códigos de los tipos de vacunas que existe en el Registro Nacional de Inmunizaciones RNI</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="StructureDefinition-TiposServicio.html" title="StructureDefinition/TiposServicio">Código de los tipos de servicio que se atiende</a>
+                                            </td>
+                                            <td>
+                                                <p>Esta extensión incluye códigos de servicios que se entregan de forma remota</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                            <a name="3"> </a>
+                            <h3>Terminology: Value Sets </h3>
+                            <p>
+                                <p>These define sets of codes used by systems conforming to this implementation guide</p>
+                            </p>
+                            <p>
+                                <table class="grid">
+                                    <col style="width:20%" />
+                                    <tbody>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="ValueSet-CodPais.html" title="ValueSet/CodPais">Códigos de Países</a>
+                                            </td>
+                                            <td>
+                                                <p>Codigos definidos para la identificación de países segun norma ISO3166-N</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="ValueSet-VSCodigosComunaCL.html" title="ValueSet/VSCodigosComunaCL">Códigos de Comunas en Chile</a>
+                                            </td>
+                                            <td>
+                                                <p>Códigos de Comunas para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="ValueSet-VSCodigosProvinciasCL.html" title="ValueSet/VSCodigosProvinciasCL">Códigos de Provincias en Chile</a>
+                                            </td>
+                                            <td>
+                                                <p>Códigos de Provincias para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="ValueSet-VSCodigosRegionesCL.html" title="ValueSet/VSCodigosRegionesCL">Códigos de Regiones en Chile</a>
+                                            </td>
+                                            <td>
+                                                <p>Códigos de Regiones para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="ValueSet-VSCodigosServiciosSalud.html" title="ValueSet/VSCodigosServiciosSalud">Códigos de Servicos de Salud en Chile</a>
+                                            </td>
+                                            <td>
+                                                <p>Códigos de Servicios de Salud que existen en Chile</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="ValueSet-VSContactosec.html" title="ValueSet/VSContactosec">Contacto participantes</a>
+                                            </td>
+                                            <td>
+                                                <p>Contacto telefonico o correo de los participantes</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="ValueSet-VSEspecialidadesDeisCL.html" title="ValueSet/VSEspecialidadesDeisCL">Códigos de Especialidades</a>
+                                            </td>
+                                            <td>
+                                                <p>Códigos de especialidades médicas descritas según DEIS</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="ValueSet-VSNombreCampana.html" title="ValueSet/VSNombreCampana">Campañas de vacunación que se realizan según RNI</a>
+                                            </td>
+                                            <td>
+                                                <p>Campañas de Inmunización utilizada en Chile según CodeSystem local</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="ValueSet-VSRazonNOTinm.html" title="ValueSet/VSRazonNOTinm">Razones por las cuales no se pudo realizar la inmunización</a>
+                                            </td>
+                                            <td>
+                                                <p>Razones por la que no se lleva a cabo la administración de una vacuna o registro de una inmunización según CodeSystem local</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="ValueSet-VSRazonNOT.html" title="ValueSet/VSRazonNOT">Razones por la que no se pudieron realizar la atención</a>
+                                            </td>
+                                            <td>
+                                                <p>Razones por la que no se lleva a cabo un encuentro remoto según CodeSystem local.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="ValueSet-VSTiposDocumentos.html" title="ValueSet/VSTiposDocumentos">Tipos de Documentos</a>
+                                            </td>
+                                            <td>
+                                                <p>Tipos de Documentos para identificación según tabla HL7 V3 y CodeSystem local.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="ValueSet-VSTiposEncuentro.html" title="ValueSet/VSTiposEncuentro">Códigos de Tipos de Encuentro</a>
+                                            </td>
+                                            <td>
+                                                <p>Códigos de Encuentros según Minsal</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="ValueSet-VSTiposServicio.html" title="ValueSet/VSTiposServicio">Tipos de Servicios</a>
+                                            </td>
+                                            <td>
+                                                <p>Tipos de Servicios para encuentro remoto segun CodeSystem local.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="ValueSet-VSTiposVacunas.html" title="ValueSet/VSTiposVacunas">Tipos de Vacunas RNI</a>
+                                            </td>
+                                            <td>
+                                                <p>Tipos de Vacunas utilizadas en Chile según CodeSystem local</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                            <a name="4"> </a>
+                            <h3>Terminology: Code Systems </h3>
+                            <p>
+                                <p>These define new code systems used by systems conforming to this implementation guide</p>
+                            </p>
+                            <p>
+                                <table class="grid">
+                                    <col style="width:20%" />
+                                    <tbody>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="CodeSystem-CSCodComunasCL.html" title="CodeSystem/CSCodComunasCL">Códigos de Comunas en Chile</a>
+                                            </td>
+                                            <td>
+                                                <p>Códigos de Comunas para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="CodeSystem-CSCodProvinciasCL.html" title="CodeSystem/CSCodProvinciasCL">Códigos de Provincias en Chile</a>
+                                            </td>
+                                            <td>
+                                                <p>Códigos de Provincias para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="CodeSystem-CSCodRegionCL.html" title="CodeSystem/CSCodRegionCL">Códigos de Regiones en ChileEstos aún deben ser llevados a un ValueSet</a>
+                                            </td>
+                                            <td>
+                                                <p>Códigos de Regiones para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="CodeSystem-CSCodSSalud.html" title="CodeSystem/CSCodSSalud">Códigos del Sistema Nacional de Servicios de Salud</a>
+                                            </td>
+                                            <td>
+                                                <p>Códigos del Sistema Nacional de Servicios de Salud</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="CodeSystem-CSCodigoServicio.html" title="CodeSystem/CSCodigoServicio">Códigos de Servicios para encuentros remotos</a>
+                                            </td>
+                                            <td>
+                                                <p>Códigos para los Servicios realizados en un encuentro remoto según indicaciones del Ministerio de Salud</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="CodeSystem-CSCodigoDNI.html" title="CodeSystem/CSCodigoDNI">Códigos de Documentos DNI para LATAM y el Caribe</a>
+                                            </td>
+                                            <td>
+                                                <p>Códigos para los DNI de países de America Latina y el Caribe según indicaciones de VS HL7 de V3</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="CodeSystem-CSEspecialidadesDeisCL.html" title="CodeSystem/CSEspecialidadesDeisCL">Códigos de Especialidades</a>
+                                            </td>
+                                            <td>
+                                                <p>Códigos de especialidades médicas descritas según DEIS</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="CodeSystem-CSNombreCampana.html" title="CodeSystem/CSNombreCampana">Nombre de Campañas de Inmunización de RNI</a>
+                                            </td>
+                                            <td>
+                                                <p>Códigos de las campañas de vacunas o inmunizaciones según indicaciones del Ministerio de Salud</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="CodeSystem-CSRazonNOT.html" title="CodeSystem/CSRazonNOT">Códigos de razones por la cuales el encuentro remoto no se pudo llevar a cabo</a>
+                                            </td>
+                                            <td>
+                                                <p>Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="CodeSystem-CSRazonNOTinm.html" title="CodeSystem/CSRazonNOTinm">Códigos de razones por las cuales el registro de inmunización no se pudo llevar a cabo</a>
+                                            </td>
+                                            <td>
+                                                <p>Códigos de las razones por la cual el registro de inmunización no pudo realizarse según indicaciones del Ministerio de Salud</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="CodeSystem-CSTiposEncuentro.html" title="CodeSystem/CSTiposEncuentro">Códigos de Tipos de Encuentro</a>
+                                            </td>
+                                            <td>
+                                                <p>Códigos de Encuentros según Minsal</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="CodeSystem-CSCodigoVacunas.html" title="CodeSystem/CSCodigoVacunas">Códigos de Vacunas RNI</a>
+                                            </td>
+                                            <td>
+                                                <p>Códigos de las vacunas o inmunizaciones según indicaciones del Ministerio de Salud</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                            <a name="5"> </a>
+                            <h3>Example: Example Instances </h3>
+                            <p>
+                                <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
+                            </p>
+                            <p>
+                                <table class="grid">
+                                    <col style="width:20%" />
+                                    <tbody>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="Practitioner-3240.html" title="Practitioner/3240">Ejemplo de Recurso Prestador como base para un Core Nacional</a>
+                                            </td>
+                                            <td>
+                                                <p>Ejemplo de un Prestador no Real con identificadores en Systemas con API”s no disponibles</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="AuditEvent-AuditEventEx.html" title="AuditEvent/AuditEventEx">Ejemplo de un Audit-Event Search.</a>
+                                            </td>
+                                            <td>
+                                                <p>Log de Audición de una operacion Search.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="Bundle-BundleEx.html" title="Bundle/BundleEx">Ejemplo Simple de Bundle de Transacción</a>
+                                            </td>
+                                            <td>
+                                                <p>Bundle de Transacción con un recurso Practitioner y un Recurso Organization</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="Provenance-EjemplValidacionProvCl.html" title="Provenance/EjemplValidacionProvCl">Ejemplo de la Validación de una Receta por medio del Prescriptor</a>
+                                            </td>
+                                            <td>
+                                                <p>Ejemplo de una Receta en Request Group que contiene una receta, en la cual el prestador que la ha desarollado genera una validación por medio de una firma</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="PractitionerRole-EspecialidadCL.html" title="PractitionerRole/EspecialidadCL">Ejemplo de Recurso de especialidad</a>
+                                            </td>
+                                            <td>
+                                                <p>Define el Rol de un Médico durante la Operación de un paciente en Urgencia</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="Location-LocalizacionEjemploCL1.html" title="Location/LocalizacionEjemploCL1">Ejemplo Localización Farmacia</a>
+                                            </td>
+                                            <td>
+                                                <p>Ejemplo de la localización relacionada con una Farmacia específica ubicada en la comuna de Viña del Mar</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="Medication-MedicamentoCl.html" title="Medication/MedicamentoCl">Ejemplo de comprimido Tareg - D 160</a>
+                                            </td>
+                                            <td>
+                                                <p>Medicamento comprimido Tareg -D160 referemciado como medicamento en la TFC, considerando el de 25 comprimidos</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="Medication-MedicamentoCl-2.html" title="Medication/MedicamentoCl-2">Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido</a>
+                                            </td>
+                                            <td>
+                                                <p>Definición de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido Código de descripción = 1703591000167111 y de Cocepto = 696681000167108 según TFC</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="Organization-ORG1.html" title="Organization/ORG1">Ejemplo Organización Prestadora de Salud</a>
+                                            </td>
+                                            <td>
+                                                <p>CESFAM Rio Bueno (Ficticio) con ID DEIS no real</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="Patient-PacienteCL.html" title="Patient/PacienteCL">Ejemplo de Recurso Paciente Nacional</a>
+                                            </td>
+                                            <td>
+                                                <p>Paciente ficticio nacional CI Chilena, sin sistema de validación “http://regcivil.cl/Validacion/RUN” ficticio , cuyo nombre se decribe mediante el oficial y uno social. La dirección tampoco es Real</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="Patient-PacienteCL2.html" title="Patient/PacienteCL2">Ejemplo de Recurso Paciente Extranjero</a>
+                                            </td>
+                                            <td>
+                                                <p>Paciente ficticio extrangero, con identificación Pasaporte de origen Salvadoreño sin sistema real de validación del número de Pasaporte.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="Patient-PacienteCl-3.html" title="Patient/PacienteCl-3">Paciente Nacional, con datos actualizados, declarando nacionalidad</a>
+                                            </td>
+                                            <td>
+                                                <p>Paciente ficticio nacional CI Chilena con sistema de validación no real, cuyo nombre es solo el oficial. La dirección tampoco es Real</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="Patient-PacienteCl-4.html" title="Patient/PacienteCl-4">Ejemplo de Recurso de paciente Nacional con contacto declarado</a>
+                                            </td>
+                                            <td>
+                                                <p>Paciente ficticio nacional CI Chilena, * sin sistema de validación "http://regcivil.cl/Validacion/RUN" ficticio , * cuyo nombre se decribe mediante el oficial y uno social. * La dirección tampoco es Real.
+                                                    * Se agrega al paciente un acompañante patiente.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="Patient-PacienteCl-5.html" title="Patient/PacienteCl-5">Ejemplo de Recurso de paciente Nacional con contacto declarado y extensión en dirección</a>
+                                            </td>
+                                            <td>
+                                                <p>Paciente ficticio nacional CI Chilena, * sin sistema de validación "http://regcivil.cl/Validacion/RUN" ficticio , * cuyo nombre se decribe mediante el oficial y uno social. * La dirección tampoco es Real.
+                                                    * Se agrega al paciente un acompañante patiente * La dirección se declara con códigos por extensión.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="column-width:30%">
+                                                <a href="RequestGroup-RG12224.html" title="RequestGroup/RG12224">example</a>
+                                            </td>
+                                            <td>
+                                                <p>Solo un ejemplo</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /inner-wrapper -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /segment-content -->
+
+    <script type="text/javascript" src="assets/js/jquery.js">
+    </script>
+    <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+    <script type="text/javascript" src="assets/js/jquery-ui.min.js">
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            if (window.location.hash != "") {
+                $('a[href="' + window.location.hash + '"]').click()
+            }
+        });
+    </script>
+    <a name="bottom"> </a>
+    <div id="segment-footer" igtool="footer" class="segment">
+        <!-- segment-footer -->
+        <div class="container">
+            <!-- container -->
+
+            <div class="inner-wrapper">
+                <p>
+                    IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>. Package hl7.fhir.cl.corecl#1.5.0 basada en <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+                    Generada el <span title="Tue, Jun 14, 2022 00:52-0400">14-06-2022</span>
+                    <br/>
+                    <span style="color: var(--footer-highlight-text-color)"></span> Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de Contenidos</a> |
+                    <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reportes QA</a>
+                    </span>
+                </p>
+            </div>
+            <!-- /inner-wrapper -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /segment-footer -->
+
+    <div id="segment-post-footer" class="segment hidden">
+        <!-- segment-post-footer -->
+        <div class="container">
+            <!-- container -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="assets/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript" src="assets/js/respond.min.js">
+    </script>
+    <script type="text/javascript" src="assets/js/anchor.min.js">
+    </script>
+    <script>
+        anchors.options.visible = 'hover'
+        anchors.add()
+    </script>
+
+    <!-- feedback form - Google forms -->
+    <!-- v0.1, 2021-01-09 -->
+
+
+
+    <!-- / feedback form  -->
+
+    <!-- Analytics Below
+  ================================================== -->
+</body>
+
+</html>

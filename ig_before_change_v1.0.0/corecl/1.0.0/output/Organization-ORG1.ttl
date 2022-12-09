@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/CoreCL/Organization/ORG1> a fhir:Organization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ORG1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreOrganizacionCl";
+       fhir:index 0;
+       fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreOrganizacionCl>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ORG1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CoreOrganizacionCl.html\">Perfil de Organización de Salud en Chile</a></p></div><p><b>identifier</b>: id: 1233</p><p><b>active</b>: true</p><p><b>name</b>: Centro de Salud Familiar Rio Bueno de Linares</p><p><b>alias</b>: Rio Bueno CESFAM</p><p><b>telecom</b>: ph: 45325775(WORK)</p><p><b>address</b>: Calle Central 33 07401 07 152 </p></div>"
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://minsal.cl/deis/codigodeis" ];
+     fhir:Identifier.value [ fhir:value "1233" ]
+  ];
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Organization.name [ fhir:value "Centro de Salud Familiar Rio Bueno de Linares"];
+  fhir:Organization.alias [
+     fhir:value "Rio Bueno CESFAM";
+     fhir:index 0
+  ];
+  fhir:Organization.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "45325775" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ];
+  fhir:Organization.address [
+     fhir:index 0;
+     fhir:Address.line [
+       fhir:value "Calle Central 33";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "07401" ];
+     fhir:Address.district [ fhir:value "074" ];
+     fhir:Address.state [ fhir:value "07" ];
+     fhir:Address.country [ fhir:value "152" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/CoreCL/Organization/ORG1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

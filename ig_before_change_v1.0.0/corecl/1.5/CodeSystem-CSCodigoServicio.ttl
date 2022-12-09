@@ -1,0 +1,112 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoServicio> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CSCodigoServicio"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoServicio defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">nutINTA<a name=\"CSCodigoServicio-nutINTA\"> </a></td><td>Nutrición INTA</td></tr><tr><td style=\"white-space:nowrap\">nedINTA<a name=\"CSCodigoServicio-nedINTA\"> </a></td><td>Medicina INTA</td></tr><tr><td style=\"white-space:nowrap\">medInt<a name=\"CSCodigoServicio-medInt\"> </a></td><td>Medicina Interna</td></tr><tr><td style=\"white-space:nowrap\">saludMDigital<a name=\"CSCodigoServicio-saludMDigital\"> </a></td><td>Salud Mental Digital</td></tr><tr><td style=\"white-space:nowrap\">medGen<a name=\"CSCodigoServicio-medGen\"> </a></td><td>Medicina General</td></tr><tr><td style=\"white-space:nowrap\">derm<a name=\"CSCodigoServicio-derm\"> </a></td><td>Dermatología</td></tr><tr><td style=\"white-space:nowrap\">telDiabetes<a name=\"CSCodigoServicio-telDiabetes\"> </a></td><td>Telemedicina Diabetes</td></tr><tr><td style=\"white-space:nowrap\">telRehab<a name=\"CSCodigoServicio-telRehab\"> </a></td><td>Telerehabilitación</td></tr><tr><td style=\"white-space:nowrap\">otorrin<a name=\"CSCodigoServicio-otorrin\"> </a></td><td>Otorrinolaringología</td></tr><tr><td style=\"white-space:nowrap\">neurInf<a name=\"CSCodigoServicio-neurInf\"> </a></td><td>Neurología Infantil</td></tr><tr><td style=\"white-space:nowrap\">atencUrgAPS<a name=\"CSCodigoServicio-atencUrgAPS\"> </a></td><td>Atención de Urgencia APS</td></tr><tr><td style=\"white-space:nowrap\">vih<a name=\"CSCodigoServicio-vih\"> </a></td><td>VIH</td></tr><tr><td style=\"white-space:nowrap\">geri<a name=\"CSCodigoServicio-geri\"> </a></td><td>Geriatría</td></tr><tr><td style=\"white-space:nowrap\">gine<a name=\"CSCodigoServicio-gine\"> </a></td><td>Ginecología</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoServicio"];
+  fhir:CodeSystem.version [ fhir:value "1.5.0"];
+  fhir:CodeSystem.name [ fhir:value "CSCodServicioCL"];
+  fhir:CodeSystem.title [ fhir:value "Códigos de Servicios para encuentros remotos"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-05-22T00:00:00-03:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Chile"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Chile" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7chile.cl" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "chair@hl7chile.cl" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Códigos para los Servicios realizados en un encuentro remoto según indicaciones del Ministerio de Salud"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "CL" ];
+       fhir:Coding.display [ fhir:value "Chile" ]
+     ]
+  ];
+  fhir:CodeSystem.copyright [ fhir:value "Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "14"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "nutINTA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nutrición INTA" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "nedINTA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicina INTA" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "medInt" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicina Interna" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "saludMDigital" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Salud Mental Digital" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "medGen" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicina General" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "derm" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dermatología" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "telDiabetes" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Telemedicina Diabetes" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "telRehab" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Telerehabilitación" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "otorrin" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Otorrinolaringología" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "neurInf" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Neurología Infantil" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "atencUrgAPS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Atención de Urgencia APS" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "vih" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VIH" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "geri" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Geriatría" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "gine" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ginecología" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoServicio.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
