@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosComunaCL> a fhir:ValueSet;
+<https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosComunaCL> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "VSCodigosComunaCL"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-CSCodComunasCL.html\"><code>https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodComunasCL</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-CSCodComunasCL.html\"><code>https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodComunasCL</code></a></li></ul></div>"
   ]; # 
-  fhir:ValueSet.url [ fhir:value "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosComunaCL"]; # 
+  fhir:ValueSet.url [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosComunaCL"]; # 
   fhir:ValueSet.version [ fhir:value "1.7.0"]; # 
   fhir:ValueSet.name [ fhir:value "VSCodigosComunaCL"]; # 
   fhir:ValueSet.title [ fhir:value "Códigos de Comunas en Chile"]; # 
@@ -47,13 +47,13 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodComunasCL" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodComunasCL" ]
      ]
   ] . # 
 
 # - ontology header ------------------------------------------------------------
 
-<https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosComunaCL.ttl> a owl:Ontology;
+<https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosComunaCL.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

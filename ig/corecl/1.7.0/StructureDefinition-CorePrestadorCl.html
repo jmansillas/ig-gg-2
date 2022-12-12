@@ -136,7 +136,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the CL Core (v1.0.0: <a href="https://confluence.hl7.org/display/HL7/HL7+Balloting" title="Standard for Trial-Use">STU</a>1) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version.  For a full list of available versions, see the <a href="https://hl7chile.cl/fhir/ig/corecl/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p><!--EndReleaseHeader-->
   
 
 
@@ -196,11 +196,11 @@
 
 <table class="grid">
 <tbody>
-<tr><td>Defining URL:</td><td>https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CorePrestadorCl</td></tr>
+<tr><td>Defining URL:</td><td>https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePrestadorCl</td></tr>
  <tr><td>Version:</td><td>1.7.0</td></tr>
  <tr><td>Name:</td><td>PrestadorCL</td></tr>
  <tr><td>Title:</td><td>CL Prestador</td></tr>
- <tr><td>Status:</td><td>Active as of 2022-12-07 13:24:22+0000</td></tr>
+ <tr><td>Status:</td><td>Active as of 2022-12-12 20:08:16-0300</td></tr>
  <tr><td>Definition:</td><td><p>Este Perfil fue creado para cubrir la descripción de un Prestador a nivel Nacional</p>
 </td></tr>
  <tr><td>Publisher:</td><td>HL7 Chile</td></tr>
@@ -213,9 +213,75 @@
   <p>
   The official URL for this profile is:
   </p>
-  <pre>https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CorePrestadorCl</pre>
+  <pre>https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePrestadorCl</pre>
 
 <!-- insert intro if present -->
+
+
+
+
+<div style="display:inline-block" markdown="1">
+
+<h4 id="ejemplos-de-uso-en-diferentes-escenarios">Ejemplos de uso en Diferentes Escenarios</h4>
+<p><br /></p>
+
+<ul>
+  <li>Búsqueda de Profesional de la Salud por <em>RUN</em> o por <em>RNPI</em></li>
+  <li>Determinación de Certificados que acredita el Prestador</li>
+  <li>Determinación de especialidades que posee el prestador</li>
+</ul>
+
+<p><br />
+<br /></p>
+
+<h3 id="elementos-mandatorios-y-must-support">Elementos Mandatorios y Must Support</h3>
+<p><br /></p>
+
+<p>El perfil presenta una serie de elementos de datos que siempre deben estar presentes en cada recurso que se genere desde este perfil. Estos elementos denominados como <strong>Mandatorios</strong> se pueden observar en elperfil con cardinalidad de valor inicial <em>1</em>. 
+Los elementos que deben ser Soportados, si la data esta presente en el recuso generado, se denominan (<a href="http://hl7.org/fhir/R4/profiling.html#mustsupport">Must Support</a>), y estos se expresan mediante la letra <strong>S</strong> en cada elemento que tiene esta categoría. Un elemento <em>Must Support</em> implica:</p>
+
+<ul>
+  <li>El sistema que recibe un recurso con un elemento <em>Must Support</em> debe almacearlo.</li>
+  <li>El sistema que recibe un recurso con un elemento <em>Must Support</em> debe poder hacer procesamiento de este elemento.</li>
+  <li>Un elemento <em>Must Support</em> no implica que sus rutas derivadas lo sea por herencia.</li>
+</ul>
+
+<p>La definición formal del Perfil en la legueta <em>Text Summary</em> indica cuantos de estos elementos hay distribuidos como elementos o rutas de estos.
+<br />
+<br /></p>
+
+<h3 id="notas-adicionales">Notas Adicionales</h3>
+<p><br /></p>
+
+<p>Consideraciones para la implementación</p>
+
+<ul>
+  <li>La Idetificación del Prestador individual puede ser:
+    <ul>
+      <li>Basada en <strong>RUN</strong>, identificación que es obligatoria. Para este <em>slice</em> se requiere un <em>identifier.use = official</em></li>
+      <li>Basada en <strong>RNPI</strong>, identificación que no es obligatoria. Para este <em>slice</em> se requiere un <em>identifier.use = secondary</em>.</li>
+    </ul>
+  </li>
+  <li>Para el elemento <em>name</em> se agega la extensión externa de 2o apellido en donde la url de esta es <em>http://hl7.org/fhir/StructureDefinition/humanname-mothers-family</em>.</li>
+  <li>El elemento <em>address</em> considera la creación de un nuevo <strong>tipo de datos</strong> denominado <strong>ClAddress</strong> que contiene lo mismo que el tipo original más las extensiones para codificar comunas, provincias, regiones y países.</li>
+  <li>Se entiende por <em>qualification</em> como los certificados/títulos y especialidades registradas por el prestador. Para diferenciar certificados de especialidades se ha optado por desarrollar dos <em>slice</em> para este elemento.
+    <ul>
+      <li>El <em>slice</em> <strong>Cert</strong> se usa para la especificación de los Títulos o Certificados Profesionales que tiene el Prestador. Para desarrollar este <em>slice</em> se requiere que:
+        <ul>
+          <li>*qualification[Cert].coding.text = “Certificado(s)”.</li>
+        </ul>
+      </li>
+      <li>El <em>slice</em> <strong>Esp</strong> se usa para la especificación de la o las especialidades que posee el Prestador. Para desarrollar este <em>slice</em> se requiere que:
+        <ul>
+          <li>*qualification[Esp].coding.text = “Especialidad(es)”.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>El perfil posee todos los elementos que lo hacen compatible con un <strong>Practitioner IPS</strong>.</li>
+</ul>
+
+</div>
 
 
 
@@ -269,7 +335,7 @@ Summary
 <p>Mandatory: 5 elements (9 nested mandatory elements)<br/> Must-Support: 32 elements</p><p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
-<li><a href="StructureDefinition-cl-address.html">CL Address <span style="font-size: 8px">(https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/cl-address)</span></a></li>
+<li><a href="StructureDefinition-cl-address.html">CL Address <span style="font-size: 8px">(https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/cl-address)</span></a></li>
 
 </ul>
 
@@ -707,7 +773,7 @@ Summary
 <p>Mandatory: 5 elements (9 nested mandatory elements)<br/> Must-Support: 32 elements</p><p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
-<li><a href="StructureDefinition-cl-address.html">CL Address <span style="font-size: 8px">(https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/cl-address)</span></a></li>
+<li><a href="StructureDefinition-cl-address.html">CL Address <span style="font-size: 8px">(https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/cl-address)</span></a></li>
 
 </ul>
 
@@ -1205,7 +1271,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.corecl#1.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 7, 2022 13:24+0000">2022-12-07</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.corecl#1.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 12, 2022 20:08-0300">2022-12-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

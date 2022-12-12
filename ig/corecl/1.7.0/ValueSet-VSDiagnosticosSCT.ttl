@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSDiagnosticosSCT> a fhir:ValueSet;
+<https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSDiagnosticosSCT> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "VSDiagnosticosSCT"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a></li><li>Include all codes defined in <code>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</code></li></ul></div>"
   ]; # 
-  fhir:ValueSet.url [ fhir:value "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSDiagnosticosSCT"]; # 
+  fhir:ValueSet.url [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSDiagnosticosSCT"]; # 
   fhir:ValueSet.version [ fhir:value "1.7.0"]; # 
   fhir:ValueSet.name [ fhir:value "VSDiagnosticosSCT"]; # 
   fhir:ValueSet.title [ fhir:value "Diagnósticos SNOMED y Ausente o Desconocido"]; # 
@@ -56,7 +56,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSDiagnosticosSCT.ttl> a owl:Ontology;
+<https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSDiagnosticosSCT.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

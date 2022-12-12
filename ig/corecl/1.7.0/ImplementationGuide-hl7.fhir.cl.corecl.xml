@@ -3,10 +3,10 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.cl.corecl"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>CoreCLDEV</h2><p>The official URL for this implementation guide is: </p><pre>https://hl7chile.cl/fhir/ig/corecl/ImplementationGuide/hl7.fhir.cl.corecl</pre><div><p>Guía de Implementación Versión de Desarrollo Sobre STU 1, para los perfiles Core que se van a requerir a nivel de desarrollo Nacional para Sistemas que Intercambien datos en estandar FHIR-R4</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>CoreCLDEV</h2><p>The official URL for this implementation guide is: </p><pre>https://hl7chile.cl/fhir/ig/CoreCL/ImplementationGuide/hl7.fhir.cl.corecl</pre><div><p>Guía de Implementación Versión de Desarrollo Sobre STU 1, para los perfiles Core que se van a requerir a nivel de desarrollo Nacional para Sistemas que Intercambien datos en estandar FHIR-R4</p>
 </div></div>
   </text>
-  <url value="https://hl7chile.cl/fhir/ig/corecl/ImplementationGuide/hl7.fhir.cl.corecl"/>
+  <url value="https://hl7chile.cl/fhir/ig/CoreCL/ImplementationGuide/hl7.fhir.cl.corecl"/>
   <version value="1.7.0"/>
   <name value="CoreCLDEV"/>
   <title value="Guía de Implementación Core-CL FHIR R4, (Versión Evolutiva)"/>
@@ -170,7 +170,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://hl7chile.cl/fhir/ig/corecl/history.html"/>
+        <valueString value="https://hl7chile.cl/fhir/ig/CoreCL/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">

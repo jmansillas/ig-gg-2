@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/DocumentoCl> a fhir:StructureDefinition;
+<https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/DocumentoCl> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "DocumentoCl"]; # 
   fhir:DomainResource.text [
@@ -22,12 +22,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "not-classified" ]
   ]; # 
-  fhir:StructureDefinition.url [ fhir:value "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/DocumentoCl"]; # 
+  fhir:StructureDefinition.url [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/DocumentoCl"]; # 
   fhir:StructureDefinition.version [ fhir:value "1.7.0"]; # 
   fhir:StructureDefinition.name [ fhir:value "DocumentoCl"]; # 
   fhir:StructureDefinition.title [ fhir:value "CL Documento"]; # 
   fhir:StructureDefinition.status [ fhir:value "active"]; # 
-  fhir:StructureDefinition.date [ fhir:value "2022-12-07T13:24:22+00:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.date [ fhir:value "2022-12-12T20:08:16-03:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Chile"]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -694,8 +694,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSTiposDocClinic";
-           fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSTiposDocClinic>
+           fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSTiposDocClinic";
+           fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSTiposDocClinic>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -7270,8 +7270,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSTiposDocClinic";
-           fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSTiposDocClinic>
+           fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSTiposDocClinic";
+           fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSTiposDocClinic>
          ]
        ]
      ], [
@@ -7686,7 +7686,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/DocumentoCl.ttl> a owl:Ontology;
+<https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/DocumentoCl.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

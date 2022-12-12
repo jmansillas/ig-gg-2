@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://hl7chile.cl/fhir/ig/corecl/CodeSystem/csrazonnoencuentro> a fhir:CodeSystem;
+<https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/csrazonnoencuentro> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "csrazonnoencuentro"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://hl7chile.cl/fhir/ig/corecl/CodeSystem/csrazonnoencuentro</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">pierdellam<a name=\"csrazonnoencuentro-pierdellam\"> </a></td><td>Participante pierde llamada</td><td>Indica la pérdida de una llamada con el paciete</td></tr><tr><td style=\"white-space:nowrap\">finallam<a name=\"csrazonnoencuentro-finallam\"> </a></td><td>El participante finalizó la llamada abruptamente</td><td>Indica la finalización de una llamada de forma abrupta</td></tr><tr><td style=\"white-space:nowrap\">problcon<a name=\"csrazonnoencuentro-problcon\"> </a></td><td>El participante tuvo problemas de conexión a internet</td><td>Indica que existieron problemas de conexión a internet para conectarse con el médico</td></tr><tr><td style=\"white-space:nowrap\">medicoproblcon<a name=\"csrazonnoencuentro-medicoproblcon\"> </a></td><td>Tuve problemas de conexión a internet</td><td>Indica problemas de conexión a internet que tuvo el médico</td></tr><tr><td style=\"white-space:nowrap\">otros<a name=\"csrazonnoencuentro-otros\"> </a></td><td>Otros, texto libre</td><td>Cualquier otro motivo</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/csrazonnoencuentro</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">pierdellam<a name=\"csrazonnoencuentro-pierdellam\"> </a></td><td>Participante pierde llamada</td><td>Indica la pérdida de una llamada con el paciete</td></tr><tr><td style=\"white-space:nowrap\">finallam<a name=\"csrazonnoencuentro-finallam\"> </a></td><td>El participante finalizó la llamada abruptamente</td><td>Indica la finalización de una llamada de forma abrupta</td></tr><tr><td style=\"white-space:nowrap\">problcon<a name=\"csrazonnoencuentro-problcon\"> </a></td><td>El participante tuvo problemas de conexión a internet</td><td>Indica que existieron problemas de conexión a internet para conectarse con el médico</td></tr><tr><td style=\"white-space:nowrap\">medicoproblcon<a name=\"csrazonnoencuentro-medicoproblcon\"> </a></td><td>Tuve problemas de conexión a internet</td><td>Indica problemas de conexión a internet que tuvo el médico</td></tr><tr><td style=\"white-space:nowrap\">otros<a name=\"csrazonnoencuentro-otros\"> </a></td><td>Otros, texto libre</td><td>Cualquier otro motivo</td></tr></table></div>"
   ]; # 
-  fhir:CodeSystem.url [ fhir:value "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/csrazonnoencuentro"]; # 
+  fhir:CodeSystem.url [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/csrazonnoencuentro"]; # 
   fhir:CodeSystem.version [ fhir:value "1.7.0"]; # 
   fhir:CodeSystem.name [ fhir:value "CSrazonnoencuentro"]; # 
   fhir:CodeSystem.title [ fhir:value "Razón Encuentro Remoto no Realizado"]; # 
@@ -76,7 +76,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://hl7chile.cl/fhir/ig/corecl/CodeSystem/csrazonnoencuentro.ttl> a owl:Ontology;
+<https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/csrazonnoencuentro.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

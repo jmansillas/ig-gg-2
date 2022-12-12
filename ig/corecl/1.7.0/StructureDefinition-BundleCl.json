@@ -13,12 +13,12 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
     "valueCode" : "not-classified"
   }],
-  "url" : "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/BundleCl",
+  "url" : "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/BundleCl",
   "version" : "1.7.0",
   "name" : "BundleCL",
   "title" : "Cl BundleCL",
   "status" : "active",
-  "date" : "2022-12-07T13:24:22+00:00",
+  "date" : "2022-12-12T20:08:16-03:00",
   "publisher" : "HL7 Chile",
   "contact" : [{
     "name" : "HL7 Chile",

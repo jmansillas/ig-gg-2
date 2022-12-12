@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSContactosec> a fhir:ValueSet;
+<https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSContactosec> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "VSContactosec"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://hl7.org/fhir/R4/codesystem-contact-point-system.html\"><code>http://hl7.org/fhir/contact-point-system</code></a></li></ul></div>"
   ]; # 
-  fhir:ValueSet.url [ fhir:value "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSContactosec"]; # 
+  fhir:ValueSet.url [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSContactosec"]; # 
   fhir:ValueSet.version [ fhir:value "1.7.0"]; # 
   fhir:ValueSet.name [ fhir:value "VSContactoSecundario"]; # 
   fhir:ValueSet.title [ fhir:value "Contacto participantes"]; # 
@@ -53,7 +53,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSContactosec.ttl> a owl:Ontology;
+<https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSContactosec.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

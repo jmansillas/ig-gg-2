@@ -5,7 +5,7 @@
     "status" : "generated",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a></li></ul></div>"
   },
-  "url" : "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSTiposDocClinic",
+  "url" : "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSTiposDocClinic",
   "version" : "1.7.0",
   "name" : "VSTiposDocClinic",
   "title" : "Tipos de Documentos Clínicos",

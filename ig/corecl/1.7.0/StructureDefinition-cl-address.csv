@@ -29,7 +29,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Código de Comunas","Código de Comunas","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Address.city.extension:comunas","Address.city.extension","comunas","","",1,1,"Y","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ComunasCl]]} {[]}
+"Address.city.extension:comunas","Address.city.extension","comunas","","",1,1,"Y","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ComunasCl]]} {[]}
 ","Códigos para Comunas en Chile","Esta extensión que permite codiificar las Comunas en Chile en el campo de Dirección","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -45,7 +45,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Código de Regiones","Código de Regiones","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Address.district.extension:provincias","Address.district.extension","provincias","","",1,1,"Y","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ProvinciasCl]]} {[]}
+"Address.district.extension:provincias","Address.district.extension","provincias","","",1,1,"Y","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ProvinciasCl]]} {[]}
 ","Códigos para Provincias en Chile","Esta extensión que permite codificar las Provincias en Chile en el campo de Dirección","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -61,7 +61,7 @@ Territory","",1,1,"Y","","Y","string {[]} {[]}
 ","Código de Regiones","Código de Regiones","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Address.state.extension:regiones","Address.state.extension","regiones","","",1,1,"Y","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/RegionesCl]]} {[]}
+"Address.state.extension:regiones","Address.state.extension","regiones","","",1,1,"Y","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RegionesCl]]} {[]}
 ","Códigos para Regiones en Chile","Esta extensión que permite codificar las Regiones en Chile en el campo de Dirección","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -80,7 +80,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Código de Países","Código de Países","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Address.country.extension:paises","Address.country.extension","paises","","",1,1,"Y","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises]]} {[]}
+"Address.country.extension:paises","Address.country.extension","paises","","",1,1,"Y","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises]]} {[]}
 ","Codigo de Identificación de países","Esta extensión incluye códigos de paises de origen","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"

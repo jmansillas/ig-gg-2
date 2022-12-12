@@ -3,9 +3,9 @@
   "id" : "VSRazonNOT",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-csrazonnoencuentro.html\"><code>https://hl7chile.cl/fhir/ig/corecl/CodeSystem/csrazonnoencuentro</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-csrazonnoencuentro.html\"><code>https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/csrazonnoencuentro</code></a></li></ul></div>"
   },
-  "url" : "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSRazonNOT",
+  "url" : "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSRazonNOT",
   "version" : "1.7.0",
   "name" : "VSRazonNOencuentro",
   "title" : "Razones no Atención Remota",
@@ -35,7 +35,7 @@
   "copyright" : "Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional.",
   "compose" : {
     "include" : [{
-      "system" : "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/csrazonnoencuentro"
+      "system" : "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/csrazonnoencuentro"
     }]
   }
 }

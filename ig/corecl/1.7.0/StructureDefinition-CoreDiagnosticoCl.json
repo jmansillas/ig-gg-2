@@ -13,12 +13,12 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
     "valueCode" : "patient"
   }],
-  "url" : "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CoreDiagnosticoCl",
+  "url" : "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreDiagnosticoCl",
   "version" : "1.7.0",
   "name" : "DiagnosticoCl",
   "title" : "CL Condición-Diagnóstico",
   "status" : "active",
-  "date" : "2022-12-07T13:24:22+00:00",
+  "date" : "2022-12-12T20:08:16-03:00",
   "publisher" : "HL7 Chile",
   "contact" : [{
     "name" : "HL7 Chile",
@@ -758,7 +758,7 @@
         }],
         "strength" : "preferred",
         "description" : "Diagósticos en SNOMED-CT. El ValueSet trae toda la terminología + Problema Ausente o Desconocido",
-        "valueSet" : "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSDiagnosticosSCT"
+        "valueSet" : "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSDiagnosticosSCT"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1290,7 +1290,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CorePacienteCl"]
+        "targetProfile" : ["https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2399,7 +2399,7 @@
         }],
         "strength" : "preferred",
         "description" : "Diagósticos en SNOMED-CT. El ValueSet trae toda la terminología + Problema Ausente o Desconocido",
-        "valueSet" : "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSDiagnosticosSCT"
+        "valueSet" : "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSDiagnosticosSCT"
       }
     },
     {
@@ -2438,7 +2438,7 @@
       "definition" : "Paciente sobre al que corresponde la condición.",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CorePacienteCl"]
+        "targetProfile" : ["https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl"]
       }],
       "mustSupport" : true
     },

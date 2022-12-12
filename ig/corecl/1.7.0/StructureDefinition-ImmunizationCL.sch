@@ -12,8 +12,8 @@
   <sch:pattern>
     <sch:title>f:Immunization</sch:title>
     <sch:rule context="f:Immunization">
-      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/NombreCampana']) &gt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/NombreCampana': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/NombreCampana']) &lt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/NombreCampana': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/NombreCampana']) &gt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/NombreCampana': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/NombreCampana']) &lt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/NombreCampana': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:location) &gt;= 1">location: minimum cardinality of 'location' is 1</sch:assert>
       <sch:assert test="count(f:expirationDate) &gt;= 1">expirationDate: minimum cardinality of 'expirationDate' is 1</sch:assert>
       <sch:assert test="count(f:performer) &gt;= 1">performer: minimum cardinality of 'performer' is 1</sch:assert>
@@ -77,8 +77,8 @@
     <sch:title>f:Immunization/f:statusReason</sch:title>
     <sch:rule context="f:Immunization/f:statusReason">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/RazonNOrealizarseInm']) &gt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/RazonNOrealizarseInm': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/RazonNOrealizarseInm']) &lt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/RazonNOrealizarseInm': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RazonNOrealizarseInm']) &gt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RazonNOrealizarseInm': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RazonNOrealizarseInm']) &lt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RazonNOrealizarseInm': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -113,8 +113,8 @@
     <sch:title>f:Immunization/f:vaccineCode</sch:title>
     <sch:rule context="f:Immunization/f:vaccineCode">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/TiposVacunaRNI']) &gt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/TiposVacunaRNI': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/TiposVacunaRNI']) &lt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/TiposVacunaRNI': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/TiposVacunaRNI']) &gt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/TiposVacunaRNI': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/TiposVacunaRNI']) &lt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/TiposVacunaRNI': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -186,8 +186,8 @@
     <sch:title>f:Immunization/f:location</sch:title>
     <sch:rule context="f:Immunization/f:location">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ServicioSalud']) &gt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ServicioSalud': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ServicioSalud']) &lt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ServicioSalud': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ServicioSalud']) &gt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ServicioSalud': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ServicioSalud']) &lt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ServicioSalud': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:reference) &lt;= 1">reference: maximum cardinality of 'reference' is 1</sch:assert>
       <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>

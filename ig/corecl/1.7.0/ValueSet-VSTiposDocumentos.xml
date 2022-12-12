@@ -3,9 +3,9 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="VSTiposDocumentos"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-CSCodigoDNI.html"><code>https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodigoDNI</code></a></li><li>Include all codes defined in <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0203.html"><code>http://terminology.hl7.org/CodeSystem/v2-0203</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-CSCodigoDNI.html"><code>https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoDNI</code></a></li><li>Include all codes defined in <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0203.html"><code>http://terminology.hl7.org/CodeSystem/v2-0203</code></a></li></ul></div>
   </text>
-  <url value="https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSTiposDocumentos"/>
+  <url value="https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSTiposDocumentos"/>
   <version value="1.7.0"/>
   <name value="VSTiposDocumentos"/>
   <title value="Tipos de Documentos"/>
@@ -35,7 +35,7 @@
   <copyright value="Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."/>
   <compose>
     <include>
-      <system value="https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodigoDNI"/>
+      <system value="https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoDNI"/>
     </include>
     <include>
       <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>

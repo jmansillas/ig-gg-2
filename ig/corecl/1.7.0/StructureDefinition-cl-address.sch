@@ -54,8 +54,8 @@
     <sch:title>f:Address/f:city</sch:title>
     <sch:rule context="f:Address/f:city">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ComunasCl']) &gt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ComunasCl': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ComunasCl']) &lt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ComunasCl': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ComunasCl']) &gt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ComunasCl': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ComunasCl']) &lt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ComunasCl': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -78,8 +78,8 @@
     <sch:title>f:Address/f:district</sch:title>
     <sch:rule context="f:Address/f:district">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ProvinciasCl']) &gt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ProvinciasCl': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ProvinciasCl']) &lt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ProvinciasCl': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ProvinciasCl']) &gt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ProvinciasCl': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ProvinciasCl']) &lt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ProvinciasCl': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -102,8 +102,8 @@
     <sch:title>f:Address/f:state</sch:title>
     <sch:rule context="f:Address/f:state">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/RegionesCl']) &gt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/RegionesCl': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/RegionesCl']) &lt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/RegionesCl': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RegionesCl']) &gt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RegionesCl': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RegionesCl']) &lt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RegionesCl': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -132,8 +132,8 @@
     <sch:title>f:Address/f:country</sch:title>
     <sch:rule context="f:Address/f:country">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises']) &gt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises']) &lt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises']) &gt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises']) &lt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

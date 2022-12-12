@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CoreOrganizacionCl> a fhir:StructureDefinition;
+<https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreOrganizacionCl> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "CoreOrganizacionCl"]; # 
   fhir:DomainResource.text [
@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "business" ]
   ]; # 
-  fhir:StructureDefinition.url [ fhir:value "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CoreOrganizacionCl"]; # 
+  fhir:StructureDefinition.url [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreOrganizacionCl"]; # 
   fhir:StructureDefinition.version [ fhir:value "1.7.0"]; # 
   fhir:StructureDefinition.name [ fhir:value "OrganizacionCL"]; # 
   fhir:StructureDefinition.title [ fhir:value "CL Organización"]; # 
   fhir:StructureDefinition.status [ fhir:value "active"]; # 
-  fhir:StructureDefinition.date [ fhir:value "2022-12-07T13:24:22+00:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.date [ fhir:value "2022-12-12T20:08:16-03:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Chile"]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -2040,8 +2040,8 @@
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.description [ fhir:value "Códigos Comuna, Ministerio del Interior, 2018" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosComunaCL";
-           fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosComunaCL>
+           fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosComunaCL";
+           fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosComunaCL>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -2107,8 +2107,8 @@
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.description [ fhir:value "Códigos Provincia, Ministerio del Interior, 2018" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosProvinciasCL";
-           fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosProvinciasCL>
+           fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosProvinciasCL";
+           fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosProvinciasCL>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -2163,8 +2163,8 @@
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.description [ fhir:value "Códigos Regiones, Ministerio del Interior, 2018" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosRegionesCL";
-           fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosRegionesCL>
+           fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosRegionesCL";
+           fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosRegionesCL>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -2277,8 +2277,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://hl7chile.cl/fhir/ig/corecl/ValueSet/CodPais";
-           fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/CodPais>
+           fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/CodPais";
+           fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/CodPais>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -3257,8 +3257,8 @@
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.description [ fhir:value "Códigos Comuna, Ministerio del Interior, 2018" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosComunaCL";
-           fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosComunaCL>
+           fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosComunaCL";
+           fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosComunaCL>
          ]
        ]
      ], [
@@ -3272,8 +3272,8 @@
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.description [ fhir:value "Códigos Provincia, Ministerio del Interior, 2018" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosProvinciasCL";
-           fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosProvinciasCL>
+           fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosProvinciasCL";
+           fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosProvinciasCL>
          ]
        ]
      ], [
@@ -3287,8 +3287,8 @@
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.description [ fhir:value "Códigos Regiones, Ministerio del Interior, 2018" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosRegionesCL";
-           fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosRegionesCL>
+           fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosRegionesCL";
+           fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosRegionesCL>
          ]
        ]
      ], [
@@ -3301,8 +3301,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://hl7chile.cl/fhir/ig/corecl/ValueSet/CodPais";
-           fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/CodPais>
+           fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/CodPais";
+           fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/CodPais>
          ]
        ]
      ], [
@@ -3377,7 +3377,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CoreOrganizacionCl.ttl> a owl:Ontology;
+<https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreOrganizacionCl.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

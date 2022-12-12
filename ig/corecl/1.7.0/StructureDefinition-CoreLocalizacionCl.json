@@ -13,12 +13,12 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
     "valueCode" : "business"
   }],
-  "url" : "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CoreLocalizacionCl",
+  "url" : "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreLocalizacionCl",
   "version" : "1.7.0",
   "name" : "LocalizacionCL",
   "title" : "CL Localización",
   "status" : "active",
-  "date" : "2022-12-07T13:24:22+00:00",
+  "date" : "2022-12-12T20:08:16-03:00",
   "publisher" : "HL7 Chile",
   "contact" : [{
     "name" : "HL7 Chile",
@@ -2130,7 +2130,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "Códigos Comuna, Ministerio del Interior, 2018",
-        "valueSet" : "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosComunaCL"
+        "valueSet" : "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosComunaCL"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -2184,7 +2184,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "Códigos Provincia, Ministerio del Interior, 2018",
-        "valueSet" : "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosProvinciasCL"
+        "valueSet" : "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosProvinciasCL"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -2226,7 +2226,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "Códigos Regiones, Ministerio del Interior, 2018",
-        "valueSet" : "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosRegionesCL"
+        "valueSet" : "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosRegionesCL"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -2321,7 +2321,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://hl7chile.cl/fhir/ig/corecl/ValueSet/CodPais"
+        "valueSet" : "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/CodPais"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -3429,7 +3429,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "Códigos Comuna, Ministerio del Interior, 2018",
-        "valueSet" : "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosComunaCL"
+        "valueSet" : "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosComunaCL"
       }
     },
     {
@@ -3441,7 +3441,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "Códigos Provincia, Ministerio del Interior, 2018",
-        "valueSet" : "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosProvinciasCL"
+        "valueSet" : "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosProvinciasCL"
       }
     },
     {
@@ -3453,7 +3453,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "Códigos Regiones, Ministerio del Interior, 2018",
-        "valueSet" : "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosRegionesCL"
+        "valueSet" : "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosRegionesCL"
       }
     },
     {
@@ -3464,7 +3464,7 @@
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://hl7chile.cl/fhir/ig/corecl/ValueSet/CodPais"
+        "valueSet" : "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/CodPais"
       }
     },
     {

@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://hl7chile.cl/fhir/ig/corecl/ImplementationGuide/hl7.fhir.cl.corecl> a fhir:ImplementationGuide;
+<https://hl7chile.cl/fhir/ig/CoreCL/ImplementationGuide/hl7.fhir.cl.corecl> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "hl7.fhir.cl.corecl"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CoreCLDEV</h2><p>The official URL for this implementation guide is: </p><pre>https://hl7chile.cl/fhir/ig/corecl/ImplementationGuide/hl7.fhir.cl.corecl</pre><div><p>Guía de Implementación Versión de Desarrollo Sobre STU 1, para los perfiles Core que se van a requerir a nivel de desarrollo Nacional para Sistemas que Intercambien datos en estandar FHIR-R4</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CoreCLDEV</h2><p>The official URL for this implementation guide is: </p><pre>https://hl7chile.cl/fhir/ig/CoreCL/ImplementationGuide/hl7.fhir.cl.corecl</pre><div><p>Guía de Implementación Versión de Desarrollo Sobre STU 1, para los perfiles Core que se van a requerir a nivel de desarrollo Nacional para Sistemas que Intercambien datos en estandar FHIR-R4</p>\n</div></div>"
   ]; # 
-  fhir:ImplementationGuide.url [ fhir:value "https://hl7chile.cl/fhir/ig/corecl/ImplementationGuide/hl7.fhir.cl.corecl"]; # 
+  fhir:ImplementationGuide.url [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/ImplementationGuide/hl7.fhir.cl.corecl"]; # 
   fhir:ImplementationGuide.version [ fhir:value "1.7.0"]; # 
   fhir:ImplementationGuide.name [ fhir:value "CoreCLDEV"]; # 
   fhir:ImplementationGuide.title [ fhir:value "Guía de Implementación Core-CL FHIR R4, (Versión Evolutiva)"]; # 
@@ -254,7 +254,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "https://hl7chile.cl/fhir/ig/corecl/history.html" ]
+         fhir:Extension.valueString [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/history.html" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -362,7 +362,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/BundleCl>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/BundleCl>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/BundleCl" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cl BundleCL" ];
@@ -376,7 +376,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/cl-address>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/cl-address>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/cl-address" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CL Address" ];
@@ -390,7 +390,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CoreDiagnosticoCl>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreDiagnosticoCl>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/CoreDiagnosticoCl" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CL Condición-Diagnóstico" ];
@@ -404,7 +404,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/DocumentoCl>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/DocumentoCl>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DocumentoCl" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CL Documento" ];
@@ -418,7 +418,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/EncounterCL>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/EncounterCL>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/EncounterCL" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CL Encuentro" ];
@@ -432,7 +432,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ImmunizationCL>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ImmunizationCL>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ImmunizationCL" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CL Inmunización" ];
@@ -446,7 +446,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CoreLocalizacionCl>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreLocalizacionCl>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/CoreLocalizacionCl" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CL Localización" ];
@@ -460,7 +460,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CoreMedicamentoCl>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreMedicamentoCl>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/CoreMedicamentoCl" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CL Medicamento" ];
@@ -474,7 +474,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CoreOrganizacionCl>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreOrganizacionCl>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/CoreOrganizacionCl" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CL Organización" ];
@@ -488,7 +488,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CorePacienteCl>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/CorePacienteCl" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CL Paciente" ];
@@ -502,7 +502,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CorePrestadorCl>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePrestadorCl>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/CorePrestadorCl" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CL Prestador" ];
@@ -516,7 +516,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ComunasCl>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ComunasCl>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ComunasCl" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Códigos para Comunas en Chile" ];
@@ -530,7 +530,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ContactoParticipantes>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ContactoParticipantes>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ContactoParticipantes" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Contacto de los participantes secundarios del encuentro" ];
@@ -544,7 +544,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/VSEspecialidadesDeisCL>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/VSEspecialidadesDeisCL>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/VSEspecialidadesDeisCL" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Especialidad del médico principal" ];
@@ -558,7 +558,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/IdContacto>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/IdContacto>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/IdContacto" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Identificación del Contacto de un Paciente" ];
@@ -572,7 +572,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/NombreCampana>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/NombreCampana>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/NombreCampana" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)" ];
@@ -586,7 +586,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/NotasEncuentro>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/NotasEncuentro>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/NotasEncuentro" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Notas realizadas en un encuentro por Comité" ];
@@ -600,7 +600,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ObservacionesDiagnostico>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ObservacionesDiagnostico>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ObservacionesDiagnostico" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observaciones o comentarios simples respecto a un diagnóstico" ];
@@ -614,7 +614,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/CodigoPaises" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Codigo de Identificación de países" ];
@@ -628,7 +628,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ProvinciasCl>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ProvinciasCl>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ProvinciasCl" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Códigos para Provincias en Chile" ];
@@ -642,7 +642,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/RazonNOrealizarse>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RazonNOrealizarse>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/RazonNOrealizarse" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Código de las razones por la cual no se pudo realizar la atención" ];
@@ -656,7 +656,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/RazonNOrealizarseInm>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RazonNOrealizarseInm>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/RazonNOrealizarseInm" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Razones por las cuales no se pudo realizar la inmunización" ];
@@ -670,7 +670,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/RegionesCl>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RegionesCl>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/RegionesCl" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Códigos para Regiones en Chile" ];
@@ -684,7 +684,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ServicioSalud>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ServicioSalud>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ServicioSalud" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sistema Nacional de Servicios de Salud" ];
@@ -698,7 +698,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/TiposEncuentro>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/TiposEncuentro>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/TiposEncuentro" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Código de tipos de encuentro remoto" ];
@@ -712,7 +712,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/TiposVacunaRNI>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/TiposVacunaRNI>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/TiposVacunaRNI" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Código de tipos de Vacunas en Chile" ];
@@ -726,7 +726,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/TiposServicio>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/TiposServicio>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/TiposServicio" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Código de los tipos de servicio que se atiende" ];
@@ -740,7 +740,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/CodPais>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/CodPais>;
          fhir:Reference.reference [ fhir:value "ValueSet/CodPais" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Códigos de Países" ];
@@ -754,7 +754,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosComunaCL>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosComunaCL>;
          fhir:Reference.reference [ fhir:value "ValueSet/VSCodigosComunaCL" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Códigos de Comunas en Chile" ];
@@ -768,7 +768,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosProvinciasCL>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosProvinciasCL>;
          fhir:Reference.reference [ fhir:value "ValueSet/VSCodigosProvinciasCL" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Códigos de Provincias en Chile" ];
@@ -782,7 +782,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosRegionesCL>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosRegionesCL>;
          fhir:Reference.reference [ fhir:value "ValueSet/VSCodigosRegionesCL" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Códigos de Regiones en Chile" ];
@@ -796,7 +796,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosServiciosSalud>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosServiciosSalud>;
          fhir:Reference.reference [ fhir:value "ValueSet/VSCodigosServiciosSalud" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Servicos de Salud en Chile" ];
@@ -810,7 +810,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigoslenguaje>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigoslenguaje>;
          fhir:Reference.reference [ fhir:value "ValueSet/VSCodigoslenguaje" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Codigos Lenguaje" ];
@@ -824,7 +824,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSContactosec>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSContactosec>;
          fhir:Reference.reference [ fhir:value "ValueSet/VSContactosec" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Contacto participantes" ];
@@ -838,7 +838,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSDiagnosticosSCT>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSDiagnosticosSCT>;
          fhir:Reference.reference [ fhir:value "ValueSet/VSDiagnosticosSCT" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diagnósticos SNOMED y Ausente o Desconocido" ];
@@ -852,7 +852,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSEspecialidadesDeisCL>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSEspecialidadesDeisCL>;
          fhir:Reference.reference [ fhir:value "ValueSet/VSEspecialidadesDeisCL" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Códigos de Especialidades" ];
@@ -866,7 +866,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSNombreCampana>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSNombreCampana>;
          fhir:Reference.reference [ fhir:value "ValueSet/VSNombreCampana" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Campañas de Vacunación" ];
@@ -880,7 +880,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSRazonNOTinm>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSRazonNOTinm>;
          fhir:Reference.reference [ fhir:value "ValueSet/VSRazonNOTinm" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Razones no Inmunización" ];
@@ -894,7 +894,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSRazonNOT>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSRazonNOT>;
          fhir:Reference.reference [ fhir:value "ValueSet/VSRazonNOT" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Razones no Atención Remota" ];
@@ -908,7 +908,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSTiposDocClinic>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSTiposDocClinic>;
          fhir:Reference.reference [ fhir:value "ValueSet/VSTiposDocClinic" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipos de Documentos Clínicos" ];
@@ -922,7 +922,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSTiposDocumentos>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSTiposDocumentos>;
          fhir:Reference.reference [ fhir:value "ValueSet/VSTiposDocumentos" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipos de Documentos" ];
@@ -936,7 +936,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSTiposEncuentroCL>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSTiposEncuentroCL>;
          fhir:Reference.reference [ fhir:value "ValueSet/VSTiposEncuentroCL" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipos de Encuentro" ];
@@ -950,7 +950,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSTiposServicio>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSTiposServicio>;
          fhir:Reference.reference [ fhir:value "ValueSet/VSTiposServicio" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipos de Servicios Remotos" ];
@@ -964,7 +964,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSTiposVacunas>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSTiposVacunas>;
          fhir:Reference.reference [ fhir:value "ValueSet/VSTiposVacunas" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipos de Vacunas RNI" ];
@@ -978,7 +978,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodComunasCL>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodComunasCL>;
          fhir:Reference.reference [ fhir:value "CodeSystem/CSCodComunasCL" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Códigos de Comunas en Chile" ];
@@ -992,7 +992,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodProvinciasCL>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodProvinciasCL>;
          fhir:Reference.reference [ fhir:value "CodeSystem/CSCodProvinciasCL" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Códigos de Provincias en Chile" ];
@@ -1006,7 +1006,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodRegionCL>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodRegionCL>;
          fhir:Reference.reference [ fhir:value "CodeSystem/CSCodRegionCL" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Códigos de Regiones en Chile" ];
@@ -1020,7 +1020,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodSSalud>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodSSalud>;
          fhir:Reference.reference [ fhir:value "CodeSystem/CSCodSSalud" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Servicios de Salud Chile" ];
@@ -1034,7 +1034,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodigoServicio>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoServicio>;
          fhir:Reference.reference [ fhir:value "CodeSystem/CSCodigoServicio" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipos de Servicios Remotos" ];
@@ -1048,7 +1048,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodigoDNI>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoDNI>;
          fhir:Reference.reference [ fhir:value "CodeSystem/CSCodigoDNI" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Códigos de Documentos DNI para LATAM y el Caribe" ];
@@ -1062,7 +1062,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodigoslenguaje>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoslenguaje>;
          fhir:Reference.reference [ fhir:value "CodeSystem/CSCodigoslenguaje" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Codigos Lenguaje" ];
@@ -1076,7 +1076,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSEspecialidadesDeisCL>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSEspecialidadesDeisCL>;
          fhir:Reference.reference [ fhir:value "CodeSystem/CSEspecialidadesDeisCL" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Códigos de Especialidades" ];
@@ -1090,7 +1090,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSNombreCampana>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSNombreCampana>;
          fhir:Reference.reference [ fhir:value "CodeSystem/CSNombreCampana" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Campañas Inmunización" ];
@@ -1104,7 +1104,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSRazonNOT>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSRazonNOT>;
          fhir:Reference.reference [ fhir:value "CodeSystem/CSRazonNOT" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Razones Cancelación Atención Remota" ];
@@ -1118,7 +1118,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSRazonNOTinm>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSRazonNOTinm>;
          fhir:Reference.reference [ fhir:value "CodeSystem/CSRazonNOTinm" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Razones no Inmunización" ];
@@ -1132,7 +1132,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSTiposEncuentroCL>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSTiposEncuentroCL>;
          fhir:Reference.reference [ fhir:value "CodeSystem/CSTiposEncuentroCL" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipos de Encuentro" ];
@@ -1146,7 +1146,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodigoVacunas>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoVacunas>;
          fhir:Reference.reference [ fhir:value "CodeSystem/CSCodigoVacunas" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Códigos de Vacunas RNI" ];
@@ -1160,7 +1160,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/corecl/CodeSystem/csrazonnoencuentro>;
+         fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/csrazonnoencuentro>;
          fhir:Reference.reference [ fhir:value "CodeSystem/csrazonnoencuentro" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Razón Encuentro Remoto no Realizado" ];
@@ -1343,7 +1343,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://hl7chile.cl/fhir/ig/corecl/ImplementationGuide/hl7.fhir.cl.corecl.ttl> a owl:Ontology;
+<https://hl7chile.cl/fhir/ig/CoreCL/ImplementationGuide/hl7.fhir.cl.corecl.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

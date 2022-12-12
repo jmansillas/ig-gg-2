@@ -27,12 +27,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CoreDiagnosticoCl"/>
+  <url value="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreDiagnosticoCl"/>
   <version value="1.7.0"/>
   <name value="DiagnosticoCl"/>
   <title value="CL Condición-Diagnóstico"/>
   <status value="active"/>
-  <date value="2022-12-07T13:24:22+00:00"/>
+  <date value="2022-12-12T20:08:16-03:00"/>
   <publisher value="HL7 Chile"/>
   <contact>
     <name value="HL7 Chile"/>
@@ -746,7 +746,7 @@
         </extension>
         <strength value="preferred"/>
         <description value="Diagósticos en SNOMED-CT. El ValueSet trae toda la terminología + Problema Ausente o Desconocido"/>
-        <valueSet value="https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSDiagnosticosSCT"/>
+        <valueSet value="https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSDiagnosticosSCT"/>
       </binding>
       <mapping>
         <identity value="workflow"/>
@@ -1260,7 +1260,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CorePacienteCl"/>
+        <targetProfile value="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2328,7 +2328,7 @@
         </extension>
         <strength value="preferred"/>
         <description value="Diagósticos en SNOMED-CT. El ValueSet trae toda la terminología + Problema Ausente o Desconocido"/>
-        <valueSet value="https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSDiagnosticosSCT"/>
+        <valueSet value="https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSDiagnosticosSCT"/>
       </binding>
     </element>
     <element id="Condition.code.coding.system">
@@ -2362,7 +2362,7 @@
       <definition value="Paciente sobre al que corresponde la condición."/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CorePacienteCl"/>
+        <targetProfile value="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl"/>
       </type>
       <mustSupport value="true"/>
     </element>

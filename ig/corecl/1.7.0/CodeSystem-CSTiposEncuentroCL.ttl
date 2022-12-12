@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSTiposEncuentroCL> a fhir:CodeSystem;
+<https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSTiposEncuentroCL> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "CSTiposEncuentroCL"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSTiposEncuentroCL</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">PR<a name=\"CSTiposEncuentroCL-PR\"> </a></td><td>Programada</td></tr><tr><td style=\"white-space:nowrap\">SP<a name=\"CSTiposEncuentroCL-SP\"> </a></td><td>Espontánea</td></tr><tr><td style=\"white-space:nowrap\">CO<a name=\"CSTiposEncuentroCL-CO\"> </a></td><td>Comité</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSTiposEncuentroCL</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">PR<a name=\"CSTiposEncuentroCL-PR\"> </a></td><td>Programada</td></tr><tr><td style=\"white-space:nowrap\">SP<a name=\"CSTiposEncuentroCL-SP\"> </a></td><td>Espontánea</td></tr><tr><td style=\"white-space:nowrap\">CO<a name=\"CSTiposEncuentroCL-CO\"> </a></td><td>Comité</td></tr></table></div>"
   ]; # 
-  fhir:CodeSystem.url [ fhir:value "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSTiposEncuentroCL"]; # 
+  fhir:CodeSystem.url [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSTiposEncuentroCL"]; # 
   fhir:CodeSystem.version [ fhir:value "1.7.0"]; # 
   fhir:CodeSystem.name [ fhir:value "CSTiposEncuentroCL"]; # 
   fhir:CodeSystem.title [ fhir:value "Tipos de Encuentro"]; # 
@@ -63,7 +63,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSTiposEncuentroCL.ttl> a owl:Ontology;
+<https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSTiposEncuentroCL.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

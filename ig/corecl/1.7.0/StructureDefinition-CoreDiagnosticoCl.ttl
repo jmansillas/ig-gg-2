@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CoreDiagnosticoCl> a fhir:StructureDefinition;
+<https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreDiagnosticoCl> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "CoreDiagnosticoCl"]; # 
   fhir:DomainResource.text [
@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ]; # 
-  fhir:StructureDefinition.url [ fhir:value "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CoreDiagnosticoCl"]; # 
+  fhir:StructureDefinition.url [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreDiagnosticoCl"]; # 
   fhir:StructureDefinition.version [ fhir:value "1.7.0"]; # 
   fhir:StructureDefinition.name [ fhir:value "DiagnosticoCl"]; # 
   fhir:StructureDefinition.title [ fhir:value "CL Condición-Diagnóstico"]; # 
   fhir:StructureDefinition.status [ fhir:value "active"]; # 
-  fhir:StructureDefinition.date [ fhir:value "2022-12-07T13:24:22+00:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.date [ fhir:value "2022-12-12T20:08:16-03:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Chile"]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -945,8 +945,8 @@
          fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ];
          fhir:ElementDefinition.binding.description [ fhir:value "Diagósticos en SNOMED-CT. El ValueSet trae toda la terminología + Problema Ausente o Desconocido" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSDiagnosticosSCT";
-           fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSDiagnosticosSCT>
+           fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSDiagnosticosSCT";
+           fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSDiagnosticosSCT>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1581,9 +1581,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CorePacienteCl";
+           fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl";
            fhir:index 0;
-           fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CorePacienteCl>
+           fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -2995,8 +2995,8 @@
          fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ];
          fhir:ElementDefinition.binding.description [ fhir:value "Diagósticos en SNOMED-CT. El ValueSet trae toda la terminología + Problema Ausente o Desconocido" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSDiagnosticosSCT";
-           fhir:link <https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSDiagnosticosSCT>
+           fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSDiagnosticosSCT";
+           fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSDiagnosticosSCT>
          ]
        ]
      ], [
@@ -3038,9 +3038,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CorePacienteCl";
+           fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl";
            fhir:index 0;
-           fhir:link <https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CorePacienteCl>
+           fhir:link <https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl>
          ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
@@ -3092,7 +3092,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CoreDiagnosticoCl.ttl> a owl:Ontology;
+<https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreDiagnosticoCl.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

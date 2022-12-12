@@ -27,12 +27,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="business"/>
   </extension>
-  <url value="https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CoreMedicamentoCl"/>
+  <url value="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreMedicamentoCl"/>
   <version value="1.7.0"/>
   <name value="MedicamentoCL"/>
   <title value="CL Medicamento"/>
   <status value="active"/>
-  <date value="2022-12-07T13:24:22+00:00"/>
+  <date value="2022-12-12T20:08:16-03:00"/>
   <publisher value="HL7 Chile"/>
   <contact>
     <name value="HL7 Chile"/>

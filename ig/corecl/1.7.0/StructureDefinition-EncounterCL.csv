@@ -23,7 +23,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Encounter.extension:notas","Encounter.extension","notas","","",0,1,"","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/NotasEncuentro]]} {[]}
+"Encounter.extension:notas","Encounter.extension","notas","","",0,1,"","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/NotasEncuentro]]} {[]}
 ","Notas realizadas en un encuentro por Comité","Esta extensión incluye los códigos de los medios de contacto que se tiene para los participantes secundarios","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -115,7 +115,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Tipos de encuentro remoto","Se usa esta extensión para agregar el tipo de Encuentro que se genera de manera remota","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Encounter.type.extension:type","Encounter.type.extension","type","","",1,1,"","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/TiposEncuentro]]} {[]}
+"Encounter.type.extension:type","Encounter.type.extension","type","","",1,1,"","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/TiposEncuentro]]} {[]}
 ","Código de tipos de encuentro remoto","Esta extensión incluye códigos de los tipos de encuentro que se realizan de forma remota","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Encounter.type.coding","Encounter.type.coding","","","",0,*,"","","Y","Coding {[]} {[]}
@@ -133,7 +133,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Tipo de servicio que se realiza en el encuentro remoto","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Encounter.serviceType.extension:serviceType","Encounter.serviceType.extension","serviceType","","",1,1,"","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/TiposServicio]]} {[]}
+"Encounter.serviceType.extension:serviceType","Encounter.serviceType.extension","serviceType","","",1,1,"","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/TiposServicio]]} {[]}
 ","Código de los tipos de servicio que se atiende","Esta extensión incluye códigos de servicios que se entregan de forma remota","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Encounter.serviceType.coding","Encounter.serviceType.coding","","","",0,*,"","","Y","Coding {[]} {[]}
@@ -146,7 +146,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Indicates the urgency of the encounter","Indicates the urgency of the encounter.","","","","","","","","","",,"example","Indicates the urgency of the encounter.","http://terminology.hl7.org/ValueSet/v3-ActPriority","",,,,"Encounter.priority",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".priorityCode","FiveWs.grade","PV2-25"
 "Encounter.subject","Encounter.subject","","patient
-","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CorePacienteCl]]}
+","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl]]}
 ","Referencia al paciente del encuentro","La referencia al paciente que está presente en el encuentro clínico remoto","While the encounter is always about the patient, the patient might not actually be known in all contexts of use, and there may be a group of patients that could be anonymous (such as in a group therapy for Alcoholics Anonymous - where the recording of the encounter could be used for billing on the number of people/staff and not important to the context of the specific patients) or alternately in veterinary care a herd of sheep receiving treatment (where the animals are not individually tracked).","","","","","","","","",,,,,"",,,,"Encounter.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.subject",".participation[typeCode=SBJ]/role[classCode=PAT]","FiveWs.subject[x]","FiveWs.subject","PID-3"
 "Encounter.episodeOfCare","Encounter.episodeOfCare","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/EpisodeOfCare]]}
@@ -190,7 +190,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Encounter.participant:partPrincipal.extension:especialidad","Encounter.participant.extension","especialidad","","",1,1,"","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/VSEspecialidadesDeisCL]]} {[]}
+"Encounter.participant:partPrincipal.extension:especialidad","Encounter.participant.extension","especialidad","","",1,1,"","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/VSEspecialidadesDeisCL]]} {[]}
 ","Especialidad del médico principal","Esta extensión incluye los códigos de las especialidades que puede tener el medico principal","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -241,7 +241,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Encounter.participant:partPrincipal.period","Encounter.participant.period","","","",0,1,"","","","Period {[]} {[]}
 ","Period of time during the encounter that the participant participated","The period of time that the specified participant participated in the encounter. These can overlap or be sub-sets of the overall encounter's period.","","","","","","","","","",,,,,"",,,,"Encounter.participant.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".time","ROL-5, ROL-6 (or maybe PRT-5)"
-"Encounter.participant:partPrincipal.individual","Encounter.participant.individual","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CorePrestadorCl]]}
+"Encounter.participant:partPrincipal.individual","Encounter.participant.individual","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePrestadorCl]]}
 ","Médico principal involucrado en el encuentro","Persons involved in the encounter other than the patient.","","","","","","","","","",,,,,"",,,,"Encounter.participant.individual",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.actor",".role","FiveWs.who","ROL-4"
 "Encounter.participant:partSecundario","Encounter.participant","partSecundario","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
@@ -253,7 +253,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Contacto de los participantes secundarios","Contacto de los participantes involucrados en el encuentro, que no sea paciente ni el médico principal","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Encounter.participant:partSecundario.extension:contact","Encounter.participant.extension","contact","","",1,*,"","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ContactoParticipantes]]} {[]}
+"Encounter.participant:partSecundario.extension:contact","Encounter.participant.extension","contact","","",1,*,"","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ContactoParticipantes]]} {[]}
 ","Contacto de los participantes secundarios del encuentro","Esta extensión incluye los códigos de los medios de contacto que se tiene para los participantes secundarios","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -369,7 +369,7 @@ Admission diagnosis","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
 ","Razones por las cuales NO se realiza el encuentro remoto","Se usa esta extensión para agregar las razones por las cuales no se pudo llevar a cabo el encuentro remoto","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Encounter.reasonCode.extension:reasonCode","Encounter.reasonCode.extension","reasonCode","","",0,1,"","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/RazonNOrealizarse]]} {[]}
+"Encounter.reasonCode.extension:reasonCode","Encounter.reasonCode.extension","reasonCode","","",0,1,"","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RazonNOrealizarse]]} {[]}
 ","Código de las razones por la cual no se pudo realizar la atención","Esta extensión incluye códigos de razones por la cuales no pudo llevarse a cabo el encuentro remoto","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Encounter.reasonCode.coding","Encounter.reasonCode.coding","","","",0,*,"","","Y","Coding {[]} {[]}
@@ -391,7 +391,7 @@ Admission diagnosis","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Encounter.diagnosis.extension:observaciones","Encounter.diagnosis.extension","observaciones","","",0,1,"","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ObservacionesDiagnostico]]} {[]}
+"Encounter.diagnosis.extension:observaciones","Encounter.diagnosis.extension","observaciones","","",0,1,"","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ObservacionesDiagnostico]]} {[]}
 ","Observaciones o comentarios simples respecto a un diagnóstico","Esta extensión sirve para insertar comentarios acerca a un diagnóstico médico realizado en un encuentro remoto","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -485,7 +485,7 @@ There may be many levels in the hierachy, and this may only pic specific levels 
 "Encounter.location.period","Encounter.location.period","","","",0,1,"","","","Period {[]} {[]}
 ","Time period during which the patient was present at the location","Time period during which the patient was present at the location.","","","","","","","","","",,,,,"",,,,"Encounter.location.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".time"
-"Encounter.serviceProvider","Encounter.serviceProvider","","","",1,1,"Y","","","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CoreOrganizacionCl]]}
+"Encounter.serviceProvider","Encounter.serviceProvider","","","",1,1,"Y","","","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreOrganizacionCl]]}
 ","La organización (instalación) responsable de este encuentro","The organization that is primarily responsible for this Encounter's services. This MAY be the same as the organization on the Patient record, however it could be different, such as if the actor performing the services was from an external organization (which may be billed seperately) for an external consultation.  Refer to the example bundle showing an abbreviated set of Encounters for a colonoscopy.","","","","","","","","","",,,,,"",,,,"Encounter.serviceProvider",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.actor",".particiaption[typeCode=PFM].role","PL.6  & PL.1"
 "Encounter.partOf","Encounter.partOf","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}

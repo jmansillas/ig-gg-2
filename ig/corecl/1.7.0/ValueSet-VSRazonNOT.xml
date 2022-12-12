@@ -3,9 +3,9 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="VSRazonNOT"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-csrazonnoencuentro.html"><code>https://hl7chile.cl/fhir/ig/corecl/CodeSystem/csrazonnoencuentro</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-csrazonnoencuentro.html"><code>https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/csrazonnoencuentro</code></a></li></ul></div>
   </text>
-  <url value="https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSRazonNOT"/>
+  <url value="https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSRazonNOT"/>
   <version value="1.7.0"/>
   <name value="VSRazonNOencuentro"/>
   <title value="Razones no Atención Remota"/>
@@ -35,7 +35,7 @@
   <copyright value="Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."/>
   <compose>
     <include>
-      <system value="https://hl7chile.cl/fhir/ig/corecl/CodeSystem/csrazonnoencuentro"/>
+      <system value="https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/csrazonnoencuentro"/>
     </include>
   </compose>
 </ValueSet>

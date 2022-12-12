@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSRazonNOT> a fhir:CodeSystem;
+<https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSRazonNOT> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "CSRazonNOT"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSRazonNOT</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">pierdeLlam<a name=\"CSRazonNOT-pierdeLlam\"> </a></td><td>El participante pierde la llamada</td></tr><tr><td style=\"white-space:nowrap\">finaLlam<a name=\"CSRazonNOT-finaLlam\"> </a></td><td>El participante finalizó la llamada abruptamente</td></tr><tr><td style=\"white-space:nowrap\">problConex<a name=\"CSRazonNOT-problConex\"> </a></td><td>El participante tuvo problemas de conexión a internet</td></tr><tr><td style=\"white-space:nowrap\">medproblConex<a name=\"CSRazonNOT-medproblConex\"> </a></td><td>Tuve problemas de conexión a internet</td></tr><tr><td style=\"white-space:nowrap\">otros<a name=\"CSRazonNOT-otros\"> </a></td><td>Otros / texto libre</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSRazonNOT</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">pierdeLlam<a name=\"CSRazonNOT-pierdeLlam\"> </a></td><td>El participante pierde la llamada</td></tr><tr><td style=\"white-space:nowrap\">finaLlam<a name=\"CSRazonNOT-finaLlam\"> </a></td><td>El participante finalizó la llamada abruptamente</td></tr><tr><td style=\"white-space:nowrap\">problConex<a name=\"CSRazonNOT-problConex\"> </a></td><td>El participante tuvo problemas de conexión a internet</td></tr><tr><td style=\"white-space:nowrap\">medproblConex<a name=\"CSRazonNOT-medproblConex\"> </a></td><td>Tuve problemas de conexión a internet</td></tr><tr><td style=\"white-space:nowrap\">otros<a name=\"CSRazonNOT-otros\"> </a></td><td>Otros / texto libre</td></tr></table></div>"
   ]; # 
-  fhir:CodeSystem.url [ fhir:value "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSRazonNOT"]; # 
+  fhir:CodeSystem.url [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSRazonNOT"]; # 
   fhir:CodeSystem.version [ fhir:value "1.7.0"]; # 
   fhir:CodeSystem.name [ fhir:value "CSRazonNOencuentroCL"]; # 
   fhir:CodeSystem.title [ fhir:value "Razones Cancelación Atención Remota"]; # 
@@ -71,7 +71,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSRazonNOT.ttl> a owl:Ontology;
+<https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSRazonNOT.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

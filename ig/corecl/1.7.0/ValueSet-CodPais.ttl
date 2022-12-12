@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://hl7chile.cl/fhir/ig/corecl/ValueSet/CodPais> a fhir:ValueSet;
+<https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/CodPais> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "CodPais"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html\"><code>urn:iso:std:iso:3166</code></a></li></ul></div>"
   ]; # 
-  fhir:ValueSet.url [ fhir:value "https://hl7chile.cl/fhir/ig/corecl/ValueSet/CodPais"]; # 
+  fhir:ValueSet.url [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/CodPais"]; # 
   fhir:ValueSet.version [ fhir:value "1.7.0"]; # 
   fhir:ValueSet.name [ fhir:value "CodPaises"]; # 
   fhir:ValueSet.title [ fhir:value "Códigos de Países"]; # 
@@ -53,7 +53,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://hl7chile.cl/fhir/ig/corecl/ValueSet/CodPais.ttl> a owl:Ontology;
+<https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/CodPais.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

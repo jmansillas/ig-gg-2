@@ -3,9 +3,9 @@
   "id" : "VSCodigosServiciosSalud",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-CSCodSSalud.html\"><code>https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodSSalud</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-CSCodSSalud.html\"><code>https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodSSalud</code></a></li></ul></div>"
   },
-  "url" : "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSCodigosServiciosSalud",
+  "url" : "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSCodigosServiciosSalud",
   "version" : "1.7.0",
   "name" : "VSCodigosServiciosSaludCL",
   "title" : "Servicos de Salud en Chile",
@@ -35,7 +35,7 @@
   "copyright" : "Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional.",
   "compose" : {
     "include" : [{
-      "system" : "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodSSalud"
+      "system" : "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodSSalud"
     }]
   }
 }

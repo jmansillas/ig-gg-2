@@ -22,7 +22,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Immunization.extension:campana","Immunization.extension","campana","","",1,1,"","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/NombreCampana]]} {[]}
+"Immunization.extension:campana","Immunization.extension","campana","","",1,1,"","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/NombreCampana]]} {[]}
 ","Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)","Esta extensión incluye los nombres de las distintas Campañas que se realizan y estan registradas en el RNI","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -47,7 +47,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Motivo de no realizar la inmunización","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Immunization.statusReason.extension:statusReason","Immunization.statusReason.extension","statusReason","","",1,1,"","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/RazonNOrealizarseInm]]} {[]}
+"Immunization.statusReason.extension:statusReason","Immunization.statusReason.extension","statusReason","","",1,1,"","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RazonNOrealizarseInm]]} {[]}
 ","Razones por las cuales no se pudo realizar la inmunización","Esta extensión incluye las razones por la cuales no pudo llevarse a cabo la inmunización","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Immunization.statusReason.coding","Immunization.statusReason.coding","","","",0,*,"","","Y","Coding {[]} {[]}
@@ -65,7 +65,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Nombre de vacuna administrada","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Immunization.vaccineCode.extension:tipov","Immunization.vaccineCode.extension","tipov","","",1,1,"","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/TiposVacunaRNI]]} {[]}
+"Immunization.vaccineCode.extension:tipov","Immunization.vaccineCode.extension","tipov","","",1,1,"","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/TiposVacunaRNI]]} {[]}
 ","Código de tipos de Vacunas en Chile","Esta extensión incluye códigos de los tipos de vacunas que existe en el Registro Nacional de Inmunizaciones RNI","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Immunization.vaccineCode.coding","Immunization.vaccineCode.coding","","","",0,*,"","","Y","Coding {[]} {[]}
@@ -74,7 +74,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Immunization.vaccineCode.text","Immunization.vaccineCode.text","","","",0,1,"","","Y","string {[]} {[]}
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.9. But note many systems use C*E.2 for this","./originalText[mediaType/code=""text/plain""]/data"
-"Immunization.patient","Immunization.patient","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CorePacienteCl]]}
+"Immunization.patient","Immunization.patient","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl]]}
 ","Quién fue inmunizado","El paciente que recibió o no recibió la inmunización","","","","","","","","","",,,,,"",,,,"Immunization.patient",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.subject","PID-3",".partipication[ttypeCode=].role","FiveWs.subject[x]","FiveWs.subject"
 "Immunization.encounter","Immunization.encounter","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
@@ -96,7 +96,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Immunization.reportOrigin","Immunization.reportOrigin","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Indicates the source of a secondarily reported record","The source of the data when the report of the immunization event is not based on information from the person who administered the vaccine.","Should not be populated if primarySource = True, not required even if primarySource = False.","","","","","","","","",,"example","The source of the data for a record which is not from a primary source.","http://hl7.org/fhir/ValueSet/immunization-origin","",,,,"Immunization.reportOrigin",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","RXA-9",".participation[typeCode=INF].role[classCode=PAT] (this syntax for self-reported) .participation[typeCode=INF].role[classCode=LIC] (this syntax for health care professional) .participation[typeCode=INF].role[classCode=PRS] (this syntax for family member)","FiveWs.source"
-"Immunization.location","Immunization.location","","","",1,1,"Y","","","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CoreLocalizacionCl]]}
+"Immunization.location","Immunization.location","","","",1,1,"Y","","","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreLocalizacionCl]]}
 ","Dónde se produjo la inmunización","El lugar donde se produjo la administración de la vacuna","","","","","","","","","",,,,,"",,,,"Immunization.location",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.location","RXA-27  (or RXA-11, deprecated as of v2.7)",".participation[typeCode=LOC].COCT_MT240000UV","FiveWs.where[x]"
 "Immunization.location.id","Immunization.location.id","","","",0,1,"","","","string {[]} {[]}
@@ -105,7 +105,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extensión para los Sistemas de Salud, por ejemplo: S.S Viña del mar Quillota","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Immunization.location.extension:ssalud","Immunization.location.extension","ssalud","","",1,1,"","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/ServicioSalud]]} {[]}
+"Immunization.location.extension:ssalud","Immunization.location.extension","ssalud","","",1,1,"","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ServicioSalud]]} {[]}
 ","Sistema Nacional de Servicios de Salud","Esta extensión incluye los códigos de los Servicios de Salud que existen en el país","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Immunization.location.reference","Immunization.location.reference","","","",0,1,"","","Y","string {[]} {[]}
@@ -165,7 +165,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Immunization.performer.function","Immunization.performer.function","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","What type of performance was done","Describes the type of performance (e.g. ordering provider, administering provider, etc.).","","","","","","","","","",,"extensible","The role a practitioner or organization plays in the immunization event.","http://hl7.org/fhir/ValueSet/immunization-function","",,,,"Immunization.performer.function",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.function",".participation.functionCode"
-"Immunization.performer.actor","Immunization.performer.actor","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CorePrestadorCl], CanonicalType[https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CoreOrganizacionCl]]}
+"Immunization.performer.actor","Immunization.performer.actor","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePrestadorCl], CanonicalType[https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreOrganizacionCl]]}
 ","Practicante u organización que realizó la acción","Practicante u organización que realizó la acción","When the individual practitioner who performed the action is known, it is best to send.","","","","","","","","",,,,,"",,,,"Immunization.performer.actor",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.actor",".player","FiveWs.actor"
 "Immunization.note","Immunization.note","","","",0,*,"","","Y","Annotation {[]} {[]}

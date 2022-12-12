@@ -162,7 +162,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Practitioner.telecom.period","Practitioner.telecom.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Time period when the contact point was/is in use","Time period when the contact point was/is in use.","","","","","","","","","",,,,,"",,,,"ContactPoint.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A","./usablePeriod[type=""IVL<TS>""]","./StartDate and ./EndDate"
-"Practitioner.address","Practitioner.address","","","",0,*,"Y","","","Address {[CanonicalType[https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/cl-address]]} {[]}
+"Practitioner.address","Practitioner.address","","","",0,*,"Y","","","Address {[CanonicalType[https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/cl-address]]} {[]}
 ","Tipo de dato para agragar la dirección de un paciente","An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiting locations which might not be valid for mail delivery.  There are a variety of postal address formats defined around the world.","Variable dirección","The home/mailing address of the practitioner is often required for employee administration purposes, and also for some rostering services where the start point (practitioners home) can be used in calculations.","","","","","","","",,,,,"",,,,"Practitioner.address",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XAD","n/a","AD","Address"

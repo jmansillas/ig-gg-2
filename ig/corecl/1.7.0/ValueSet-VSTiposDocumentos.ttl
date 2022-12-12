@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSTiposDocumentos> a fhir:ValueSet;
+<https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSTiposDocumentos> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "VSTiposDocumentos"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-CSCodigoDNI.html\"><code>https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodigoDNI</code></a></li><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0203.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0203</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-CSCodigoDNI.html\"><code>https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoDNI</code></a></li><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0203.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0203</code></a></li></ul></div>"
   ]; # 
-  fhir:ValueSet.url [ fhir:value "https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSTiposDocumentos"]; # 
+  fhir:ValueSet.url [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSTiposDocumentos"]; # 
   fhir:ValueSet.version [ fhir:value "1.7.0"]; # 
   fhir:ValueSet.name [ fhir:value "VSTiposDocumentos"]; # 
   fhir:ValueSet.title [ fhir:value "Tipos de Documentos"]; # 
@@ -47,7 +47,7 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSCodigoDNI" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoDNI" ]
      ], [
        fhir:index 1;
        fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ]
@@ -56,7 +56,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSTiposDocumentos.ttl> a owl:Ontology;
+<https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSTiposDocumentos.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

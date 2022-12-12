@@ -3,9 +3,9 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="VSRazonNOTinm"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-CSRazonNOTinm.html"><code>https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSRazonNOTinm</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-CSRazonNOTinm.html"><code>https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSRazonNOTinm</code></a></li></ul></div>
   </text>
-  <url value="https://hl7chile.cl/fhir/ig/corecl/ValueSet/VSRazonNOTinm"/>
+  <url value="https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSRazonNOTinm"/>
   <version value="1.7.0"/>
   <name value="VSRazonNOTinmCL"/>
   <title value="Razones no Inmunización"/>
@@ -35,7 +35,7 @@
   <copyright value="Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."/>
   <compose>
     <include>
-      <system value="https://hl7chile.cl/fhir/ig/corecl/CodeSystem/CSRazonNOTinm"/>
+      <system value="https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSRazonNOTinm"/>
     </include>
   </compose>
 </ValueSet>

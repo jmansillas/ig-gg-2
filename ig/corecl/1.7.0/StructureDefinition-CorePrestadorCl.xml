@@ -52,12 +52,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="individual"/>
   </extension>
-  <url value="https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CorePrestadorCl"/>
+  <url value="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePrestadorCl"/>
   <version value="1.7.0"/>
   <name value="PrestadorCL"/>
   <title value="CL Prestador"/>
   <status value="active"/>
-  <date value="2022-12-07T13:24:22+00:00"/>
+  <date value="2022-12-12T20:08:16-03:00"/>
   <publisher value="HL7 Chile"/>
   <contact>
     <name value="HL7 Chile"/>
@@ -2122,7 +2122,7 @@
       </base>
       <type>
         <code value="Address"/>
-        <profile value="https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/cl-address"/>
+        <profile value="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/cl-address"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -5037,7 +5037,7 @@
       <path value="Practitioner.address"/>
       <type>
         <code value="Address"/>
-        <profile value="https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/cl-address"/>
+        <profile value="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/cl-address"/>
       </type>
       <mustSupport value="true"/>
     </element>
